@@ -1,6 +1,6 @@
 ---
-title: "Project proposal"
-author: "Team name"
+title: "proposal.rmd"
+author: "Team Blue"
 output: github_document
 ---
 

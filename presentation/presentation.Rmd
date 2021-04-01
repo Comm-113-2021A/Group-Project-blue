@@ -30,7 +30,9 @@ knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618,
 ```
 
 ```{r load-data, include=FALSE}
-# Load your data here
+  janssen <- read.csv("../data/janssen.csv")
+  pfizer <- read.csv("../data/pfizer.csv")
+  moderna <- read.csv("../data/moderna.csv")
 ```
 
 ```{r}
