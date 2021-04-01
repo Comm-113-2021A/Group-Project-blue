@@ -1,6 +1,6 @@
 ---
-title: Project title
-author: by Team name
+title: Analysis of COVID Vaccines in Pennsylvania
+author: by Team Blue
 output: github_document
 ---
 
