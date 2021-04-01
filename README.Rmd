@@ -1,5 +1,5 @@
 ---
-title: Analysis of COVID Vaccines in Pennsylvania
+title: Analysis of COVID Vaccine Distribution in Pennsylvania
 author: by Team Blue
 output: github_document
 ---
