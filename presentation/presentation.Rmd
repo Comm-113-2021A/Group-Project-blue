@@ -21,6 +21,7 @@ library(tidymodels)
 library(palmerpenguins)
 library(knitr)
 library(xaringanthemer)
+library(showtext)
 ```
 
 ```{r setup, include=FALSE}
