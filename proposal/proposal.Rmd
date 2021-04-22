@@ -1,23 +1,122 @@
 ---
-title: "Project proposal"
-author: "Team name"
+title: "proposal.rmd"
+author: "Team Blue"
 output: github_document
 ---
 
 ```{r load-packages, message = FALSE}
 library(tidyverse)
 library(broom)
+library(ggplot2)
 ```
 
-## 1. Introduction
+<div align="center"> <h1> **Research Proposal** </h1> </div>
+ 
+ 
+## Section 1: Introduction
+
+Given that Covid-19 vaccines are being delivered to people across the world, our team could not help but ponder the question: How is the limited vaccine being distributed? And more importantly, is it done fairly?
+
+Hence, by focusing the scope of our investigation to the vaccination distribution of the United States, we aim to explore how the U.S. distribute the vaccine and how efficient they administered the vaccines, since January 12th 2021 to the March 8th 2021 (a more complete data set will be updated to include more observations for the final presentations).
+
+Furthermore, we would also examine whether the U.S. is following through its promise to distribute the vaccine based on populations share relative to the U.S. total population. If time permits, we will also aim to explore whether any confounding factors (i.e.,race, income) could determine where these vaccines are ending up.
+
+### _1.1 Research Question_
+
+Where in the U.S. will people more likely to receive Covid-19 vaccines? (Predictive)
 
 
+### _1.2 Data_
 
-## 2. Data
+The dataset for this assignment can be found as a csv file under `us_state_vaccinations` in the `data` folder of the repository. Source of data and details about each of the columns can be found here: https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations#united-states-vaccination-data 
+
+```{r load_dataset}
+cov_19_vaccine <- read.csv("data/us_state_vaccinations.csv")
+```
+
+The data was collected by the OWID, or Our World In Data. They in turn rely on the data from the CDC, or Centers for Disease Control and Prevention. 
+
+The descriptions of the variables in our data set `cov_19_vaccine` are as follows:
+
+-   `location`: name of the state or federal entity.
+-   `date`: date of the observation.
+-   `total_vaccinations`: total number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.
+-   `total_vaccinations_per_hundred`: total_vaccinations per 100 people in the total population of the state.
+daily_vaccinations_raw: daily change in the total number of doses administered. It is only calculated for consecutive days. This is a raw measure provided for data checks and transparency, but we strongly recommend that any analysis on daily vaccination rates be conducted using daily_vaccinations instead.
+-   `daily_vaccinations`: new doses administered per day (7-day smoothed). For countries that don't report data on a daily basis, we assume that doses changed equally on a daily basis over any periods in which no data was reported. This produces a complete series of daily figures, which is then averaged over a rolling 7-day window. An example of how we perform this calculation can be found here.
+-   `daily_vaccinations_per_million`: daily_vaccinations per 1,000,000 people in the total population of the state.
+-   `people_vaccinated`: total number of people who received at least one vaccine dose. If a person receives the first dose of a 2-dose vaccine, this metric goes up by 1. If they receive the second dose, the metric stays the same.
+-   `people_vaccinated_per_hundred`: people_vaccinated per 100 people in the total population of the state.
+-   `people_fully_vaccinated`: total number of people who received all doses prescribed by the vaccination protocol. If a person receives the first dose of a 2-dose vaccine, this metric stays the same. If they receive the second dose, the metric goes up by 1.
+-   `people_fully_vaccinated_per_hundred`: people_fully_vaccinated per 100 people in the total population of the state.
+-   `total_distributed`: cumulative counts of COVID-19 vaccine doses recorded as shipped in CDC's Vaccine Tracking System.
+-   `total_distributed_per_hundred`: cumulative counts of COVID-19 vaccine doses recorded as shipped in CDC's Vaccine Tracking System per 100 people in the total population of the state.
+-   `share_doses_used`: share of vaccination doses administered among those recorded as shipped in CDC's Vaccine Tracking System.
+
+## Section 2: Raw Data
+
+```{r}
+cov_19_vaccine %>%
+  glimpse()
+```
+There are `r nrow(cov_19_vaccine)` rows (observations) representing daily Covid-19 vaccinations statistics for all 52 states & other U.S. territories, and `r ncol(cov_19_vaccine)` columns (variables) in our data set. 
 
 
+## Section 3: Data Analysis Plan
 
-## 3. Data analysis plan
+### _3.1 Variables_
+
+To answer "Where in the U.S. are people most likely to receive the Covid-19 vaccine?", the following columns are of immediate interest to us: `location`, `date`, `total_vaccinations_per_hundred`, and `share_doses_used`. 
+
+We will use a predictor variable of `location` in order to see how the state of the pandemic is varying over geographical area. 
+
+We will use a predictor variable of `date` for a representative state, such as New York, in order to make predictions about the situation in the future.
+
+An explanatory variable of `total_vaccinations_per_hundred` tells us how close the state is towards achieving herd immunity. A high number would imply the state is a safer one to be in.
+
+An explanatory variable of `share_doses_used` tells us how in demand the vaccinations are in the state. In addition, many vaccine distribution centers give out vaccines to those in line when people who registered don't show up, so this statistic additionally tells us how likely one is to get a vaccine by waiting in line. 
+
+Mixing and matching the predictor and explanatory variables can gives us different results. 
+
+In addition to the most probable location to receive vaccination, we could also compare the variables: `total_vaccinations`,`daily_vaccinations`, `people_fully_vaccinated`.
+
+Studying the relationship between these two variables could reveal to us how efficient each states are using the vaccines supply. This is because the Covid-19 vaccination is unique in two ways:
+
+1. Covid-19 vaccines (from Moderna and Pfizer) requires 2 doses administered one month apart. However, it has reportedly been difficult to come back to vaccinations site to complete both doses. While we are aware that the Johnson & Johnson's vaccine only require 1 dosage, it has only been approved for use on February 28th 2021. Hence, we can filter for date up until February 28th 2021, though this would be a limitation to our analysis.
+
+2. Covid-19 vaccines have relatively short shelf-life and requires extremely low temperature to preserve. Hence, we could look into which states have the highest/lowest wastage of vaccine doses.
+    
+
+### _3.2 Comparison Groups_
+
+The comparison groups will be their `location`, i.e., states. 
+
+### _3.3 Preliminary exploratory data analysis_
+
+```{r which_locations_are_there}
+cov_19_vaccine %>%
+  distinct(location)
+```
+
+There's 65 unique locations: the 50 states plus some territories such as American Samoa. We could generate something like a heat map in the future, but for exploratory analysis, let's just look at some representative states. Let's use Pennsylvania, New York, and California. Also this preliminary analysis was useful in showing that New York is actually called "New York State", probably to disambiguate it from the city. 
+
+```{r three-state-total-vaccination-per-hundred}
+cov_19_vaccine %>%
+  filter(date == "2021-03-08" & 
+         location %in% c('New York State', 'California', 'Pennsylvania')) %>%
+  ggplot(aes(x = location, y = total_vaccinations_per_hundred)) + 
+  geom_col() + 
+  coord_cartesian(ylim=c(20, 30))
+```
+
+Here is the total vaccinations per hundred for New York State, California, and Pennsylvania for March 8th. It seems that New York and California, states especially known for their dire covid situations have been getting more vaccines. 
+
+### _3.4 Possible Method(s)_
+
+The method(s) that you believe will be useful in answering your question(s). 
+A standard t-test to determine if there are any statistical anomalies would be helpful in answering if there is inequality in the distribution of vaccines. A heat map of the US can help visualize this. 
 
 
+What results from these specific statistical methods are needed to support your hypothesized answer?
+The t-test would need to show that there is a significant difference in the vaccine distribution.
 

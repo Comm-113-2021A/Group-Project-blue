@@ -1,7 +1,7 @@
 ---
-title: "Presentation title"
-subtitle: "Presentation subtitle (if any)"
-author: "Team name <br> Names of team members"
+title: "Analysis of COVID Vaccine Distribution in Pennsylvania"
+subtitle: ""
+author: "Team Blue <br> Vinh Hau, Iris Lee, Jason Yan"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -21,6 +21,7 @@ library(tidymodels)
 library(palmerpenguins)
 library(knitr)
 library(xaringanthemer)
+library(showtext)
 ```
 
 ```{r setup, include=FALSE}
@@ -28,8 +29,10 @@ library(xaringanthemer)
 knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618, out.width = "80%")
 ```
 
-```{r load-data, include=FALSE}
-# Load your data here
+```{r load-data}
+  janssen <- read.csv("../data/janssen.csv")
+  pfizer <- read.csv("../data/pfizer.csv")
+  moderna <- read.csv("../data/moderna.csv")
 ```
 
 ```{r}

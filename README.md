@@ -1,6 +1,7 @@
-Project title
+
+Analysis of COVID Vaccine Distribution in Pennsylvania
 ================
-by Team name
+by Team Blue
 
 ## Summary
 
