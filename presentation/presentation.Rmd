@@ -22,6 +22,7 @@ library(palmerpenguins)
 library(knitr)
 library(xaringanthemer)
 library(showtext)
+library(rvest)
 ```
 
 ```{r setup, include=FALSE}
@@ -29,13 +30,13 @@ library(showtext)
 knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618, out.width = "80%")
 ```
 
-```{r load-data}
+```{r load-data, echo = FALSE}
   janssen <- read.csv("../data/janssen.csv")
   pfizer <- read.csv("../data/pfizer.csv")
   moderna <- read.csv("../data/moderna.csv")
 ```
 
-```{r}
+```{r, echo = FALSE}
 style_xaringan(
   title_slide_background_image = "img/confetti.jpg"
 )
@@ -44,21 +45,127 @@ style_xaringan(
 
 class: center, middle
 
-## A statement of the overall goal / research question
+## Are vaccines being distributed fairly within the US?
 
 ---
 
 class: inverse, center, middle
 
-# Section title
+# Data Tidying
 
 ---
 
-# Hello World
+# Initial Data Sets
 
-- Click the `Knit` button to compile your presentation
+- Vaccination Data recieved from CDC
 
-- Make sure to commit and push all resulting files to your GitHub repo
+- Data on vaccines came in 3 different different data sets. 
+
+---
+
+# janssen.csv
+
+```{r echo = FALSE}
+glimpse(janssen)
+```
+
+---
+
+# moderna.csv
+
+```{r echo = FALSE}
+glimpse(moderna)
+```
+
+
+---
+
+# phizer.csv
+
+```{r echo = FALSE}
+glimpse(pfizer)
+```
+
+---
+
+# Renaming Columns
+
+```{r}
+janssen <- janssen %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    # second_dose = "2nd Dose Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+moderna <- moderna %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+pfizer <- pfizer %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+```
+
+---
+
+# Combining Data
+
+- We wish to combine the data into one big dataset `vaccines.csv`. 
+
+- First note that the janssen vaccine only has 1 dose. We can fix this with a `mutate` call
+
+```{r}
+janssen_second_dose <- janssen %>%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+```
+
+---
+
+# Marking Vaccine
+
+Then, we add a column called vaccine so we know what kind of vaccine it is after we combine the datasets. 
+```{r}
+janssen_second_dose <- janssen_second_dose %>%
+  mutate(vaccine = "janssen")
+
+pfizer <- pfizer %>%
+  mutate(vaccine = "pfizer")
+
+moderna <- moderna %>%
+  mutate(vaccine = "moderna")
+```
+
+---
+
+# Combine
+
+- Then we combine the datasets into `vaccines` with `rbind`
+```{r}
+vaccines <- rbind(janssen_second_dose, moderna, pfizer)
+glimpse(vaccines)
+```
+
+---
+
+# Writing Data Set
+
+- Finally we write out the dataset
+```{r}
+write_csv(vaccines, "../data/vaccines.csv")
+```
+
+---
+
+Join 
 
 ---
 

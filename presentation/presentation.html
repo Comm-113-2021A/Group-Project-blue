@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation title</title>
+    <title>Analysis of COVID Vaccine Distribution in Pennsylvania</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Team name   Names of team members" />
-    <meta name="date" content="2020-11-24" />
-    <script src="libs/header-attrs-2.5.3/header-attrs.js"></script>
+    <meta name="author" content="Team Blue   Vinh Hau, Iris Lee, Jason Yan" />
+    <meta name="date" content="2021-04-22" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Presentation title
-## Presentation subtitle (if any)
-### Team name <br> Names of team members
-### University of Edinburgh
-### 2020-11-24
+# Analysis of COVID Vaccine Distribution in Pennsylvania
+### Team Blue <br> Vinh Hau, Iris Lee, Jason Yan
+### 2021-04-22
 
 ---
 
@@ -28,30 +26,170 @@ class: center, middle, inverse, title-slide
 
 
 
-```r
-style_xaringan(
-  title_slide_background_image = "img/confetti.jpg"
-)
-```
 
 
 class: center, middle
 
-## A statement of the overall goal / research question
+## Are vaccines being distributed fairly within the US?
 
 ---
 
 class: inverse, center, middle
 
-# Section title
+# Data Tidying
 
 ---
 
-# Hello World
+# Initial Data Sets
 
-- Click the `Knit` button to compile your presentation
+- Vaccination Data recieved from CDC
 
-- Make sure to commit and push all resulting files to your GitHub repo
+- Data on vaccines came in 3 different different data sets. 
+
+---
+
+# janssen.csv
+
+
+```
+## Rows: 315
+## Columns: 3
+## $ Jurisdiction          &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New H…
+## $ Week.of.Allocations   &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/0…
+## $ X1st.Dose.Allocations &lt;int&gt; 53900, 20600, 103800, 20600, 16200, 9700, 13160…
+```
+
+---
+
+# moderna.csv
+
+
+```
+## Rows: 1,008
+## Columns: 4
+## $ Jurisdiction          &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New H…
+## $ Week.of.Allocations   &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/0…
+## $ X1st.Dose.Allocations &lt;int&gt; 37400, 14300, 72100, 14300, 11300, 6700, 91300,…
+## $ X2nd.Dose.Allocations &lt;int&gt; 37400, 14300, 72100, 14300, 11300, 6700, 91300,…
+```
+
+
+---
+
+# phizer.csv
+
+
+```
+## Rows: 1,071
+## Columns: 4
+## $ Jurisdiction          &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New H…
+## $ Week.of.Allocations   &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/0…
+## $ X1st.Dose.Allocations &lt;int&gt; 50310, 19890, 95940, 19890, 15210, 9360, 120510…
+## $ X2nd.Dose.Allocations &lt;int&gt; 50310, 19890, 95940, 19890, 15210, 9360, 120510…
+```
+
+---
+
+# Renaming Columns
+
+
+```r
+janssen &lt;- janssen %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    # second_dose = "2nd Dose Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+moderna &lt;- moderna %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+pfizer &lt;- pfizer %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+```
+
+---
+
+# Combining Data
+
+- We wish to combine the data into one big dataset `vaccines.csv`. 
+
+- First note that the janssen vaccine only has 1 dose. We can fix this with a `mutate` call
+
+
+```r
+janssen_second_dose &lt;- janssen %&gt;%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+```
+
+```
+## Rows: 315
+## Columns: 4
+## $ jurisdiction &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New Hampshire"…
+## $ week         &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/05/2021", …
+## $ first_dose   &lt;int&gt; 53900, 20600, 103800, 20600, 16200, 9700, 131600, 167600…
+## $ second_dose  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+```
+
+---
+
+# Marking Vaccine
+
+Then, we add a column called vaccine so we know what kind of vaccine it is after we combine the datasets. 
+
+```r
+janssen_second_dose &lt;- janssen_second_dose %&gt;%
+  mutate(vaccine = "janssen")
+
+pfizer &lt;- pfizer %&gt;%
+  mutate(vaccine = "pfizer")
+
+moderna &lt;- moderna %&gt;%
+  mutate(vaccine = "moderna")
+```
+
+---
+
+# Combine
+
+- Then we combine the datasets into `vaccines` with `rbind`
+
+```r
+vaccines &lt;- rbind(janssen_second_dose, moderna, pfizer)
+glimpse(vaccines)
+```
+
+```
+## Rows: 2,394
+## Columns: 5
+## $ jurisdiction &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New Hampshire"…
+## $ week         &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/05/2021", …
+## $ first_dose   &lt;int&gt; 53900, 20600, 103800, 20600, 16200, 9700, 131600, 167600…
+## $ second_dose  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+## $ vaccine      &lt;chr&gt; "janssen", "janssen", "janssen", "janssen", "janssen", "…
+```
+
+---
+
+# Writing Data Set
+
+- Finally we write out the dataset
+
+```r
+write_csv(vaccines, "../data/vaccines.csv")
+```
+
+
 
 ---
 
@@ -139,7 +277,7 @@ glance(model)
 - goes here
 ]
 .pull-right[
-&lt;img src="presentation_files/figure-html/unnamed-chunk-2-1.png" width="100%" /&gt;
+&lt;img src="presentation_files/figure-html/unnamed-chunk-10-1.png" width="100%" /&gt;
 ]
 
 ---
