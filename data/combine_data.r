@@ -27,6 +27,15 @@ pfizer <- read_csv("data/pfizer.csv") %>%
 janssen_second_dose <- janssen %>%
   mutate(second_dose = 0)
 
+janssen_second_dose <- janssen_second_dose %>%
+  mutate(vaccine = "janssen")
+
+pfizer <- pfizer %>%
+  mutate(vaccine = "pfizer")
+
+moderna <- moderna %>%
+  mutate(vaccine = "moderna")
+
 vaccines <- rbind(janssen_second_dose, moderna, pfizer)
 
 vaccines <- vaccines %>%
@@ -34,3 +43,10 @@ vaccines <- vaccines %>%
 
 write_csv(vaccines, "data/vaccines.csv")
 
+
+
+# ----------- demographic -------------------------
+
+demographic <- read_csv("data/demographic.csv")
+
+glimpse(demographic)
