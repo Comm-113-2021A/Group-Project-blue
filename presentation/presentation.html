@@ -116,6 +116,7 @@ pfizer &lt;- pfizer %&gt;%
     jurisdiction = "Jurisdiction"
   )
 ```
+<<<<<<< HEAD
 
 ---
 
@@ -160,12 +161,59 @@ moderna &lt;- moderna %&gt;%
 
 ---
 
+=======
+
+---
+
+# Combining Data
+
+- We wish to combine the data into one big dataset `vaccines.csv`. 
+
+- First note that the janssen vaccine only has 1 dose. We can fix this with a `mutate` call
+
+
+```r
+janssen_second_dose &lt;- janssen %&gt;%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+```
+
+```
+## Rows: 315
+## Columns: 4
+## $ jurisdiction &lt;chr&gt; "Connecticut", "Maine", "Massachusetts", "New Hampshire"…
+## $ week         &lt;chr&gt; "04/05/2021", "04/05/2021", "04/05/2021", "04/05/2021", …
+## $ first_dose   &lt;int&gt; 53900, 20600, 103800, 20600, 16200, 9700, 131600, 167600…
+## $ second_dose  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+```
+
+---
+
+# Marking Vaccine
+
+Then, we add a column called vaccine so we know what kind of vaccine it is after we combine the datasets. 
+
+```r
+janssen_second_dose &lt;- janssen_second_dose %&gt;%
+  mutate(vaccine = "janssen")
+
+pfizer &lt;- pfizer %&gt;%
+  mutate(vaccine = "pfizer")
+
+moderna &lt;- moderna %&gt;%
+  mutate(vaccine = "moderna")
+```
+
+---
+
+>>>>>>> 05e0a320f1738341b3207fa8a59bc836f723dfb0
 # Combine
 
 - Then we combine the datasets into `vaccines` with `rbind`
 
 ```r
 vaccines &lt;- rbind(janssen_second_dose, moderna, pfizer)
+<<<<<<< HEAD
 glimpse(vaccines)
 ```
 
@@ -177,6 +225,8 @@ glimpse(vaccines)
 ## $ first_dose   &lt;int&gt; 53900, 20600, 103800, 20600, 16200, 9700, 131600, 167600…
 ## $ second_dose  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
 ## $ vaccine      &lt;chr&gt; "janssen", "janssen", "janssen", "janssen", "janssen", "…
+=======
+>>>>>>> 05e0a320f1738341b3207fa8a59bc836f723dfb0
 ```
 
 ---

@@ -1,4 +1,5 @@
 jurisdiction,week,first_dose,second_dose,vaccine
+<<<<<<< HEAD
 Connecticut,2020-04-05,53900,0,janssen
 Maine,2020-04-05,20600,0,janssen
 Massachusetts,2020-04-05,103800,0,janssen
@@ -2393,3 +2394,2399 @@ Washington,2020-12-14,62400,62400,pfizer
 West Virginia,2020-12-14,16575,16575,pfizer
 Wisconsin,2020-12-14,49725,49725,pfizer
 Wyoming,2020-12-14,4875,4875,pfizer
+=======
+Connecticut,04/05/2021,53900,0,janssen
+Maine,04/05/2021,20600,0,janssen
+Massachusetts,04/05/2021,103800,0,janssen
+New Hampshire,04/05/2021,20600,0,janssen
+Rhode Island,04/05/2021,16200,0,janssen
+Vermont,04/05/2021,9700,0,janssen
+New Jersey,04/05/2021,131600,0,janssen
+New York,04/05/2021,167600,0,janssen
+New York City,04/05/2021,127200,0,janssen
+Puerto Rico,04/05/2021,51400,0,janssen
+U.S. Virgin Islands,04/05/2021,1600,0,janssen
+Delaware,04/05/2021,14300,0,janssen
+District of Columbia,04/05/2021,10800,0,janssen
+Maryland,04/05/2021,88800,0,janssen
+Pennsylvania,04/05/2021,169200,0,janssen
+Philadelphia,04/05/2021,23500,0,janssen
+Virginia,04/05/2021,124700,0,janssen
+West Virginia,04/05/2021,27800,0,janssen
+Alabama,04/05/2021,71800,0,janssen
+Florida,04/05/2021,313200,0,janssen
+Georgia,04/05/2021,148500,0,janssen
+Kentucky,04/05/2021,65300,0,janssen
+Mississippi,04/05/2021,43200,0,janssen
+North Carolina,04/05/2021,149800,0,janssen
+South Carolina,04/05/2021,73500,0,janssen
+Tennessee,04/05/2021,98100,0,janssen
+Chicago,04/05/2021,39900,0,janssen
+Illinois,04/05/2021,148600,0,janssen
+Indiana,04/05/2021,96500,0,janssen
+Michigan,04/05/2021,147800,0,janssen
+Minnesota,04/05/2021,80800,0,janssen
+Ohio,04/05/2021,171900,0,janssen
+Wisconsin,04/05/2021,85900,0,janssen
+Arkansas,04/05/2021,43500,0,janssen
+Louisiana,04/05/2021,67700,0,janssen
+New Mexico,04/05/2021,30800,0,janssen
+Oklahoma,04/05/2021,56400,0,janssen
+Texas,04/05/2021,392100,0,janssen
+Iowa,04/05/2021,45800,0,janssen
+Kansas,04/05/2021,41800,0,janssen
+Missouri,04/05/2021,89600,0,janssen
+Nebraska,04/05/2021,27600,0,janssen
+Colorado,04/05/2021,81400,0,janssen
+Montana,04/05/2021,15600,0,janssen
+North Dakota,04/05/2021,11300,0,janssen
+South Dakota,04/05/2021,12500,0,janssen
+Utah,04/05/2021,40700,0,janssen
+Wyoming,04/05/2021,8500,0,janssen
+Arizona,04/05/2021,101700,0,janssen
+California,04/05/2021,572700,0,janssen
+Hawaii,04/05/2021,21300,0,janssen
+Nevada,04/05/2021,42900,0,janssen
+American Samoa,04/05/2021,3700,0,janssen
+Guam,04/05/2021,16900,0,janssen
+Marshall Islands,04/05/2021,9600,0,janssen
+Micronesia,04/05/2021,15900,0,janssen
+Mariana Islands,04/05/2021,1600,0,janssen
+Palau,04/05/2021,3200,0,janssen
+Alaska,04/05/2021,15800,0,janssen
+Idaho,04/05/2021,23800,0,janssen
+Oregon,04/05/2021,61400,0,janssen
+Washington,04/05/2021,109000,0,janssen
+Federal Entities,04/05/2021,84600,0,janssen
+Connecticut,03/29/2021,21200,0,janssen
+Maine,03/29/2021,8100,0,janssen
+Massachusetts,03/29/2021,40800,0,janssen
+New Hampshire,03/29/2021,8100,0,janssen
+Rhode Island,03/29/2021,6400,0,janssen
+Vermont,03/29/2021,3900,0,janssen
+New Jersey,03/29/2021,51700,0,janssen
+New York,03/29/2021,65800,0,janssen
+New York City,03/29/2021,49900,0,janssen
+Puerto Rico,03/29/2021,20300,0,janssen
+U.S. Virgin Islands,03/29/2021,700,0,janssen
+Delaware,03/29/2021,5600,0,janssen
+District of Columbia,03/29/2021,4300,0,janssen
+Maryland,03/29/2021,34900,0,janssen
+Pennsylvania,03/29/2021,66400,0,janssen
+Philadelphia,03/29/2021,9200,0,janssen
+Virginia,03/29/2021,49000,0,janssen
+West Virginia,03/29/2021,11000,0,janssen
+Alabama,03/29/2021,28300,0,janssen
+Florida,03/29/2021,122900,0,janssen
+Georgia,03/29/2021,58400,0,janssen
+Kentucky,03/29/2021,25700,0,janssen
+Mississippi,03/29/2021,17100,0,janssen
+North Carolina,03/29/2021,58800,0,janssen
+South Carolina,03/29/2021,28900,0,janssen
+Tennessee,03/29/2021,38600,0,janssen
+Chicago,03/29/2021,15700,0,janssen
+Illinois,03/29/2021,58400,0,janssen
+Indiana,03/29/2021,38000,0,janssen
+Michigan,03/29/2021,58100,0,janssen
+Minnesota,03/29/2021,31800,0,janssen
+Ohio,03/29/2021,67400,0,janssen
+Wisconsin,03/29/2021,33800,0,janssen
+Arkansas,03/29/2021,17200,0,janssen
+Louisiana,03/29/2021,26600,0,janssen
+New Mexico,03/29/2021,12100,0,janssen
+Oklahoma,03/29/2021,22200,0,janssen
+Texas,03/29/2021,153900,0,janssen
+Iowa,03/29/2021,18100,0,janssen
+Kansas,03/29/2021,16500,0,janssen
+Missouri,03/29/2021,35200,0,janssen
+Nebraska,03/29/2021,10900,0,janssen
+Colorado,03/29/2021,32000,0,janssen
+Montana,03/29/2021,6100,0,janssen
+North Dakota,03/29/2021,4500,0,janssen
+South Dakota,03/29/2021,5000,0,janssen
+Utah,03/29/2021,16100,0,janssen
+Wyoming,03/29/2021,3400,0,janssen
+Arizona,03/29/2021,40000,0,janssen
+California,03/29/2021,224600,0,janssen
+Hawaii,03/29/2021,8400,0,janssen
+Nevada,03/29/2021,16900,0,janssen
+American Samoa,03/29/2021,300,0,janssen
+Guam,03/29/2021,900,0,janssen
+Marshall Islands,03/29/2021,400,0,janssen
+Micronesia,03/29/2021,600,0,janssen
+Mariana Islands,03/29/2021,400,0,janssen
+Palau,03/29/2021,200,0,janssen
+Alaska,03/29/2021,6300,0,janssen
+Idaho,03/29/2021,9500,0,janssen
+Oregon,03/29/2021,24200,0,janssen
+Washington,03/29/2021,42800,0,janssen
+Federal Entities,03/29/2021,16700,0,janssen
+Connecticut,03/22/2021,4200,0,janssen
+Maine,03/22/2021,1600,0,janssen
+Massachusetts,03/22/2021,8000,0,janssen
+New Hampshire,03/22/2021,1600,0,janssen
+Rhode Island,03/22/2021,1300,0,janssen
+Vermont,03/22/2021,800,0,janssen
+New Jersey,03/22/2021,10200,0,janssen
+New York,03/22/2021,12900,0,janssen
+New York City,03/22/2021,9800,0,janssen
+Puerto Rico,03/22/2021,4000,0,janssen
+U.S. Virgin Islands,03/22/2021,200,0,janssen
+Delaware,03/22/2021,1100,0,janssen
+District of Columbia,03/22/2021,900,0,janssen
+Maryland,03/22/2021,6900,0,janssen
+Pennsylvania,03/22/2021,13000,0,janssen
+Philadelphia,03/22/2021,1800,0,janssen
+Virginia,03/22/2021,9600,0,janssen
+West Virginia,03/22/2021,2200,0,janssen
+Alabama,03/22/2021,5600,0,janssen
+Florida,03/22/2021,24100,0,janssen
+Georgia,03/22/2021,11500,0,janssen
+Kentucky,03/22/2021,5100,0,janssen
+Mississippi,03/22/2021,3400,0,janssen
+North Carolina,03/22/2021,11500,0,janssen
+South Carolina,03/22/2021,5700,0,janssen
+Tennessee,03/22/2021,7600,0,janssen
+Chicago,03/22/2021,3100,0,janssen
+Illinois,03/22/2021,11500,0,janssen
+Indiana,03/22/2021,7500,0,janssen
+Michigan,03/22/2021,11400,0,janssen
+Minnesota,03/22/2021,6300,0,janssen
+Ohio,03/22/2021,13200,0,janssen
+Wisconsin,03/22/2021,6700,0,janssen
+Arkansas,03/22/2021,3400,0,janssen
+Louisiana,03/22/2021,5200,0,janssen
+New Mexico,03/22/2021,2400,0,janssen
+Oklahoma,03/22/2021,4400,0,janssen
+Texas,03/22/2021,30200,0,janssen
+Iowa,03/22/2021,3600,0,janssen
+Kansas,03/22/2021,3300,0,janssen
+Missouri,03/22/2021,6900,0,janssen
+Nebraska,03/22/2021,2200,0,janssen
+Colorado,03/22/2021,6300,0,janssen
+Montana,03/22/2021,1200,0,janssen
+North Dakota,03/22/2021,900,0,janssen
+South Dakota,03/22/2021,1000,0,janssen
+Utah,03/22/2021,3200,0,janssen
+Wyoming,03/22/2021,700,0,janssen
+Arizona,03/22/2021,7900,0,janssen
+California,03/22/2021,44000,0,janssen
+Hawaii,03/22/2021,1700,0,janssen
+Nevada,03/22/2021,3300,0,janssen
+American Samoa,03/22/2021,100,0,janssen
+Guam,03/22/2021,200,0,janssen
+Marshall Islands,03/22/2021,100,0,janssen
+Micronesia,03/22/2021,100,0,janssen
+Mariana Islands,03/22/2021,100,0,janssen
+Palau,03/22/2021,100,0,janssen
+Alaska,03/22/2021,1300,0,janssen
+Idaho,03/22/2021,1900,0,janssen
+Oregon,03/22/2021,4800,0,janssen
+Washington,03/22/2021,8400,0,janssen
+Federal Entities,03/22/2021,16700,0,janssen
+Connecticut,03/15/2021,4200,0,janssen
+Maine,03/15/2021,1600,0,janssen
+Massachusetts,03/15/2021,8000,0,janssen
+New Hampshire,03/15/2021,1600,0,janssen
+Rhode Island,03/15/2021,1300,0,janssen
+Vermont,03/15/2021,800,0,janssen
+New Jersey,03/15/2021,10200,0,janssen
+New York,03/15/2021,12900,0,janssen
+New York City,03/15/2021,9800,0,janssen
+Puerto Rico,03/15/2021,4000,0,janssen
+U.S. Virgin Islands,03/15/2021,200,0,janssen
+Delaware,03/15/2021,1100,0,janssen
+District of Columbia,03/15/2021,900,0,janssen
+Maryland,03/15/2021,6900,0,janssen
+Pennsylvania,03/15/2021,13000,0,janssen
+Philadelphia,03/15/2021,1800,0,janssen
+Virginia,03/15/2021,9600,0,janssen
+West Virginia,03/15/2021,2200,0,janssen
+Alabama,03/15/2021,5600,0,janssen
+Florida,03/15/2021,24100,0,janssen
+Georgia,03/15/2021,11500,0,janssen
+Kentucky,03/15/2021,5100,0,janssen
+Mississippi,03/15/2021,3400,0,janssen
+North Carolina,03/15/2021,11500,0,janssen
+South Carolina,03/15/2021,5700,0,janssen
+Tennessee,03/15/2021,7600,0,janssen
+Chicago,03/15/2021,3100,0,janssen
+Illinois,03/15/2021,11500,0,janssen
+Indiana,03/15/2021,7500,0,janssen
+Michigan,03/15/2021,11400,0,janssen
+Minnesota,03/15/2021,6300,0,janssen
+Ohio,03/15/2021,13200,0,janssen
+Wisconsin,03/15/2021,6700,0,janssen
+Arkansas,03/15/2021,3400,0,janssen
+Louisiana,03/15/2021,5200,0,janssen
+New Mexico,03/15/2021,2400,0,janssen
+Oklahoma,03/15/2021,4400,0,janssen
+Texas,03/15/2021,30200,0,janssen
+Iowa,03/15/2021,3600,0,janssen
+Kansas,03/15/2021,3300,0,janssen
+Missouri,03/15/2021,6900,0,janssen
+Nebraska,03/15/2021,2200,0,janssen
+Colorado,03/15/2021,6300,0,janssen
+Montana,03/15/2021,1200,0,janssen
+North Dakota,03/15/2021,900,0,janssen
+South Dakota,03/15/2021,1000,0,janssen
+Utah,03/15/2021,3200,0,janssen
+Wyoming,03/15/2021,700,0,janssen
+Arizona,03/15/2021,7900,0,janssen
+California,03/15/2021,44000,0,janssen
+Hawaii,03/15/2021,1700,0,janssen
+Nevada,03/15/2021,3300,0,janssen
+American Samoa,03/15/2021,100,0,janssen
+Guam,03/15/2021,200,0,janssen
+Marshall Islands,03/15/2021,100,0,janssen
+Micronesia,03/15/2021,100,0,janssen
+Mariana Islands,03/15/2021,100,0,janssen
+Palau,03/15/2021,100,0,janssen
+Alaska,03/15/2021,1300,0,janssen
+Idaho,03/15/2021,1900,0,janssen
+Oregon,03/15/2021,4800,0,janssen
+Washington,03/15/2021,8400,0,janssen
+Federal Entities,03/15/2021,120500,0,janssen
+Connecticut,03/01/2021,30200,0,janssen
+Maine,03/01/2021,11500,0,janssen
+Massachusetts,03/01/2021,58100,0,janssen
+New Hampshire,03/01/2021,11600,0,janssen
+Rhode Island,03/01/2021,9100,0,janssen
+Vermont,03/01/2021,5400,0,janssen
+New Jersey,03/01/2021,73600,0,janssen
+New York,03/01/2021,93700,0,janssen
+New York City,03/01/2021,71100,0,janssen
+Puerto Rico,03/01/2021,28800,0,janssen
+U.S. Virgin Islands,03/01/2021,900,0,janssen
+Delaware,03/01/2021,8000,0,janssen
+District of Columbia,03/01/2021,6000,0,janssen
+Maryland,03/01/2021,49600,0,janssen
+Pennsylvania,03/01/2021,94600,0,janssen
+Philadelphia,03/01/2021,13100,0,janssen
+Virginia,03/01/2021,69700,0,janssen
+West Virginia,03/01/2021,15500,0,janssen
+Alabama,03/01/2021,40100,0,janssen
+Florida,03/01/2021,175100,0,janssen
+Georgia,03/01/2021,83000,0,janssen
+Kentucky,03/01/2021,36500,0,janssen
+Mississippi,03/01/2021,24200,0,janssen
+North Carolina,03/01/2021,83700,0,janssen
+South Carolina,03/01/2021,41100,0,janssen
+Tennessee,03/01/2021,54800,0,janssen
+Chicago,03/01/2021,22300,0,janssen
+Illinois,03/01/2021,83100,0,janssen
+Indiana,03/01/2021,53900,0,janssen
+Michigan,03/01/2021,82700,0,janssen
+Minnesota,03/01/2021,45200,0,janssen
+Ohio,03/01/2021,96100,0,janssen
+Wisconsin,03/01/2021,48000,0,janssen
+Arkansas,03/01/2021,24400,0,janssen
+Louisiana,03/01/2021,37900,0,janssen
+New Mexico,03/01/2021,17200,0,janssen
+Oklahoma,03/01/2021,31500,0,janssen
+Texas,03/01/2021,219200,0,janssen
+Iowa,03/01/2021,25600,0,janssen
+Kansas,03/01/2021,23400,0,janssen
+Missouri,03/01/2021,50100,0,janssen
+Nebraska,03/01/2021,15500,0,janssen
+Colorado,03/01/2021,45500,0,janssen
+Montana,03/01/2021,8700,0,janssen
+North Dakota,03/01/2021,6300,0,janssen
+South Dakota,03/01/2021,7000,0,janssen
+Utah,03/01/2021,22800,0,janssen
+Wyoming,03/01/2021,4800,0,janssen
+Arizona,03/01/2021,56800,0,janssen
+California,03/01/2021,320100,0,janssen
+Hawaii,03/01/2021,11900,0,janssen
+Nevada,03/01/2021,24000,0,janssen
+American Samoa,03/01/2021,400,0,janssen
+Guam,03/01/2021,1300,0,janssen
+Marshall Islands,03/01/2021,600,0,janssen
+Micronesia,03/01/2021,800,0,janssen
+Mariana Islands,03/01/2021,400,0,janssen
+Palau,03/01/2021,200,0,janssen
+Alaska,03/01/2021,8900,0,janssen
+Idaho,03/01/2021,13300,0,janssen
+Oregon,03/01/2021,34400,0,janssen
+Washington,03/01/2021,60900,0,janssen
+Federal Entities,03/01/2021,139200,0,janssen
+Connecticut,04/05/2021,37400,37400,moderna
+Maine,04/05/2021,14300,14300,moderna
+Massachusetts,04/05/2021,72100,72100,moderna
+New Hampshire,04/05/2021,14300,14300,moderna
+Rhode Island,04/05/2021,11300,11300,moderna
+Vermont,04/05/2021,6700,6700,moderna
+New Jersey,04/05/2021,91300,91300,moderna
+New York,04/05/2021,116300,116300,moderna
+New York City,04/05/2021,88300,88300,moderna
+Puerto Rico,04/05/2021,35700,35700,moderna
+U.S. Virgin Islands,04/05/2021,1100,1100,moderna
+Delaware,04/05/2021,9900,9900,moderna
+District of Columbia,04/05/2021,7500,7500,moderna
+Maryland,04/05/2021,61600,61600,moderna
+Pennsylvania,04/05/2021,117500,117500,moderna
+Philadelphia,04/05/2021,16300,16300,moderna
+Virginia,04/05/2021,86500,86500,moderna
+West Virginia,04/05/2021,19300,19300,moderna
+Alabama,04/05/2021,49800,49800,moderna
+Florida,04/05/2021,217400,217400,moderna
+Georgia,04/05/2021,103000,103000,moderna
+Kentucky,04/05/2021,45300,45300,moderna
+Mississippi,04/05/2021,30000,30000,moderna
+North Carolina,04/05/2021,103900,103900,moderna
+South Carolina,04/05/2021,51000,51000,moderna
+Tennessee,04/05/2021,68100,68100,moderna
+Chicago,04/05/2021,27700,27700,moderna
+Illinois,04/05/2021,103100,103100,moderna
+Indiana,04/05/2021,66900,66900,moderna
+Michigan,04/05/2021,102600,102600,moderna
+Minnesota,04/05/2021,56200,56200,moderna
+Ohio,04/05/2021,119300,119300,moderna
+Wisconsin,04/05/2021,59700,59700,moderna
+Arkansas,04/05/2021,30200,30200,moderna
+Louisiana,04/05/2021,47000,47000,moderna
+New Mexico,04/05/2021,21400,21400,moderna
+Oklahoma,04/05/2021,39200,39200,moderna
+Texas,04/05/2021,272100,272100,moderna
+Iowa,04/05/2021,31800,31800,moderna
+Kansas,04/05/2021,29000,29000,moderna
+Missouri,04/05/2021,62200,62200,moderna
+Nebraska,04/05/2021,19200,19200,moderna
+Colorado,04/05/2021,56500,56500,moderna
+Montana,04/05/2021,10800,10800,moderna
+North Dakota,04/05/2021,7800,7800,moderna
+South Dakota,04/05/2021,8700,8700,moderna
+Utah,04/05/2021,28300,28300,moderna
+Wyoming,04/05/2021,5900,5900,moderna
+Arizona,04/05/2021,70600,70600,moderna
+California,04/05/2021,397400,397400,moderna
+Hawaii,04/05/2021,14800,14800,moderna
+Nevada,04/05/2021,29800,29800,moderna
+American Samoa,04/05/2021,0,0,moderna
+Guam,04/05/2021,0,0,moderna
+Marshall Islands,04/05/2021,0,0,moderna
+Micronesia,04/05/2021,0,0,moderna
+Mariana Islands,04/05/2021,0,0,moderna
+Palau,04/05/2021,0,0,moderna
+Alaska,04/05/2021,0,0,moderna
+Idaho,04/05/2021,16600,16600,moderna
+Oregon,04/05/2021,42700,42700,moderna
+Washington,04/05/2021,75700,75700,moderna
+Federal Entities,04/05/2021,143000,143000,moderna
+Connecticut,03/29/2021,35800,35800,moderna
+Maine,03/29/2021,13700,13700,moderna
+Massachusetts,03/29/2021,69000,69000,moderna
+New Hampshire,03/29/2021,13700,13700,moderna
+Rhode Island,03/29/2021,10800,10800,moderna
+Vermont,03/29/2021,6500,6500,moderna
+New Jersey,03/29/2021,87400,87400,moderna
+New York,03/29/2021,111300,111300,moderna
+New York City,03/29/2021,84500,84500,moderna
+Puerto Rico,03/29/2021,34200,34200,moderna
+U.S. Virgin Islands,03/29/2021,1100,1100,moderna
+Delaware,03/29/2021,9500,9500,moderna
+District of Columbia,03/29/2021,7200,7200,moderna
+Maryland,03/29/2021,59000,59000,moderna
+Pennsylvania,03/29/2021,112400,112400,moderna
+Philadelphia,03/29/2021,15600,15600,moderna
+Virginia,03/29/2021,82800,82800,moderna
+West Virginia,03/29/2021,18500,18500,moderna
+Alabama,03/29/2021,47700,47700,moderna
+Florida,03/29/2021,208000,208000,moderna
+Georgia,03/29/2021,98600,98600,moderna
+Kentucky,03/29/2021,43400,43400,moderna
+Mississippi,03/29/2021,28700,28700,moderna
+North Carolina,03/29/2021,99500,99500,moderna
+South Carolina,03/29/2021,48800,48800,moderna
+Tennessee,03/29/2021,65200,65200,moderna
+Chicago,03/29/2021,26500,26500,moderna
+Illinois,03/29/2021,98700,98700,moderna
+Indiana,03/29/2021,64100,64100,moderna
+Michigan,03/29/2021,98200,98200,moderna
+Minnesota,03/29/2021,53800,53800,moderna
+Ohio,03/29/2021,114100,114100,moderna
+Wisconsin,03/29/2021,57100,57100,moderna
+Arkansas,03/29/2021,28900,28900,moderna
+Louisiana,03/29/2021,45000,45000,moderna
+New Mexico,03/29/2021,20500,20500,moderna
+Oklahoma,03/29/2021,37500,37500,moderna
+Texas,03/29/2021,260400,260400,moderna
+Iowa,03/29/2021,30400,30400,moderna
+Kansas,03/29/2021,27800,27800,moderna
+Missouri,03/29/2021,59500,59500,moderna
+Nebraska,03/29/2021,18400,18400,moderna
+Colorado,03/29/2021,54100,54100,moderna
+Montana,03/29/2021,10400,10400,moderna
+North Dakota,03/29/2021,7500,7500,moderna
+South Dakota,03/29/2021,8300,8300,moderna
+Utah,03/29/2021,27100,27100,moderna
+Wyoming,03/29/2021,5700,5700,moderna
+Arizona,03/29/2021,67600,67600,moderna
+California,03/29/2021,380300,380300,moderna
+Hawaii,03/29/2021,14200,14200,moderna
+Nevada,03/29/2021,28500,28500,moderna
+American Samoa,03/29/2021,5000,0,moderna
+Guam,03/29/2021,15000,0,moderna
+Marshall Islands,03/29/2021,16800,0,moderna
+Micronesia,03/29/2021,22600,0,moderna
+Mariana Islands,03/29/2021,5000,0,moderna
+Palau,03/29/2021,6200,0,moderna
+Alaska,03/29/2021,52500,52500,moderna
+Idaho,03/29/2021,15800,15800,moderna
+Oregon,03/29/2021,40800,40800,moderna
+Washington,03/29/2021,72400,72400,moderna
+Federal Entities,03/29/2021,143000,143000,moderna
+Connecticut,03/22/2021,35800,35800,moderna
+Maine,03/22/2021,13700,13700,moderna
+Massachusetts,03/22/2021,69000,69000,moderna
+New Hampshire,03/22/2021,13700,13700,moderna
+Rhode Island,03/22/2021,10800,10800,moderna
+Vermont,03/22/2021,6500,6500,moderna
+New Jersey,03/22/2021,87400,87400,moderna
+New York,03/22/2021,111300,111300,moderna
+New York City,03/22/2021,84500,84500,moderna
+Puerto Rico,03/22/2021,34200,34200,moderna
+U.S. Virgin Islands,03/22/2021,1100,1100,moderna
+Delaware,03/22/2021,9500,9500,moderna
+District of Columbia,03/22/2021,7200,7200,moderna
+Maryland,03/22/2021,59000,59000,moderna
+Pennsylvania,03/22/2021,112400,112400,moderna
+Philadelphia,03/22/2021,15600,15600,moderna
+Virginia,03/22/2021,82800,82800,moderna
+West Virginia,03/22/2021,18500,18500,moderna
+Alabama,03/22/2021,47700,47700,moderna
+Florida,03/22/2021,208000,208000,moderna
+Georgia,03/22/2021,98600,98600,moderna
+Kentucky,03/22/2021,43400,43400,moderna
+Mississippi,03/22/2021,28700,28700,moderna
+North Carolina,03/22/2021,99500,99500,moderna
+South Carolina,03/22/2021,48800,48800,moderna
+Tennessee,03/22/2021,65200,65200,moderna
+Chicago,03/22/2021,26500,26500,moderna
+Illinois,03/22/2021,98700,98700,moderna
+Indiana,03/22/2021,64100,64100,moderna
+Michigan,03/22/2021,98200,98200,moderna
+Minnesota,03/22/2021,53800,53800,moderna
+Ohio,03/22/2021,114100,114100,moderna
+Wisconsin,03/22/2021,57100,57100,moderna
+Arkansas,03/22/2021,28900,28900,moderna
+Louisiana,03/22/2021,45000,45000,moderna
+New Mexico,03/22/2021,20500,20500,moderna
+Oklahoma,03/22/2021,37500,37500,moderna
+Texas,03/22/2021,260400,260400,moderna
+Iowa,03/22/2021,30400,30400,moderna
+Kansas,03/22/2021,27800,27800,moderna
+Missouri,03/22/2021,59500,59500,moderna
+Nebraska,03/22/2021,18400,18400,moderna
+Colorado,03/22/2021,54100,54100,moderna
+Montana,03/22/2021,10400,10400,moderna
+North Dakota,03/22/2021,7500,7500,moderna
+South Dakota,03/22/2021,8300,8300,moderna
+Utah,03/22/2021,27100,27100,moderna
+Wyoming,03/22/2021,5700,5700,moderna
+Arizona,03/22/2021,67600,67600,moderna
+California,03/22/2021,380300,380300,moderna
+Hawaii,03/22/2021,14200,14200,moderna
+Nevada,03/22/2021,28500,28500,moderna
+American Samoa,03/22/2021,0,0,moderna
+Guam,03/22/2021,0,0,moderna
+Marshall Islands,03/22/2021,0,0,moderna
+Micronesia,03/22/2021,0,0,moderna
+Mariana Islands,03/22/2021,0,0,moderna
+Palau,03/22/2021,0,0,moderna
+Alaska,03/22/2021,0,0,moderna
+Idaho,03/22/2021,15800,15800,moderna
+Oregon,03/22/2021,40800,40800,moderna
+Washington,03/22/2021,72400,72400,moderna
+Federal Entities,03/22/2021,143000,143000,moderna
+Connecticut,03/15/2021,35800,35800,moderna
+Maine,03/15/2021,13700,13700,moderna
+Massachusetts,03/15/2021,69000,69000,moderna
+New Hampshire,03/15/2021,13700,13700,moderna
+Rhode Island,03/15/2021,10800,10800,moderna
+Vermont,03/15/2021,6500,6500,moderna
+New Jersey,03/15/2021,87400,87400,moderna
+New York,03/15/2021,111300,111300,moderna
+New York City,03/15/2021,84500,84500,moderna
+Puerto Rico,03/15/2021,34200,34200,moderna
+U.S. Virgin Islands,03/15/2021,1100,1100,moderna
+Delaware,03/15/2021,9500,9500,moderna
+District of Columbia,03/15/2021,7200,7200,moderna
+Maryland,03/15/2021,59000,59000,moderna
+Pennsylvania,03/15/2021,112400,112400,moderna
+Philadelphia,03/15/2021,15600,15600,moderna
+Virginia,03/15/2021,82800,82800,moderna
+West Virginia,03/15/2021,18500,18500,moderna
+Alabama,03/15/2021,47700,47700,moderna
+Florida,03/15/2021,208000,208000,moderna
+Georgia,03/15/2021,98600,98600,moderna
+Kentucky,03/15/2021,43400,43400,moderna
+Mississippi,03/15/2021,28700,28700,moderna
+North Carolina,03/15/2021,99500,99500,moderna
+South Carolina,03/15/2021,48800,48800,moderna
+Tennessee,03/15/2021,65200,65200,moderna
+Chicago,03/15/2021,26500,26500,moderna
+Illinois,03/15/2021,98700,98700,moderna
+Indiana,03/15/2021,64100,64100,moderna
+Michigan,03/15/2021,98200,98200,moderna
+Minnesota,03/15/2021,53800,53800,moderna
+Ohio,03/15/2021,114100,114100,moderna
+Wisconsin,03/15/2021,57100,57100,moderna
+Arkansas,03/15/2021,28900,28900,moderna
+Louisiana,03/15/2021,45000,45000,moderna
+New Mexico,03/15/2021,20500,20500,moderna
+Oklahoma,03/15/2021,37500,37500,moderna
+Texas,03/15/2021,260400,260400,moderna
+Iowa,03/15/2021,30400,30400,moderna
+Kansas,03/15/2021,27800,27800,moderna
+Missouri,03/15/2021,59500,59500,moderna
+Nebraska,03/15/2021,18400,18400,moderna
+Colorado,03/15/2021,54100,54100,moderna
+Montana,03/15/2021,10400,10400,moderna
+North Dakota,03/15/2021,7500,7500,moderna
+South Dakota,03/15/2021,8300,8300,moderna
+Utah,03/15/2021,27100,27100,moderna
+Wyoming,03/15/2021,5700,5700,moderna
+Arizona,03/15/2021,67600,67600,moderna
+California,03/15/2021,380300,380300,moderna
+Hawaii,03/15/2021,14200,14200,moderna
+Nevada,03/15/2021,28500,28500,moderna
+American Samoa,03/15/2021,0,0,moderna
+Guam,03/15/2021,0,0,moderna
+Marshall Islands,03/15/2021,0,0,moderna
+Micronesia,03/15/2021,0,0,moderna
+Mariana Islands,03/15/2021,0,0,moderna
+Palau,03/15/2021,0,0,moderna
+Alaska,03/15/2021,0,0,moderna
+Idaho,03/15/2021,15800,15800,moderna
+Oregon,03/15/2021,40800,40800,moderna
+Washington,03/15/2021,72400,72400,moderna
+Federal Entities,03/15/2021,143000,143000,moderna
+Connecticut,03/08/2021,35800,35800,moderna
+Maine,03/08/2021,13700,13700,moderna
+Massachusetts,03/08/2021,69000,69000,moderna
+New Hampshire,03/08/2021,13700,13700,moderna
+Rhode Island,03/08/2021,10800,10800,moderna
+Vermont,03/08/2021,6500,6500,moderna
+New Jersey,03/08/2021,87400,87400,moderna
+New York,03/08/2021,111300,111300,moderna
+New York City,03/08/2021,84500,84500,moderna
+Puerto Rico,03/08/2021,34200,34200,moderna
+U.S. Virgin Islands,03/08/2021,1100,1100,moderna
+Delaware,03/08/2021,9500,9500,moderna
+District of Columbia,03/08/2021,7200,7200,moderna
+Maryland,03/08/2021,59000,59000,moderna
+Pennsylvania,03/08/2021,112400,112400,moderna
+Philadelphia,03/08/2021,15600,15600,moderna
+Virginia,03/08/2021,82800,82800,moderna
+West Virginia,03/08/2021,18500,18500,moderna
+Alabama,03/08/2021,47700,47700,moderna
+Florida,03/08/2021,208000,208000,moderna
+Georgia,03/08/2021,98600,98600,moderna
+Kentucky,03/08/2021,43400,43400,moderna
+Mississippi,03/08/2021,28700,28700,moderna
+North Carolina,03/08/2021,99500,99500,moderna
+South Carolina,03/08/2021,48800,48800,moderna
+Tennessee,03/08/2021,65200,65200,moderna
+Chicago,03/08/2021,26500,26500,moderna
+Illinois,03/08/2021,98700,98700,moderna
+Indiana,03/08/2021,64100,64100,moderna
+Michigan,03/08/2021,98200,98200,moderna
+Minnesota,03/08/2021,53800,53800,moderna
+Ohio,03/08/2021,114100,114100,moderna
+Wisconsin,03/08/2021,57100,57100,moderna
+Arkansas,03/08/2021,28900,28900,moderna
+Louisiana,03/08/2021,45000,45000,moderna
+New Mexico,03/08/2021,20500,20500,moderna
+Oklahoma,03/08/2021,37500,37500,moderna
+Texas,03/08/2021,260400,260400,moderna
+Iowa,03/08/2021,30400,30400,moderna
+Kansas,03/08/2021,27800,27800,moderna
+Missouri,03/08/2021,59500,59500,moderna
+Nebraska,03/08/2021,18400,18400,moderna
+Colorado,03/08/2021,54100,54100,moderna
+Montana,03/08/2021,10400,10400,moderna
+North Dakota,03/08/2021,7500,7500,moderna
+South Dakota,03/08/2021,8300,8300,moderna
+Utah,03/08/2021,27100,27100,moderna
+Wyoming,03/08/2021,5700,5700,moderna
+Arizona,03/08/2021,67600,67600,moderna
+California,03/08/2021,380300,380300,moderna
+Hawaii,03/08/2021,14200,14200,moderna
+Nevada,03/08/2021,28500,28500,moderna
+American Samoa,03/08/2021,0,0,moderna
+Guam,03/08/2021,0,0,moderna
+Marshall Islands,03/08/2021,0,0,moderna
+Micronesia,03/08/2021,0,0,moderna
+Mariana Islands,03/08/2021,0,0,moderna
+Palau,03/08/2021,0,0,moderna
+Alaska,03/08/2021,0,0,moderna
+Idaho,03/08/2021,15800,15800,moderna
+Oregon,03/08/2021,40800,40800,moderna
+Washington,03/08/2021,72400,72400,moderna
+Federal Entities,03/08/2021,197900,193500,moderna
+Alabama,03/01/2021,47700,47700,moderna
+Alaska,03/01/2021,49300,49300,moderna
+American Samoa,03/01/2021,4400,0,moderna
+Arizona,03/01/2021,67600,67600,moderna
+Arkansas,03/01/2021,28900,28900,moderna
+California,03/01/2021,380300,380300,moderna
+Chicago,03/01/2021,26500,26500,moderna
+Colorado,03/01/2021,54100,54100,moderna
+Connecticut,03/01/2021,35800,35800,moderna
+Delaware,03/01/2021,9500,9500,moderna
+District of Columbia,03/01/2021,7200,7200,moderna
+Federal Entities,03/01/2021,180500,163500,moderna
+Florida,03/01/2021,208000,208000,moderna
+Georgia,03/01/2021,98600,98600,moderna
+Guam,03/01/2021,14200,0,moderna
+Hawaii,03/01/2021,14200,14200,moderna
+Idaho,03/01/2021,15800,15800,moderna
+Illinois,03/01/2021,98700,98700,moderna
+Indiana,03/01/2021,64100,64100,moderna
+Iowa,03/01/2021,30400,30400,moderna
+Kansas,03/01/2021,27800,27800,moderna
+Kentucky,03/01/2021,43400,43400,moderna
+Louisiana,03/01/2021,45000,45000,moderna
+Maine,03/01/2021,13700,13700,moderna
+Mariana Islands,03/01/2021,4600,0,moderna
+Marshall Islands,03/01/2021,14000,0,moderna
+Maryland,03/01/2021,59000,59000,moderna
+Massachusetts,03/01/2021,69000,69000,moderna
+Michigan,03/01/2021,98200,98200,moderna
+Micronesia,03/01/2021,16600,0,moderna
+Minnesota,03/01/2021,53800,53800,moderna
+Mississippi,03/01/2021,28700,28700,moderna
+Missouri,03/01/2021,59500,59500,moderna
+Montana,03/01/2021,10400,10400,moderna
+Nebraska,03/01/2021,18400,18400,moderna
+Nevada,03/01/2021,28500,28500,moderna
+New Hampshire,03/01/2021,13700,13700,moderna
+New Jersey,03/01/2021,87400,87400,moderna
+New Mexico,03/01/2021,20500,20500,moderna
+New York,03/01/2021,111300,111300,moderna
+New York City,03/01/2021,84500,84500,moderna
+North Carolina,03/01/2021,99500,99500,moderna
+North Dakota,03/01/2021,7500,7500,moderna
+Ohio,03/01/2021,114100,114100,moderna
+Oklahoma,03/01/2021,37500,37500,moderna
+Oregon,03/01/2021,40800,40800,moderna
+Palau,03/01/2021,5400,0,moderna
+Pennsylvania,03/01/2021,112400,112400,moderna
+Philadelphia,03/01/2021,15600,15600,moderna
+Puerto Rico,03/01/2021,34200,34200,moderna
+Rhode Island,03/01/2021,10800,10800,moderna
+South Carolina,03/01/2021,48800,48800,moderna
+South Dakota,03/01/2021,8300,8300,moderna
+Tennessee,03/01/2021,65200,65200,moderna
+Texas,03/01/2021,260400,260400,moderna
+U.S. Virgin Islands,03/01/2021,1100,1100,moderna
+Utah,03/01/2021,27100,27100,moderna
+Vermont,03/01/2021,6500,6500,moderna
+Virginia,03/01/2021,82800,82800,moderna
+Washington,03/01/2021,72400,72400,moderna
+West Virginia,03/01/2021,18500,18500,moderna
+Wisconsin,03/01/2021,57100,57100,moderna
+Wyoming,03/01/2021,5700,5700,moderna
+Alabama,02/22/2021,47700,47700,moderna
+Alaska,02/22/2021,0,0,moderna
+American Samoa,02/22/2021,0,0,moderna
+Arizona,02/22/2021,67600,67600,moderna
+Arkansas,02/22/2021,28900,28900,moderna
+California,02/22/2021,380300,380300,moderna
+Chicago,02/22/2021,26500,26500,moderna
+Colorado,02/22/2021,54100,54100,moderna
+Connecticut,02/22/2021,35800,35800,moderna
+Delaware,02/22/2021,9500,9500,moderna
+District of Columbia,02/22/2021,7200,7200,moderna
+Federal Entities,02/22/2021,163500,163500,moderna
+Florida,02/22/2021,208000,208000,moderna
+Georgia,02/22/2021,98600,98600,moderna
+Guam,02/22/2021,0,0,moderna
+Hawaii,02/22/2021,14200,14200,moderna
+Idaho,02/22/2021,15800,15800,moderna
+Illinois,02/22/2021,98700,98700,moderna
+Indiana,02/22/2021,64100,64100,moderna
+Iowa,02/22/2021,30400,30400,moderna
+Kansas,02/22/2021,27800,27800,moderna
+Kentucky,02/22/2021,43400,43400,moderna
+Louisiana,02/22/2021,45000,45000,moderna
+Maine,02/22/2021,13700,13700,moderna
+Mariana Islands,02/22/2021,0,0,moderna
+Marshall Islands,02/22/2021,0,0,moderna
+Maryland,02/22/2021,59000,59000,moderna
+Massachusetts,02/22/2021,69000,69000,moderna
+Michigan,02/22/2021,98200,98200,moderna
+Micronesia,02/22/2021,0,0,moderna
+Minnesota,02/22/2021,53800,53800,moderna
+Mississippi,02/22/2021,28700,28700,moderna
+Missouri,02/22/2021,59500,59500,moderna
+Montana,02/22/2021,10400,10400,moderna
+Nebraska,02/22/2021,18400,18400,moderna
+Nevada,02/22/2021,28500,28500,moderna
+New Hampshire,02/22/2021,13700,13700,moderna
+New Jersey,02/22/2021,87400,87400,moderna
+New Mexico,02/22/2021,20500,20500,moderna
+New York,02/22/2021,111300,111300,moderna
+New York City,02/22/2021,84500,84500,moderna
+North Carolina,02/22/2021,99500,99500,moderna
+North Dakota,02/22/2021,7500,7500,moderna
+Ohio,02/22/2021,114100,114100,moderna
+Oklahoma,02/22/2021,37500,37500,moderna
+Oregon,02/22/2021,40800,40800,moderna
+Palau,02/22/2021,0,0,moderna
+Pennsylvania,02/22/2021,112400,112400,moderna
+Philadelphia,02/22/2021,15600,15600,moderna
+Puerto Rico,02/22/2021,34200,34200,moderna
+Rhode Island,02/22/2021,10800,10800,moderna
+South Carolina,02/22/2021,48800,48800,moderna
+South Dakota,02/22/2021,8300,8300,moderna
+Tennessee,02/22/2021,65200,65200,moderna
+Texas,02/22/2021,260400,260400,moderna
+U.S. Virgin Islands,02/22/2021,1100,1100,moderna
+Utah,02/22/2021,27100,27100,moderna
+Vermont,02/22/2021,6500,6500,moderna
+Virginia,02/22/2021,82800,82800,moderna
+Washington,02/22/2021,72400,72400,moderna
+West Virginia,02/22/2021,18500,18500,moderna
+Wisconsin,02/22/2021,57100,57100,moderna
+Wyoming,02/22/2021,5700,5700,moderna
+Alabama,02/15/2021,47700,47700,moderna
+Alaska,02/15/2021,0,0,moderna
+American Samoa,02/15/2021,0,0,moderna
+Arizona,02/15/2021,67600,67600,moderna
+Arkansas,02/15/2021,28900,28900,moderna
+California,02/15/2021,380300,380300,moderna
+Chicago,02/15/2021,26500,26500,moderna
+Colorado,02/15/2021,54100,54100,moderna
+Connecticut,02/15/2021,35800,35800,moderna
+Delaware,02/15/2021,9500,9500,moderna
+District of Columbia,02/15/2021,7200,7200,moderna
+Federal Entities,02/15/2021,163500,163500,moderna
+Florida,02/15/2021,208000,208000,moderna
+Georgia,02/15/2021,98600,98600,moderna
+Guam,02/15/2021,0,0,moderna
+Hawaii,02/15/2021,14200,14200,moderna
+Idaho,02/15/2021,15800,15800,moderna
+Illinois,02/15/2021,98700,98700,moderna
+Indiana,02/15/2021,64100,64100,moderna
+Iowa,02/15/2021,30400,30400,moderna
+Kansas,02/15/2021,27800,27800,moderna
+Kentucky,02/15/2021,43400,43400,moderna
+Louisiana,02/15/2021,45000,45000,moderna
+Maine,02/15/2021,13700,13700,moderna
+Mariana Islands,02/15/2021,0,0,moderna
+Marshall Islands,02/15/2021,0,0,moderna
+Maryland,02/15/2021,59000,59000,moderna
+Massachusetts,02/15/2021,69000,69000,moderna
+Michigan,02/15/2021,98200,98200,moderna
+Micronesia,02/15/2021,0,0,moderna
+Minnesota,02/15/2021,53800,53800,moderna
+Mississippi,02/15/2021,28700,28700,moderna
+Missouri,02/15/2021,59500,59500,moderna
+Montana,02/15/2021,10400,10400,moderna
+Nebraska,02/15/2021,18400,18400,moderna
+Nevada,02/15/2021,28500,28500,moderna
+New Hampshire,02/15/2021,13700,13700,moderna
+New Jersey,02/15/2021,87400,87400,moderna
+New Mexico,02/15/2021,20500,20500,moderna
+New York,02/15/2021,111300,111300,moderna
+New York City,02/15/2021,84500,84500,moderna
+North Carolina,02/15/2021,99500,99500,moderna
+North Dakota,02/15/2021,7500,7500,moderna
+Ohio,02/15/2021,114100,114100,moderna
+Oklahoma,02/15/2021,37500,37500,moderna
+Oregon,02/15/2021,40800,40800,moderna
+Palau,02/15/2021,0,0,moderna
+Pennsylvania,02/15/2021,112400,112400,moderna
+Philadelphia,02/15/2021,15600,15600,moderna
+Puerto Rico,02/15/2021,34200,34200,moderna
+Rhode Island,02/15/2021,10800,10800,moderna
+South Carolina,02/15/2021,48800,48800,moderna
+South Dakota,02/15/2021,8300,8300,moderna
+Tennessee,02/15/2021,65200,65200,moderna
+Texas,02/15/2021,260400,260400,moderna
+U.S. Virgin Islands,02/15/2021,1100,1100,moderna
+Utah,02/15/2021,27100,27100,moderna
+Vermont,02/15/2021,6500,6500,moderna
+Virginia,02/15/2021,82800,82800,moderna
+Washington,02/15/2021,72400,72400,moderna
+West Virginia,02/15/2021,18500,18500,moderna
+Wisconsin,02/15/2021,57100,57100,moderna
+Wyoming,02/15/2021,5700,5700,moderna
+Alabama,02/08/2021,44100,44100,moderna
+Alaska,02/08/2021,0,0,moderna
+American Samoa,02/08/2021,0,0,moderna
+Arizona,02/08/2021,62500,62500,moderna
+Arkansas,02/08/2021,26800,26800,moderna
+California,02/08/2021,351900,351900,moderna
+Chicago,02/08/2021,24500,24500,moderna
+Colorado,02/08/2021,50000,50000,moderna
+Connecticut,02/08/2021,33100,33100,moderna
+Delaware,02/08/2021,8800,8800,moderna
+District of Columbia,02/08/2021,6600,6600,moderna
+Federal Entities,02/08/2021,481400,481400,moderna
+Florida,02/08/2021,192500,192500,moderna
+Georgia,02/08/2021,91300,91300,moderna
+Guam,02/08/2021,0,0,moderna
+Hawaii,02/08/2021,13100,13100,moderna
+Idaho,02/08/2021,14700,14700,moderna
+Illinois,02/08/2021,91300,91300,moderna
+Indiana,02/08/2021,59300,59300,moderna
+Iowa,02/08/2021,28200,28200,moderna
+Kansas,02/08/2021,25700,25700,moderna
+Kentucky,02/08/2021,40200,40200,moderna
+Louisiana,02/08/2021,41600,41600,moderna
+Maine,02/08/2021,12700,12700,moderna
+Mariana Islands,02/08/2021,0,0,moderna
+Marshall Islands,02/08/2021,0,0,moderna
+Maryland,02/08/2021,54600,54600,moderna
+Massachusetts,02/08/2021,63800,63800,moderna
+Michigan,02/08/2021,90900,90900,moderna
+Micronesia,02/08/2021,0,0,moderna
+Minnesota,02/08/2021,49700,49700,moderna
+Mississippi,02/08/2021,26600,26600,moderna
+Missouri,02/08/2021,55100,55100,moderna
+Montana,02/08/2021,9600,9600,moderna
+Nebraska,02/08/2021,17000,17000,moderna
+Nevada,02/08/2021,26400,26400,moderna
+New Hampshire,02/08/2021,12700,12700,moderna
+New Jersey,02/08/2021,80900,80900,moderna
+New Mexico,02/08/2021,19000,19000,moderna
+New York,02/08/2021,103000,103000,moderna
+New York City,02/08/2021,78200,78200,moderna
+North Carolina,02/08/2021,92000,92000,moderna
+North Dakota,02/08/2021,6900,6900,moderna
+Ohio,02/08/2021,105600,105600,moderna
+Oklahoma,02/08/2021,34700,34700,moderna
+Oregon,02/08/2021,37800,37800,moderna
+Palau,02/08/2021,0,0,moderna
+Pennsylvania,02/08/2021,104000,104000,moderna
+Philadelphia,02/08/2021,14400,14400,moderna
+Puerto Rico,02/08/2021,31600,31600,moderna
+Rhode Island,02/08/2021,10000,10000,moderna
+South Carolina,02/08/2021,45200,45200,moderna
+South Dakota,02/08/2021,7700,7700,moderna
+Tennessee,02/08/2021,60300,60300,moderna
+Texas,02/08/2021,241000,241000,moderna
+U.S. Virgin Islands,02/08/2021,1000,1000,moderna
+Utah,02/08/2021,25100,25100,moderna
+Vermont,02/08/2021,6000,6000,moderna
+Virginia,02/08/2021,76600,76600,moderna
+Washington,02/08/2021,67000,67000,moderna
+West Virginia,02/08/2021,17100,17100,moderna
+Wisconsin,02/08/2021,52900,52900,moderna
+Wyoming,02/08/2021,5300,5300,moderna
+Alabama,02/01/2021,40400,40400,moderna
+Alaska,02/01/2021,32300,32300,moderna
+American Samoa,02/01/2021,3200,0,moderna
+Arizona,02/01/2021,57200,57200,moderna
+Arkansas,02/01/2021,24500,24500,moderna
+California,02/01/2021,322000,322000,moderna
+Chicago,02/01/2021,22400,22400,moderna
+Colorado,02/01/2021,45800,45800,moderna
+Connecticut,02/01/2021,30300,30300,moderna
+Delaware,02/01/2021,8000,8000,moderna
+District of Columbia,02/01/2021,6100,6100,moderna
+Federal Entities,02/01/2021,151180,151800,moderna
+Florida,02/01/2021,176100,176100,moderna
+Georgia,02/01/2021,83500,83500,moderna
+Guam,02/01/2021,9200,0,moderna
+Hawaii,02/01/2021,12000,12000,moderna
+Idaho,02/01/2021,13400,13400,moderna
+Illinois,02/01/2021,83600,83600,moderna
+Indiana,02/01/2021,54300,54300,moderna
+Iowa,02/01/2021,25800,25800,moderna
+Kansas,02/01/2021,23500,23500,moderna
+Kentucky,02/01/2021,36700,36700,moderna
+Louisiana,02/01/2021,38100,38100,moderna
+Maine,02/01/2021,11600,11600,moderna
+Mariana Islands,02/01/2021,3200,0,moderna
+Marshall Islands,02/01/2021,6600,0,moderna
+Maryland,02/01/2021,49900,49900,moderna
+Massachusetts,02/01/2021,58400,58400,moderna
+Michigan,02/01/2021,83100,83100,moderna
+Micronesia,02/01/2021,9400,0,moderna
+Minnesota,02/01/2021,45500,45500,moderna
+Mississippi,02/01/2021,24300,24300,moderna
+Missouri,02/01/2021,50400,50400,moderna
+Montana,02/01/2021,8800,8800,moderna
+Nebraska,02/01/2021,15500,15500,moderna
+Nevada,02/01/2021,24100,24100,moderna
+New Hampshire,02/01/2021,11600,11600,moderna
+New Jersey,02/01/2021,74000,74000,moderna
+New Mexico,02/01/2021,17300,17300,moderna
+New York,02/01/2021,94200,94200,moderna
+New York City,02/01/2021,71500,71500,moderna
+North Carolina,02/01/2021,84200,84200,moderna
+North Dakota,02/01/2021,6400,6400,moderna
+Ohio,02/01/2021,96600,96600,moderna
+Oklahoma,02/01/2021,31700,31700,moderna
+Oregon,02/01/2021,34600,34600,moderna
+Palau,02/01/2021,2800,0,moderna
+Pennsylvania,02/01/2021,95200,95200,moderna
+Philadelphia,02/01/2021,13200,13200,moderna
+Puerto Rico,02/01/2021,28900,28900,moderna
+Rhode Island,02/01/2021,9100,9100,moderna
+South Carolina,02/01/2021,41400,41400,moderna
+South Dakota,02/01/2021,7000,7000,moderna
+Tennessee,02/01/2021,55200,55200,moderna
+Texas,02/01/2021,220500,220500,moderna
+U.S. Virgin Islands,02/01/2021,900,900,moderna
+Utah,02/01/2021,22900,22900,moderna
+Vermont,02/01/2021,5500,5500,moderna
+Virginia,02/01/2021,70100,70100,moderna
+Washington,02/01/2021,61300,61300,moderna
+West Virginia,02/01/2021,15600,15600,moderna
+Wisconsin,02/01/2021,48300,48300,moderna
+Wyoming,02/01/2021,4800,4800,moderna
+Alabama,01/25/2021,30600,30600,moderna
+Alaska,01/25/2021,0,0,moderna
+American Samoa,01/25/2021,0,0,moderna
+Arizona,01/25/2021,43400,43400,moderna
+Arkansas,01/25/2021,18600,18600,moderna
+California,01/25/2021,244000,244000,moderna
+Chicago,01/25/2021,17000,17000,moderna
+Colorado,01/25/2021,34700,34700,moderna
+Connecticut,01/25/2021,23000,23000,moderna
+Delaware,01/25/2021,6100,6100,moderna
+District of Columbia,01/25/2021,4600,4600,moderna
+Federal Entities,01/25/2021,105300,105300,moderna
+Florida,01/25/2021,133500,133500,moderna
+Georgia,01/25/2021,63300,63300,moderna
+Guam,01/25/2021,0,0,moderna
+Hawaii,01/25/2021,9100,9100,moderna
+Idaho,01/25/2021,10200,10200,moderna
+Illinois,01/25/2021,63300,63300,moderna
+Indiana,01/25/2021,41100,41100,moderna
+Iowa,01/25/2021,19500,19500,moderna
+Kansas,01/25/2021,17800,17800,moderna
+Kentucky,01/25/2021,27900,27900,moderna
+Louisiana,01/25/2021,28900,28900,moderna
+Maine,01/25/2021,8800,8800,moderna
+Mariana Islands,01/25/2021,0,0,moderna
+Marshall Islands,01/25/2021,0,0,moderna
+Maryland,01/25/2021,37800,37800,moderna
+Massachusetts,01/25/2021,44300,44300,moderna
+Michigan,01/25/2021,63000,63000,moderna
+Micronesia,01/25/2021,0,0,moderna
+Minnesota,01/25/2021,34500,34500,moderna
+Mississippi,01/25/2021,18500,18500,moderna
+Missouri,01/25/2021,38200,38200,moderna
+Montana,01/25/2021,6700,6700,moderna
+Nebraska,01/25/2021,11800,11800,moderna
+Nevada,01/25/2021,18300,18300,moderna
+New Hampshire,01/25/2021,8800,8800,moderna
+New Jersey,01/25/2021,56100,56100,moderna
+New Mexico,01/25/2021,13200,13200,moderna
+New York,01/25/2021,71400,71400,moderna
+New York City,01/25/2021,54200,54200,moderna
+North Carolina,01/25/2021,63800,63800,moderna
+North Dakota,01/25/2021,4800,4800,moderna
+Ohio,01/25/2021,73200,73200,moderna
+Oklahoma,01/25/2021,24100,24100,moderna
+Oregon,01/25/2021,26200,26200,moderna
+Palau,01/25/2021,0,0,moderna
+Pennsylvania,01/25/2021,72100,72100,moderna
+Philadelphia,01/25/2021,10000,10000,moderna
+Puerto Rico,01/25/2021,21900,21900,moderna
+Rhode Island,01/25/2021,6900,6900,moderna
+South Carolina,01/25/2021,31400,31400,moderna
+South Dakota,01/25/2021,5300,5300,moderna
+Tennessee,01/25/2021,41800,41800,moderna
+Texas,01/25/2021,167100,167100,moderna
+U.S. Virgin Islands,01/25/2021,700,700,moderna
+Utah,01/25/2021,17400,17400,moderna
+Vermont,01/25/2021,4200,4200,moderna
+Virginia,01/25/2021,53100,53100,moderna
+Washington,01/25/2021,46500,46500,moderna
+West Virginia,01/25/2021,11900,11900,moderna
+Wisconsin,01/25/2021,36700,36700,moderna
+Wyoming,01/25/2021,3700,3700,moderna
+Alabama,01/18/2021,30600,30600,moderna
+Alaska,01/18/2021,0,0,moderna
+American Samoa,01/18/2021,0,0,moderna
+Arizona,01/18/2021,43400,43400,moderna
+Arkansas,01/18/2021,18600,18600,moderna
+California,01/18/2021,244000,244000,moderna
+Chicago,01/18/2021,17000,17000,moderna
+Colorado,01/18/2021,34700,34700,moderna
+Connecticut,01/18/2021,23000,23000,moderna
+Delaware,01/18/2021,6100,6100,moderna
+District of Columbia,01/18/2021,4600,4600,moderna
+Federal Entities,01/18/2021,105000,105000,moderna
+Florida,01/18/2021,133500,133500,moderna
+Georgia,01/18/2021,63300,63300,moderna
+Guam,01/18/2021,0,0,moderna
+Hawaii,01/18/2021,9100,9100,moderna
+Idaho,01/18/2021,10200,10200,moderna
+Illinois,01/18/2021,63300,63300,moderna
+Indiana,01/18/2021,41100,41100,moderna
+Iowa,01/18/2021,19500,19500,moderna
+Kansas,01/18/2021,17800,17800,moderna
+Kentucky,01/18/2021,27900,27900,moderna
+Louisiana,01/18/2021,28900,28900,moderna
+Maine,01/18/2021,8800,8800,moderna
+Mariana Islands,01/18/2021,0,0,moderna
+Marshall Islands,01/18/2021,0,0,moderna
+Maryland,01/18/2021,37800,37800,moderna
+Massachusetts,01/18/2021,44300,44300,moderna
+Michigan,01/18/2021,63000,63000,moderna
+Micronesia,01/18/2021,0,0,moderna
+Minnesota,01/18/2021,34500,34500,moderna
+Mississippi,01/18/2021,18500,18500,moderna
+Missouri,01/18/2021,38200,38200,moderna
+Montana,01/18/2021,6700,6700,moderna
+Nebraska,01/18/2021,11800,11800,moderna
+Nevada,01/18/2021,18300,18300,moderna
+New Hampshire,01/18/2021,8800,8800,moderna
+New Jersey,01/18/2021,56100,56100,moderna
+New Mexico,01/18/2021,13200,13200,moderna
+New York,01/18/2021,71400,71400,moderna
+New York City,01/18/2021,54200,54200,moderna
+North Carolina,01/18/2021,63800,63800,moderna
+North Dakota,01/18/2021,4800,4800,moderna
+Ohio,01/18/2021,73200,73200,moderna
+Oklahoma,01/18/2021,24100,24100,moderna
+Oregon,01/18/2021,26200,26200,moderna
+Palau,01/18/2021,0,0,moderna
+Pennsylvania,01/18/2021,72100,72100,moderna
+Philadelphia,01/18/2021,10000,10000,moderna
+Puerto Rico,01/18/2021,21900,21900,moderna
+Rhode Island,01/18/2021,6900,6900,moderna
+South Carolina,01/18/2021,31400,31400,moderna
+South Dakota,01/18/2021,5300,5300,moderna
+Tennessee,01/18/2021,41800,41800,moderna
+Texas,01/18/2021,167100,167100,moderna
+U.S. Virgin Islands,01/18/2021,700,700,moderna
+Utah,01/18/2021,17400,17400,moderna
+Vermont,01/18/2021,4200,4200,moderna
+Virginia,01/18/2021,53100,53100,moderna
+Washington,01/18/2021,46500,46500,moderna
+West Virginia,01/18/2021,11900,11900,moderna
+Wisconsin,01/18/2021,36700,36700,moderna
+Wyoming,01/18/2021,3700,3700,moderna
+Alabama,01/11/2021,29100,29100,moderna
+Alaska,01/11/2021,0,0,moderna
+American Samoa,01/11/2021,0,0,moderna
+Arizona,01/11/2021,41300,41300,moderna
+Arkansas,01/11/2021,17700,17700,moderna
+California,01/11/2021,232300,232300,moderna
+Chicago,01/11/2021,16200,16200,moderna
+Colorado,01/11/2021,33000,33000,moderna
+Connecticut,01/11/2021,21900,21900,moderna
+Delaware,01/11/2021,5800,5800,moderna
+District of Columbia,01/11/2021,4400,4400,moderna
+Federal Entities,01/11/2021,99900,99900,moderna
+Florida,01/11/2021,127100,127100,moderna
+Georgia,01/11/2021,60200,60200,moderna
+Guam,01/11/2021,0,0,moderna
+Hawaii,01/11/2021,8700,8700,moderna
+Idaho,01/11/2021,9700,9700,moderna
+Illinois,01/11/2021,60300,60300,moderna
+Indiana,01/11/2021,39200,39200,moderna
+Iowa,01/11/2021,18600,18600,moderna
+Kansas,01/11/2021,17000,17000,moderna
+Kentucky,01/11/2021,26500,26500,moderna
+Louisiana,01/11/2021,27500,27500,moderna
+Maine,01/11/2021,8400,8400,moderna
+Mariana Islands,01/11/2021,0,0,moderna
+Marshall Islands,01/11/2021,0,0,moderna
+Maryland,01/11/2021,36000,36000,moderna
+Massachusetts,01/11/2021,42100,42100,moderna
+Michigan,01/11/2021,60000,60000,moderna
+Micronesia,01/11/2021,0,0,moderna
+Minnesota,01/11/2021,32900,32900,moderna
+Mississippi,01/11/2021,17600,17600,moderna
+Missouri,01/11/2021,36400,36400,moderna
+Montana,01/11/2021,6400,6400,moderna
+Nebraska,01/11/2021,11200,11200,moderna
+Nevada,01/11/2021,17400,17400,moderna
+New Hampshire,01/11/2021,8400,8400,moderna
+New Jersey,01/11/2021,53400,53400,moderna
+New Mexico,01/11/2021,12500,12500,moderna
+New York,01/11/2021,68000,68000,moderna
+New York City,01/11/2021,51600,51600,moderna
+North Carolina,01/11/2021,60800,60800,moderna
+North Dakota,01/11/2021,4600,4600,moderna
+Ohio,01/11/2021,69700,69700,moderna
+Oklahoma,01/11/2021,22900,22900,moderna
+Oregon,01/11/2021,25000,25000,moderna
+Palau,01/11/2021,0,0,moderna
+Pennsylvania,01/11/2021,68700,68700,moderna
+Philadelphia,01/11/2021,9500,9500,moderna
+Puerto Rico,01/11/2021,20900,20900,moderna
+Rhode Island,01/11/2021,6600,6600,moderna
+South Carolina,01/11/2021,29900,29900,moderna
+South Dakota,01/11/2021,5100,5100,moderna
+Tennessee,01/11/2021,39800,39800,moderna
+Texas,01/11/2021,159100,159100,moderna
+U.S. Virgin Islands,01/11/2021,700,700,moderna
+Utah,01/11/2021,16600,16600,moderna
+Vermont,01/11/2021,4000,4000,moderna
+Virginia,01/11/2021,50600,50600,moderna
+Washington,01/11/2021,44300,44300,moderna
+West Virginia,01/11/2021,11300,11300,moderna
+Wisconsin,01/11/2021,34900,34900,moderna
+Wyoming,01/11/2021,3500,3500,moderna
+Alabama,01/04/2021,29000,29000,moderna
+Alaska,01/04/2021,25600,25600,moderna
+American Samoa,01/04/2021,2400,0,moderna
+Arizona,01/04/2021,41100,41100,moderna
+Arkansas,01/04/2021,17600,17600,moderna
+California,01/04/2021,231400,231400,moderna
+Chicago,01/04/2021,16100,16100,moderna
+Colorado,01/04/2021,32900,32900,moderna
+Connecticut,01/04/2021,21800,21800,moderna
+Delaware,01/04/2021,5800,5800,moderna
+District of Columbia,01/04/2021,4400,4400,moderna
+Federal Entities,01/04/2021,108400,99600,moderna
+Florida,01/04/2021,126600,126600,moderna
+Georgia,01/04/2021,60000,60000,moderna
+Guam,01/04/2021,7200,0,moderna
+Hawaii,01/04/2021,8600,8600,moderna
+Idaho,01/04/2021,9700,9700,moderna
+Illinois,01/04/2021,60100,60100,moderna
+Indiana,01/04/2021,39000,39000,moderna
+Iowa,01/04/2021,18500,18500,moderna
+Kansas,01/04/2021,16900,16900,moderna
+Kentucky,01/04/2021,26400,26400,moderna
+Louisiana,01/04/2021,27400,27400,moderna
+Maine,01/04/2021,8300,8300,moderna
+Mariana Islands,01/04/2021,2400,0,moderna
+Marshall Islands,01/04/2021,6400,0,moderna
+Maryland,01/04/2021,35900,35900,moderna
+Massachusetts,01/04/2021,42000,42000,moderna
+Michigan,01/04/2021,59800,59800,moderna
+Micronesia,01/04/2021,9600,0,moderna
+Minnesota,01/04/2021,32700,32700,moderna
+Mississippi,01/04/2021,17500,17500,moderna
+Missouri,01/04/2021,36200,36200,moderna
+Montana,01/04/2021,6300,6300,moderna
+Nebraska,01/04/2021,11200,11200,moderna
+Nevada,01/04/2021,17300,17300,moderna
+New Hampshire,01/04/2021,8400,8400,moderna
+New Jersey,01/04/2021,53200,53200,moderna
+New Mexico,01/04/2021,12500,12500,moderna
+New York,01/04/2021,67700,67700,moderna
+New York City,01/04/2021,51400,51400,moderna
+North Carolina,01/04/2021,60500,60500,moderna
+North Dakota,01/04/2021,4600,4600,moderna
+Ohio,01/04/2021,69500,69500,moderna
+Oklahoma,01/04/2021,22800,22800,moderna
+Oregon,01/04/2021,24800,24800,moderna
+Palau,01/04/2021,3200,0,moderna
+Pennsylvania,01/04/2021,68400,68400,moderna
+Philadelphia,01/04/2021,9500,9500,moderna
+Puerto Rico,01/04/2021,20800,20800,moderna
+Rhode Island,01/04/2021,6600,6600,moderna
+South Carolina,01/04/2021,29700,29700,moderna
+South Dakota,01/04/2021,5100,5100,moderna
+Tennessee,01/04/2021,39700,39700,moderna
+Texas,01/04/2021,158500,158500,moderna
+U.S. Virgin Islands,01/04/2021,700,700,moderna
+Utah,01/04/2021,16500,16500,moderna
+Vermont,01/04/2021,3900,3900,moderna
+Virginia,01/04/2021,50400,50400,moderna
+Washington,01/04/2021,44100,44100,moderna
+West Virginia,01/04/2021,11200,11200,moderna
+Wisconsin,01/04/2021,34700,34700,moderna
+Wyoming,01/04/2021,3500,3500,moderna
+Alabama,12/28/2020,29100,29100,moderna
+Alaska,12/28/2020,0,0,moderna
+American Samoa,12/28/2020,0,0,moderna
+Arizona,12/28/2020,41300,41300,moderna
+Arkansas,12/28/2020,17700,17700,moderna
+California,12/28/2020,232300,232300,moderna
+Chicago,12/28/2020,16200,16200,moderna
+Colorado,12/28/2020,33000,33000,moderna
+Connecticut,12/28/2020,21900,21900,moderna
+Delaware,12/28/2020,5800,5800,moderna
+District of Columbia,12/28/2020,4400,4400,moderna
+Federal Entities,12/28/2020,100000,100000,moderna
+Florida,12/28/2020,127100,127100,moderna
+Georgia,12/28/2020,60200,60200,moderna
+Guam,12/28/2020,0,0,moderna
+Hawaii,12/28/2020,8700,8700,moderna
+Idaho,12/28/2020,9700,9700,moderna
+Illinois,12/28/2020,60300,60300,moderna
+Indiana,12/28/2020,39200,39200,moderna
+Iowa,12/28/2020,18600,18600,moderna
+Kansas,12/28/2020,17000,17000,moderna
+Kentucky,12/28/2020,26500,26500,moderna
+Louisiana,12/28/2020,27500,27500,moderna
+Maine,12/28/2020,8400,8400,moderna
+Mariana Islands,12/28/2020,0,0,moderna
+Marshall Islands,12/28/2020,0,0,moderna
+Maryland,12/28/2020,36000,36000,moderna
+Massachusetts,12/28/2020,42100,42100,moderna
+Michigan,12/28/2020,60000,60000,moderna
+Micronesia,12/28/2020,0,0,moderna
+Minnesota,12/28/2020,32900,32900,moderna
+Mississippi,12/28/2020,17600,17600,moderna
+Missouri,12/28/2020,36400,36400,moderna
+Montana,12/28/2020,6400,6400,moderna
+Nebraska,12/28/2020,11200,11200,moderna
+Nevada,12/28/2020,17400,17400,moderna
+New Hampshire,12/28/2020,8400,8400,moderna
+New Jersey,12/28/2020,53400,53400,moderna
+New Mexico,12/28/2020,12500,12500,moderna
+New York,12/28/2020,68000,68000,moderna
+New York City,12/28/2020,51600,51600,moderna
+North Carolina,12/28/2020,60800,60800,moderna
+North Dakota,12/28/2020,4600,4600,moderna
+Ohio,12/28/2020,69700,69700,moderna
+Oklahoma,12/28/2020,22900,22900,moderna
+Oregon,12/28/2020,25000,25000,moderna
+Palau,12/28/2020,0,0,moderna
+Pennsylvania,12/28/2020,68700,68700,moderna
+Philadelphia,12/28/2020,9500,9500,moderna
+Puerto Rico,12/28/2020,20900,20900,moderna
+Rhode Island,12/28/2020,6600,6600,moderna
+South Carolina,12/28/2020,29900,29900,moderna
+South Dakota,12/28/2020,5100,5100,moderna
+Tennessee,12/28/2020,39800,39800,moderna
+Texas,12/28/2020,159100,159100,moderna
+U.S. Virgin Islands,12/28/2020,700,700,moderna
+Utah,12/28/2020,16600,16600,moderna
+Vermont,12/28/2020,4000,4000,moderna
+Virginia,12/28/2020,50600,50600,moderna
+Washington,12/28/2020,44300,44300,moderna
+West Virginia,12/28/2020,11300,11300,moderna
+Wisconsin,12/28/2020,34900,34900,moderna
+Wyoming,12/28/2020,3500,3500,moderna
+Alabama,12/21/2020,84300,84300,moderna
+Alaska,12/21/2020,26800,26800,moderna
+American Samoa,12/21/2020,2400,0,moderna
+Arizona,12/21/2020,119400,119400,moderna
+Arkansas,12/21/2020,51100,51100,moderna
+California,12/21/2020,672600,672600,moderna
+Chicago,12/21/2020,46800,46800,moderna
+Colorado,12/21/2020,95600,95600,moderna
+Connecticut,12/21/2020,63300,63300,moderna
+Delaware,12/21/2020,16700,16700,moderna
+District of Columbia,12/21/2020,12600,12600,moderna
+Federal Entities,12/21/2020,298200,289200,moderna
+Florida,12/21/2020,367900,367900,moderna
+Georgia,12/21/2020,174400,174400,moderna
+Guam,12/21/2020,7600,0,moderna
+Hawaii,12/21/2020,25000,25000,moderna
+Idaho,12/21/2020,28000,28000,moderna
+Illinois,12/21/2020,174600,174600,moderna
+Indiana,12/21/2020,113300,113300,moderna
+Iowa,12/21/2020,53800,53800,moderna
+Kansas,12/21/2020,49100,49100,moderna
+Kentucky,12/21/2020,76700,76700,moderna
+Louisiana,12/21/2020,79500,79500,moderna
+Maine,12/21/2020,24200,24200,moderna
+Mariana Islands,12/21/2020,2600,0,moderna
+Marshall Islands,12/21/2020,7200,0,moderna
+Maryland,12/21/2020,104300,104300,moderna
+Massachusetts,12/21/2020,121900,121900,moderna
+Michigan,12/21/2020,173600,173600,moderna
+Micronesia,12/21/2020,9800,0,moderna
+Minnesota,12/21/2020,94900,94900,moderna
+Mississippi,12/21/2020,50800,50800,moderna
+Missouri,12/21/2020,105300,105300,moderna
+Montana,12/21/2020,18300,18300,moderna
+Nebraska,12/21/2020,32400,32400,moderna
+Nevada,12/21/2020,50300,50300,moderna
+New Hampshire,12/21/2020,24200,24200,moderna
+New Jersey,12/21/2020,154500,154500,moderna
+New Mexico,12/21/2020,36100,36100,moderna
+New York,12/21/2020,196800,196800,moderna
+New York City,12/21/2020,149400,149400,moderna
+North Carolina,12/21/2020,175900,175900,moderna
+North Dakota,12/21/2020,13200,13200,moderna
+Ohio,12/21/2020,201900,201900,moderna
+Oklahoma,12/21/2020,66200,66200,moderna
+Oregon,12/21/2020,72100,72100,moderna
+Palau,12/21/2020,2800,0,moderna
+Pennsylvania,12/21/2020,198800,198800,moderna
+Philadelphia,12/21/2020,27600,27600,moderna
+Puerto Rico,12/21/2020,60400,60400,moderna
+Rhode Island,12/21/2020,19000,19000,moderna
+South Carolina,12/21/2020,86400,86400,moderna
+South Dakota,12/21/2020,14600,14600,moderna
+Tennessee,12/21/2020,115200,115200,moderna
+Texas,12/21/2020,460500,460500,moderna
+U.S. Virgin Islands,12/21/2020,1900,1900,moderna
+Utah,12/21/2020,47800,47800,moderna
+Vermont,12/21/2020,11400,11400,moderna
+Virginia,12/21/2020,146400,146400,moderna
+Washington,12/21/2020,128000,128000,moderna
+West Virginia,12/21/2020,32600,32600,moderna
+Wisconsin,12/21/2020,101000,101000,moderna
+Wyoming,12/21/2020,10000,10000,moderna
+Connecticut,04/05/2021,50310,50310,pfizer
+Maine,04/05/2021,19890,19890,pfizer
+Massachusetts,04/05/2021,95940,95940,pfizer
+New Hampshire,04/05/2021,19890,19890,pfizer
+Rhode Island,04/05/2021,15210,15210,pfizer
+Vermont,04/05/2021,9360,9360,pfizer
+New Jersey,04/05/2021,120510,120510,pfizer
+New York,04/05/2021,153270,153270,pfizer
+New York City,04/05/2021,117000,117000,pfizer
+Puerto Rico,04/05/2021,47970,47970,pfizer
+U.S. Virgin Islands,04/05/2021,2340,2340,pfizer
+Delaware,04/05/2021,14040,14040,pfizer
+District of Columbia,04/05/2021,10530,10530,pfizer
+Maryland,04/05/2021,81900,81900,pfizer
+Pennsylvania,04/05/2021,155610,155610,pfizer
+Philadelphia,04/05/2021,22230,22230,pfizer
+Virginia,04/05/2021,114660,114660,pfizer
+West Virginia,04/05/2021,25740,25740,pfizer
+Alabama,04/05/2021,66690,66690,pfizer
+Florida,04/05/2021,286650,286650,pfizer
+Georgia,04/05/2021,136890,136890,pfizer
+Kentucky,04/05/2021,60840,60840,pfizer
+Mississippi,04/05/2021,39780,39780,pfizer
+North Carolina,04/05/2021,138060,138060,pfizer
+South Carolina,04/05/2021,67860,67860,pfizer
+Tennessee,04/05/2021,90090,90090,pfizer
+Chicago,04/05/2021,37440,37440,pfizer
+Illinois,04/05/2021,136890,136890,pfizer
+Indiana,04/05/2021,88920,88920,pfizer
+Michigan,04/05/2021,135720,135720,pfizer
+Minnesota,04/05/2021,74880,74880,pfizer
+Ohio,04/05/2021,157950,157950,pfizer
+Wisconsin,04/05/2021,79560,79560,pfizer
+Arkansas,04/05/2021,39780,39780,pfizer
+Louisiana,04/05/2021,62010,62010,pfizer
+New Mexico,04/05/2021,29250,29250,pfizer
+Oklahoma,04/05/2021,52650,52650,pfizer
+Texas,04/05/2021,359190,359190,pfizer
+Iowa,04/05/2021,42120,42120,pfizer
+Kansas,04/05/2021,38610,38610,pfizer
+Missouri,04/05/2021,83070,83070,pfizer
+Nebraska,04/05/2021,25740,25740,pfizer
+Colorado,04/05/2021,74880,74880,pfizer
+Montana,04/05/2021,15210,15210,pfizer
+North Dakota,04/05/2021,10530,10530,pfizer
+South Dakota,04/05/2021,11700,11700,pfizer
+Utah,04/05/2021,37440,37440,pfizer
+Wyoming,04/05/2021,8190,8190,pfizer
+Arizona,04/05/2021,93600,93600,pfizer
+California,04/05/2021,524160,524160,pfizer
+Hawaii,04/05/2021,19890,19890,pfizer
+Nevada,04/05/2021,39780,39780,pfizer
+American Samoa,04/05/2021,0,0,pfizer
+Guam,04/05/2021,0,0,pfizer
+Marshall Islands,04/05/2021,0,0,pfizer
+Micronesia,04/05/2021,0,0,pfizer
+Mariana Islands,04/05/2021,0,0,pfizer
+Palau,04/05/2021,0,0,pfizer
+Alaska,04/05/2021,0,0,pfizer
+Idaho,04/05/2021,22230,22230,pfizer
+Oregon,04/05/2021,57330,57330,pfizer
+Washington,04/05/2021,100620,100620,pfizer
+Federal Entities,04/05/2021,243360,243360,pfizer
+Connecticut,03/29/2021,60840,60840,pfizer
+Maine,03/29/2021,23400,23400,pfizer
+Massachusetts,03/29/2021,117000,117000,pfizer
+New Hampshire,03/29/2021,23400,23400,pfizer
+Rhode Island,03/29/2021,18720,18720,pfizer
+Vermont,03/29/2021,11700,11700,pfizer
+New Jersey,03/29/2021,148590,148590,pfizer
+New York,03/29/2021,188370,188370,pfizer
+New York City,03/29/2021,143910,143910,pfizer
+Puerto Rico,03/29/2021,58500,58500,pfizer
+U.S. Virgin Islands,03/29/2021,2340,2340,pfizer
+Delaware,03/29/2021,16380,16380,pfizer
+District of Columbia,03/29/2021,12870,12870,pfizer
+Maryland,03/29/2021,100620,100620,pfizer
+Pennsylvania,03/29/2021,190710,190710,pfizer
+Philadelphia,03/29/2021,26910,26910,pfizer
+Virginia,03/29/2021,140400,140400,pfizer
+West Virginia,03/29/2021,31590,31590,pfizer
+Alabama,03/29/2021,80730,80730,pfizer
+Florida,03/29/2021,352170,352170,pfizer
+Georgia,03/29/2021,167310,167310,pfizer
+Kentucky,03/29/2021,73710,73710,pfizer
+Mississippi,03/29/2021,49140,49140,pfizer
+North Carolina,03/29/2021,168480,168480,pfizer
+South Carolina,03/29/2021,83070,83070,pfizer
+Tennessee,03/29/2021,111150,111150,pfizer
+Chicago,03/29/2021,45630,45630,pfizer
+Illinois,03/29/2021,167310,167310,pfizer
+Indiana,03/29/2021,108810,108810,pfizer
+Michigan,03/29/2021,166140,166140,pfizer
+Minnesota,03/29/2021,91260,91260,pfizer
+Ohio,03/29/2021,194220,194220,pfizer
+Wisconsin,03/29/2021,97110,97110,pfizer
+Arkansas,03/29/2021,49140,49140,pfizer
+Louisiana,03/29/2021,77220,77220,pfizer
+New Mexico,03/29/2021,35100,35100,pfizer
+Oklahoma,03/29/2021,64350,64350,pfizer
+Texas,03/29/2021,441090,441090,pfizer
+Iowa,03/29/2021,51480,51480,pfizer
+Kansas,03/29/2021,47970,47970,pfizer
+Missouri,03/29/2021,101790,101790,pfizer
+Nebraska,03/29/2021,31590,31590,pfizer
+Colorado,03/29/2021,92430,92430,pfizer
+Montana,03/29/2021,17550,17550,pfizer
+North Dakota,03/29/2021,12870,12870,pfizer
+South Dakota,03/29/2021,14040,14040,pfizer
+Utah,03/29/2021,46800,46800,pfizer
+Wyoming,03/29/2021,10530,10530,pfizer
+Arizona,03/29/2021,114660,114660,pfizer
+California,03/29/2021,644670,644670,pfizer
+Hawaii,03/29/2021,24570,24570,pfizer
+Nevada,03/29/2021,49140,49140,pfizer
+American Samoa,03/29/2021,11700,0,pfizer
+Guam,03/29/2021,25740,0,pfizer
+Marshall Islands,03/29/2021,0,0,pfizer
+Micronesia,03/29/2021,0,0,pfizer
+Mariana Islands,03/29/2021,11700,0,pfizer
+Palau,03/29/2021,0,0,pfizer
+Alaska,03/29/2021,91260,79560,pfizer
+Idaho,03/29/2021,26910,26910,pfizer
+Oregon,03/29/2021,70200,70200,pfizer
+Washington,03/29/2021,122850,122850,pfizer
+Federal Entities,03/29/2021,201240,201240,pfizer
+Connecticut,03/22/2021,50310,50310,pfizer
+Maine,03/22/2021,19890,19890,pfizer
+Massachusetts,03/22/2021,95940,95940,pfizer
+New Hampshire,03/22/2021,19890,19890,pfizer
+Rhode Island,03/22/2021,15210,15210,pfizer
+Vermont,03/22/2021,9360,9360,pfizer
+New Jersey,03/22/2021,120510,120510,pfizer
+New York,03/22/2021,153270,153270,pfizer
+New York City,03/22/2021,117000,117000,pfizer
+Puerto Rico,03/22/2021,47970,47970,pfizer
+U.S. Virgin Islands,03/22/2021,2340,2340,pfizer
+Delaware,03/22/2021,14040,14040,pfizer
+District of Columbia,03/22/2021,10530,10530,pfizer
+Maryland,03/22/2021,81900,81900,pfizer
+Pennsylvania,03/22/2021,155610,155610,pfizer
+Philadelphia,03/22/2021,22230,22230,pfizer
+Virginia,03/22/2021,114660,114660,pfizer
+West Virginia,03/22/2021,25740,25740,pfizer
+Alabama,03/22/2021,66690,66690,pfizer
+Florida,03/22/2021,286650,286650,pfizer
+Georgia,03/22/2021,136890,136890,pfizer
+Kentucky,03/22/2021,60840,60840,pfizer
+Mississippi,03/22/2021,39780,39780,pfizer
+North Carolina,03/22/2021,138060,138060,pfizer
+South Carolina,03/22/2021,67860,67860,pfizer
+Tennessee,03/22/2021,90090,90090,pfizer
+Chicago,03/22/2021,37440,37440,pfizer
+Illinois,03/22/2021,136890,136890,pfizer
+Indiana,03/22/2021,88920,88920,pfizer
+Michigan,03/22/2021,135720,135720,pfizer
+Minnesota,03/22/2021,74880,74880,pfizer
+Ohio,03/22/2021,157950,157950,pfizer
+Wisconsin,03/22/2021,79560,79560,pfizer
+Arkansas,03/22/2021,39780,39780,pfizer
+Louisiana,03/22/2021,62010,62010,pfizer
+New Mexico,03/22/2021,29250,29250,pfizer
+Oklahoma,03/22/2021,52650,52650,pfizer
+Texas,03/22/2021,359190,359190,pfizer
+Iowa,03/22/2021,42120,42120,pfizer
+Kansas,03/22/2021,38610,38610,pfizer
+Missouri,03/22/2021,83070,83070,pfizer
+Nebraska,03/22/2021,25740,25740,pfizer
+Colorado,03/22/2021,74880,74880,pfizer
+Montana,03/22/2021,15210,15210,pfizer
+North Dakota,03/22/2021,10530,10530,pfizer
+South Dakota,03/22/2021,11700,11700,pfizer
+Utah,03/22/2021,37440,37440,pfizer
+Wyoming,03/22/2021,8190,8190,pfizer
+Arizona,03/22/2021,93600,93600,pfizer
+California,03/22/2021,524160,524160,pfizer
+Hawaii,03/22/2021,19890,19890,pfizer
+Nevada,03/22/2021,39780,39780,pfizer
+American Samoa,03/22/2021,0,0,pfizer
+Guam,03/22/2021,0,0,pfizer
+Marshall Islands,03/22/2021,0,0,pfizer
+Micronesia,03/22/2021,0,0,pfizer
+Mariana Islands,03/22/2021,0,0,pfizer
+Palau,03/22/2021,0,0,pfizer
+Alaska,03/22/2021,0,0,pfizer
+Idaho,03/22/2021,22230,22230,pfizer
+Oregon,03/22/2021,57330,57330,pfizer
+Washington,03/22/2021,100620,100620,pfizer
+Federal Entities,03/22/2021,195390,195390,pfizer
+Connecticut,03/15/2021,49140,49140,pfizer
+Maine,03/15/2021,18720,18720,pfizer
+Massachusetts,03/15/2021,93600,93600,pfizer
+New Hampshire,03/15/2021,18720,18720,pfizer
+Rhode Island,03/15/2021,15210,15210,pfizer
+Vermont,03/15/2021,9360,9360,pfizer
+New Jersey,03/15/2021,119340,119340,pfizer
+New York,03/15/2021,150930,150930,pfizer
+New York City,03/15/2021,114660,114660,pfizer
+Puerto Rico,03/15/2021,46800,46800,pfizer
+U.S. Virgin Islands,03/15/2021,2340,2340,pfizer
+Delaware,03/15/2021,12870,12870,pfizer
+District of Columbia,03/15/2021,10530,10530,pfizer
+Maryland,03/15/2021,80730,80730,pfizer
+Pennsylvania,03/15/2021,153270,153270,pfizer
+Philadelphia,03/15/2021,22230,22230,pfizer
+Virginia,03/15/2021,112320,112320,pfizer
+West Virginia,03/15/2021,25740,25740,pfizer
+Alabama,03/15/2021,65520,65520,pfizer
+Florida,03/15/2021,281970,281970,pfizer
+Georgia,03/15/2021,134550,134550,pfizer
+Kentucky,03/15/2021,59670,59670,pfizer
+Mississippi,03/15/2021,39780,39780,pfizer
+North Carolina,03/15/2021,135720,135720,pfizer
+South Carolina,03/15/2021,66690,66690,pfizer
+Tennessee,03/15/2021,88920,88920,pfizer
+Chicago,03/15/2021,36270,36270,pfizer
+Illinois,03/15/2021,134550,134550,pfizer
+Indiana,03/15/2021,87750,87750,pfizer
+Michigan,03/15/2021,133380,133380,pfizer
+Minnesota,03/15/2021,73710,73710,pfizer
+Ohio,03/15/2021,155610,155610,pfizer
+Wisconsin,03/15/2021,78390,78390,pfizer
+Arkansas,03/15/2021,39780,39780,pfizer
+Louisiana,03/15/2021,62010,62010,pfizer
+New Mexico,03/15/2021,28080,28080,pfizer
+Oklahoma,03/15/2021,51480,51480,pfizer
+Texas,03/15/2021,353340,353340,pfizer
+Iowa,03/15/2021,42120,42120,pfizer
+Kansas,03/15/2021,38610,38610,pfizer
+Missouri,03/15/2021,80730,80730,pfizer
+Nebraska,03/15/2021,25740,25740,pfizer
+Colorado,03/15/2021,73710,73710,pfizer
+Montana,03/15/2021,14040,14040,pfizer
+North Dakota,03/15/2021,10530,10530,pfizer
+South Dakota,03/15/2021,11700,11700,pfizer
+Utah,03/15/2021,37440,37440,pfizer
+Wyoming,03/15/2021,8190,8190,pfizer
+Arizona,03/15/2021,92430,92430,pfizer
+California,03/15/2021,515970,515970,pfizer
+Hawaii,03/15/2021,19890,19890,pfizer
+Nevada,03/15/2021,38610,38610,pfizer
+American Samoa,03/15/2021,0,0,pfizer
+Guam,03/15/2021,0,0,pfizer
+Marshall Islands,03/15/2021,0,0,pfizer
+Micronesia,03/15/2021,0,0,pfizer
+Mariana Islands,03/15/2021,0,0,pfizer
+Palau,03/15/2021,0,0,pfizer
+Alaska,03/15/2021,0,0,pfizer
+Idaho,03/15/2021,22230,22230,pfizer
+Oregon,03/15/2021,56160,56160,pfizer
+Washington,03/15/2021,98280,98280,pfizer
+Federal Entities,03/15/2021,182520,182520,pfizer
+Connecticut,03/08/2021,45630,45630,pfizer
+Maine,03/08/2021,17550,17550,pfizer
+Massachusetts,03/08/2021,87750,87750,pfizer
+New Hampshire,03/08/2021,17550,17550,pfizer
+Rhode Island,03/08/2021,14040,14040,pfizer
+Vermont,03/08/2021,8190,8190,pfizer
+New Jersey,03/08/2021,111150,111150,pfizer
+New York,03/08/2021,140400,140400,pfizer
+New York City,03/08/2021,106470,106470,pfizer
+Puerto Rico,03/08/2021,43290,43290,pfizer
+U.S. Virgin Islands,03/08/2021,2340,2340,pfizer
+Delaware,03/08/2021,12870,12870,pfizer
+District of Columbia,03/08/2021,9360,9360,pfizer
+Maryland,03/08/2021,74880,74880,pfizer
+Pennsylvania,03/08/2021,141570,141570,pfizer
+Philadelphia,03/08/2021,19890,19890,pfizer
+Virginia,03/08/2021,105300,105300,pfizer
+West Virginia,03/08/2021,23400,23400,pfizer
+Alabama,03/08/2021,60840,60840,pfizer
+Florida,03/08/2021,262080,262080,pfizer
+Georgia,03/08/2021,125190,125190,pfizer
+Kentucky,03/08/2021,54990,54990,pfizer
+Mississippi,03/08/2021,36270,36270,pfizer
+North Carolina,03/08/2021,126360,126360,pfizer
+South Carolina,03/08/2021,62010,62010,pfizer
+Tennessee,03/08/2021,83070,83070,pfizer
+Chicago,03/08/2021,33930,33930,pfizer
+Illinois,03/08/2021,125190,125190,pfizer
+Indiana,03/08/2021,80730,80730,pfizer
+Michigan,03/08/2021,124020,124020,pfizer
+Minnesota,03/08/2021,67860,67860,pfizer
+Ohio,03/08/2021,143910,143910,pfizer
+Wisconsin,03/08/2021,72540,72540,pfizer
+Arkansas,03/08/2021,37440,37440,pfizer
+Louisiana,03/08/2021,57330,57330,pfizer
+New Mexico,03/08/2021,25740,25740,pfizer
+Oklahoma,03/08/2021,47970,47970,pfizer
+Texas,03/08/2021,328770,328770,pfizer
+Iowa,03/08/2021,38610,38610,pfizer
+Kansas,03/08/2021,35100,35100,pfizer
+Missouri,03/08/2021,76050,76050,pfizer
+Nebraska,03/08/2021,23400,23400,pfizer
+Colorado,03/08/2021,69030,69030,pfizer
+Montana,03/08/2021,14040,14040,pfizer
+North Dakota,03/08/2021,10530,10530,pfizer
+South Dakota,03/08/2021,10530,10530,pfizer
+Utah,03/08/2021,35100,35100,pfizer
+Wyoming,03/08/2021,8190,8190,pfizer
+Arizona,03/08/2021,85410,85410,pfizer
+California,03/08/2021,479700,479700,pfizer
+Hawaii,03/08/2021,18720,18720,pfizer
+Nevada,03/08/2021,36270,36270,pfizer
+American Samoa,03/08/2021,0,0,pfizer
+Guam,03/08/2021,0,0,pfizer
+Marshall Islands,03/08/2021,0,0,pfizer
+Micronesia,03/08/2021,0,0,pfizer
+Mariana Islands,03/08/2021,0,0,pfizer
+Palau,03/08/2021,0,0,pfizer
+Alaska,03/08/2021,0,0,pfizer
+Idaho,03/08/2021,19890,19890,pfizer
+Oregon,03/08/2021,51480,51480,pfizer
+Washington,03/08/2021,91260,91260,pfizer
+Federal Entities,03/08/2021,230490,221130,pfizer
+Alabama,03/01/2021,54990,54990,pfizer
+Alaska,03/01/2021,53820,53820,pfizer
+American Samoa,03/01/2021,9360,0,pfizer
+Arizona,03/01/2021,78390,78390,pfizer
+Arkansas,03/01/2021,33930,33930,pfizer
+California,03/01/2021,438750,438750,pfizer
+Chicago,03/01/2021,31590,31590,pfizer
+Colorado,03/01/2021,63180,63180,pfizer
+Connecticut,03/01/2021,42120,42120,pfizer
+Delaware,03/01/2021,11700,11700,pfizer
+District of Columbia,03/01/2021,9360,9360,pfizer
+Federal Entities,03/01/2021,209430,190710,pfizer
+Florida,03/01/2021,239850,239850,pfizer
+Georgia,03/01/2021,114660,114660,pfizer
+Guam,03/01/2021,21060,0,pfizer
+Hawaii,03/01/2021,16380,16380,pfizer
+Idaho,03/01/2021,18720,18720,pfizer
+Illinois,03/01/2021,114660,114660,pfizer
+Indiana,03/01/2021,74880,74880,pfizer
+Iowa,03/01/2021,35100,35100,pfizer
+Kansas,03/01/2021,32760,32760,pfizer
+Kentucky,03/01/2021,50310,50310,pfizer
+Louisiana,03/01/2021,52650,52650,pfizer
+Maine,03/01/2021,16380,16380,pfizer
+Mariana Islands,03/01/2021,9360,0,pfizer
+Marshall Islands,03/01/2021,0,0,pfizer
+Maryland,03/01/2021,69030,69030,pfizer
+Massachusetts,03/01/2021,79560,79560,pfizer
+Michigan,03/01/2021,113490,113490,pfizer
+Micronesia,03/01/2021,0,0,pfizer
+Minnesota,03/01/2021,62010,62010,pfizer
+Mississippi,03/01/2021,33930,33930,pfizer
+Missouri,03/01/2021,69030,69030,pfizer
+Montana,03/01/2021,12870,12870,pfizer
+Nebraska,03/01/2021,22230,22230,pfizer
+Nevada,03/01/2021,33930,33930,pfizer
+New Hampshire,03/01/2021,16380,16380,pfizer
+New Jersey,03/01/2021,101790,101790,pfizer
+New Mexico,03/01/2021,24570,24570,pfizer
+New York,03/01/2021,128700,128700,pfizer
+New York City,03/01/2021,98280,98280,pfizer
+North Carolina,03/01/2021,115830,115830,pfizer
+North Dakota,03/01/2021,9360,9360,pfizer
+Ohio,03/01/2021,132210,132210,pfizer
+Oklahoma,03/01/2021,43290,43290,pfizer
+Oregon,03/01/2021,47970,47970,pfizer
+Palau,03/01/2021,0,0,pfizer
+Pennsylvania,03/01/2021,129870,129870,pfizer
+Philadelphia,03/01/2021,18720,18720,pfizer
+Puerto Rico,03/01/2021,39780,39780,pfizer
+Rhode Island,03/01/2021,12870,12870,pfizer
+South Carolina,03/01/2021,57330,57330,pfizer
+South Dakota,03/01/2021,10530,10530,pfizer
+Tennessee,03/01/2021,76050,76050,pfizer
+Texas,03/01/2021,300690,300690,pfizer
+U.S. Virgin Islands,03/01/2021,2340,2340,pfizer
+Utah,03/01/2021,31590,31590,pfizer
+Vermont,03/01/2021,8190,8190,pfizer
+Virginia,03/01/2021,95940,95940,pfizer
+Washington,03/01/2021,84240,84240,pfizer
+West Virginia,03/01/2021,22230,22230,pfizer
+Wisconsin,03/01/2021,66690,66690,pfizer
+Wyoming,03/01/2021,7020,7020,pfizer
+Alabama,02/22/2021,47970,47970,pfizer
+Alaska,02/22/2021,0,0,pfizer
+American Samoa,02/22/2021,0,0,pfizer
+Arizona,02/22/2021,69030,69030,pfizer
+Arkansas,02/22/2021,29250,29250,pfizer
+California,02/22/2021,382590,382590,pfizer
+Chicago,02/22/2021,26910,26910,pfizer
+Colorado,02/22/2021,54990,54990,pfizer
+Connecticut,02/22/2021,36270,36270,pfizer
+Delaware,02/22/2021,10530,10530,pfizer
+District of Columbia,02/22/2021,8190,8190,pfizer
+Federal Entities,02/22/2021,166140,166140,pfizer
+Florida,02/22/2021,209430,209430,pfizer
+Georgia,02/22/2021,99450,99450,pfizer
+Guam,02/22/2021,0,0,pfizer
+Hawaii,02/22/2021,15210,15210,pfizer
+Idaho,02/22/2021,16380,16380,pfizer
+Illinois,02/22/2021,99450,99450,pfizer
+Indiana,02/22/2021,64350,64350,pfizer
+Iowa,02/22/2021,31590,31590,pfizer
+Kansas,02/22/2021,28080,28080,pfizer
+Kentucky,02/22/2021,44460,44460,pfizer
+Louisiana,02/22/2021,45630,45630,pfizer
+Maine,02/22/2021,14040,14040,pfizer
+Mariana Islands,02/22/2021,0,0,pfizer
+Marshall Islands,02/22/2021,0,0,pfizer
+Maryland,02/22/2021,59670,59670,pfizer
+Massachusetts,02/22/2021,70200,70200,pfizer
+Michigan,02/22/2021,99450,99450,pfizer
+Micronesia,02/22/2021,0,0,pfizer
+Minnesota,02/22/2021,54990,54990,pfizer
+Mississippi,02/22/2021,29250,29250,pfizer
+Missouri,02/22/2021,60840,60840,pfizer
+Montana,02/22/2021,10530,10530,pfizer
+Nebraska,02/22/2021,18720,18720,pfizer
+Nevada,02/22/2021,29250,29250,pfizer
+New Hampshire,02/22/2021,14040,14040,pfizer
+New Jersey,02/22/2021,88920,88920,pfizer
+New Mexico,02/22/2021,21060,21060,pfizer
+New York,02/22/2021,112320,112320,pfizer
+New York City,02/22/2021,85410,85410,pfizer
+North Carolina,02/22/2021,100620,100620,pfizer
+North Dakota,02/22/2021,8190,8190,pfizer
+Ohio,02/22/2021,115830,115830,pfizer
+Oklahoma,02/22/2021,38610,38610,pfizer
+Oregon,02/22/2021,42120,42120,pfizer
+Palau,02/22/2021,0,0,pfizer
+Pennsylvania,02/22/2021,113490,113490,pfizer
+Philadelphia,02/22/2021,16380,16380,pfizer
+Puerto Rico,02/22/2021,35100,35100,pfizer
+Rhode Island,02/22/2021,11700,11700,pfizer
+South Carolina,02/22/2021,49140,49140,pfizer
+South Dakota,02/22/2021,9360,9360,pfizer
+Tennessee,02/22/2021,65520,65520,pfizer
+Texas,02/22/2021,262080,262080,pfizer
+U.S. Virgin Islands,02/22/2021,1170,1170,pfizer
+Utah,02/22/2021,28080,28080,pfizer
+Vermont,02/22/2021,7020,7020,pfizer
+Virginia,02/22/2021,84240,84240,pfizer
+Washington,02/22/2021,73710,73710,pfizer
+West Virginia,02/22/2021,18720,18720,pfizer
+Wisconsin,02/22/2021,58500,58500,pfizer
+Wyoming,02/22/2021,5850,5850,pfizer
+Alabama,02/15/2021,30225,30225,pfizer
+Alaska,02/15/2021,0,0,pfizer
+American Samoa,02/15/2021,0,0,pfizer
+Arizona,02/15/2021,42900,42900,pfizer
+Arkansas,02/15/2021,18525,18525,pfizer
+California,02/15/2021,241800,241800,pfizer
+Chicago,02/15/2021,17550,17550,pfizer
+Colorado,02/15/2021,35100,35100,pfizer
+Connecticut,02/15/2021,23400,23400,pfizer
+Delaware,02/15/2021,6825,6825,pfizer
+District of Columbia,02/15/2021,4875,4875,pfizer
+Federal Entities,02/15/2021,105300,105300,pfizer
+Florida,02/15/2021,132600,132600,pfizer
+Georgia,02/15/2021,63375,63375,pfizer
+Guam,02/15/2021,0,0,pfizer
+Hawaii,02/15/2021,9750,9750,pfizer
+Idaho,02/15/2021,10725,10725,pfizer
+Illinois,02/15/2021,63375,63375,pfizer
+Indiana,02/15/2021,40950,40950,pfizer
+Iowa,02/15/2021,19500,19500,pfizer
+Kansas,02/15/2021,18525,18525,pfizer
+Kentucky,02/15/2021,28275,28275,pfizer
+Louisiana,02/15/2021,29250,29250,pfizer
+Maine,02/15/2021,8775,8775,pfizer
+Mariana Islands,02/15/2021,0,0,pfizer
+Marshall Islands,02/15/2021,0,0,pfizer
+Maryland,02/15/2021,38025,38025,pfizer
+Massachusetts,02/15/2021,43875,43875,pfizer
+Michigan,02/15/2021,62400,62400,pfizer
+Micronesia,02/15/2021,0,0,pfizer
+Minnesota,02/15/2021,34125,34125,pfizer
+Mississippi,02/15/2021,18525,18525,pfizer
+Missouri,02/15/2021,38025,38025,pfizer
+Montana,02/15/2021,6825,6825,pfizer
+Nebraska,02/15/2021,11700,11700,pfizer
+Nevada,02/15/2021,18525,18525,pfizer
+New Hampshire,02/15/2021,8775,8775,pfizer
+New Jersey,02/15/2021,55575,55575,pfizer
+New Mexico,02/15/2021,13650,13650,pfizer
+New York,02/15/2021,71175,71175,pfizer
+New York City,02/15/2021,53625,53625,pfizer
+North Carolina,02/15/2021,63375,63375,pfizer
+North Dakota,02/15/2021,4875,4875,pfizer
+Ohio,02/15/2021,73125,73125,pfizer
+Oklahoma,02/15/2021,24375,24375,pfizer
+Oregon,02/15/2021,26325,26325,pfizer
+Palau,02/15/2021,0,0,pfizer
+Pennsylvania,02/15/2021,71175,71175,pfizer
+Philadelphia,02/15/2021,10725,10725,pfizer
+Puerto Rico,02/15/2021,22425,22425,pfizer
+Rhode Island,02/15/2021,6825,6825,pfizer
+South Carolina,02/15/2021,31200,31200,pfizer
+South Dakota,02/15/2021,5850,5850,pfizer
+Tennessee,02/15/2021,41925,41925,pfizer
+Texas,02/15/2021,165750,165750,pfizer
+U.S. Virgin Islands,02/15/2021,975,975,pfizer
+Utah,02/15/2021,17550,17550,pfizer
+Vermont,02/15/2021,4875,4875,pfizer
+Virginia,02/15/2021,52650,52650,pfizer
+Washington,02/15/2021,46800,46800,pfizer
+West Virginia,02/15/2021,11700,11700,pfizer
+Wisconsin,02/15/2021,37050,37050,pfizer
+Wyoming,02/15/2021,3900,3900,pfizer
+Alabama,02/08/2021,30225,30225,pfizer
+Alaska,02/08/2021,0,0,pfizer
+American Samoa,02/08/2021,0,0,pfizer
+Arizona,02/08/2021,42900,42900,pfizer
+Arkansas,02/08/2021,18525,18525,pfizer
+California,02/08/2021,241800,241800,pfizer
+Chicago,02/08/2021,17550,17550,pfizer
+Colorado,02/08/2021,35100,35100,pfizer
+Connecticut,02/08/2021,23400,23400,pfizer
+Delaware,02/08/2021,6825,6825,pfizer
+District of Columbia,02/08/2021,4875,4875,pfizer
+Federal Entities,02/08/2021,105300,105300,pfizer
+Florida,02/08/2021,132600,132600,pfizer
+Georgia,02/08/2021,63375,63375,pfizer
+Guam,02/08/2021,0,0,pfizer
+Hawaii,02/08/2021,9750,9750,pfizer
+Idaho,02/08/2021,10725,10725,pfizer
+Illinois,02/08/2021,63375,63375,pfizer
+Indiana,02/08/2021,40950,40950,pfizer
+Iowa,02/08/2021,19500,19500,pfizer
+Kansas,02/08/2021,18525,18525,pfizer
+Kentucky,02/08/2021,28275,28275,pfizer
+Louisiana,02/08/2021,29250,29250,pfizer
+Maine,02/08/2021,8775,8775,pfizer
+Mariana Islands,02/08/2021,0,0,pfizer
+Marshall Islands,02/08/2021,0,0,pfizer
+Maryland,02/08/2021,38025,38025,pfizer
+Massachusetts,02/08/2021,43875,43875,pfizer
+Michigan,02/08/2021,62400,62400,pfizer
+Micronesia,02/08/2021,0,0,pfizer
+Minnesota,02/08/2021,34125,34125,pfizer
+Mississippi,02/08/2021,18525,18525,pfizer
+Missouri,02/08/2021,38025,38025,pfizer
+Montana,02/08/2021,6825,6825,pfizer
+Nebraska,02/08/2021,11700,11700,pfizer
+Nevada,02/08/2021,18525,18525,pfizer
+New Hampshire,02/08/2021,8775,8775,pfizer
+New Jersey,02/08/2021,55575,55575,pfizer
+New Mexico,02/08/2021,13650,13650,pfizer
+New York,02/08/2021,71175,71175,pfizer
+New York City,02/08/2021,53625,53625,pfizer
+North Carolina,02/08/2021,63375,63375,pfizer
+North Dakota,02/08/2021,4875,4875,pfizer
+Ohio,02/08/2021,73125,73125,pfizer
+Oklahoma,02/08/2021,24375,24375,pfizer
+Oregon,02/08/2021,26325,26325,pfizer
+Palau,02/08/2021,0,0,pfizer
+Pennsylvania,02/08/2021,71175,71175,pfizer
+Philadelphia,02/08/2021,10725,10725,pfizer
+Puerto Rico,02/08/2021,22425,22425,pfizer
+Rhode Island,02/08/2021,6825,6825,pfizer
+South Carolina,02/08/2021,31200,31200,pfizer
+South Dakota,02/08/2021,5850,5850,pfizer
+Tennessee,02/08/2021,41925,41925,pfizer
+Texas,02/08/2021,165750,165750,pfizer
+U.S. Virgin Islands,02/08/2021,975,975,pfizer
+Utah,02/08/2021,17550,17550,pfizer
+Vermont,02/08/2021,4875,4875,pfizer
+Virginia,02/08/2021,52650,52650,pfizer
+Washington,02/08/2021,46800,46800,pfizer
+West Virginia,02/08/2021,11700,11700,pfizer
+Wisconsin,02/08/2021,37050,37050,pfizer
+Wyoming,02/08/2021,3900,3900,pfizer
+Alabama,02/01/2021,30225,30225,pfizer
+Alaska,02/01/2021,27300,27300,pfizer
+American Samoa,02/01/2021,7800,0,pfizer
+Arizona,02/01/2021,42900,42900,pfizer
+Arkansas,02/01/2021,18525,18525,pfizer
+California,02/01/2021,240825,240825,pfizer
+Chicago,02/01/2021,17550,17550,pfizer
+Colorado,02/01/2021,34125,34125,pfizer
+Connecticut,02/01/2021,23400,23400,pfizer
+Delaware,02/01/2021,6825,6825,pfizer
+District of Columbia,02/01/2021,4875,4875,pfizer
+Federal Entities,02/01/2021,119925,104325,pfizer
+Florida,02/01/2021,131625,131625,pfizer
+Georgia,02/01/2021,62400,62400,pfizer
+Guam,02/01/2021,7800,0,pfizer
+Hawaii,02/01/2021,9750,9750,pfizer
+Idaho,02/01/2021,10725,10725,pfizer
+Illinois,02/01/2021,62400,62400,pfizer
+Indiana,02/01/2021,40950,40950,pfizer
+Iowa,02/01/2021,19500,19500,pfizer
+Kansas,02/01/2021,17550,17550,pfizer
+Kentucky,02/01/2021,28275,28275,pfizer
+Louisiana,02/01/2021,29250,29250,pfizer
+Maine,02/01/2021,8775,8775,pfizer
+Mariana Islands,02/01/2021,7800,0,pfizer
+Marshall Islands,02/01/2021,0,0,pfizer
+Maryland,02/01/2021,38025,38025,pfizer
+Massachusetts,02/01/2021,43875,43875,pfizer
+Michigan,02/01/2021,62400,62400,pfizer
+Micronesia,02/01/2021,0,0,pfizer
+Minnesota,02/01/2021,34125,34125,pfizer
+Mississippi,02/01/2021,18525,18525,pfizer
+Missouri,02/01/2021,38025,38025,pfizer
+Montana,02/01/2021,6825,6825,pfizer
+Nebraska,02/01/2021,11700,11700,pfizer
+Nevada,02/01/2021,18525,18525,pfizer
+New Hampshire,02/01/2021,8775,8775,pfizer
+New Jersey,02/01/2021,55575,55575,pfizer
+New Mexico,02/01/2021,13650,13650,pfizer
+New York,02/01/2021,70200,70200,pfizer
+New York City,02/01/2021,53625,53625,pfizer
+North Carolina,02/01/2021,63375,63375,pfizer
+North Dakota,02/01/2021,4875,4875,pfizer
+Ohio,02/01/2021,72150,72150,pfizer
+Oklahoma,02/01/2021,24375,24375,pfizer
+Oregon,02/01/2021,26325,26325,pfizer
+Palau,02/01/2021,0,0,pfizer
+Pennsylvania,02/01/2021,71175,71175,pfizer
+Philadelphia,02/01/2021,10725,10725,pfizer
+Puerto Rico,02/01/2021,22425,22425,pfizer
+Rhode Island,02/01/2021,6825,6825,pfizer
+South Carolina,02/01/2021,31200,31200,pfizer
+South Dakota,02/01/2021,5850,5850,pfizer
+Tennessee,02/01/2021,41925,41925,pfizer
+Texas,02/01/2021,164775,164775,pfizer
+U.S. Virgin Islands,02/01/2021,975,975,pfizer
+Utah,02/01/2021,17550,17550,pfizer
+Vermont,02/01/2021,4875,4875,pfizer
+Virginia,02/01/2021,52650,52650,pfizer
+Washington,02/01/2021,45825,45825,pfizer
+West Virginia,02/01/2021,11700,11700,pfizer
+Wisconsin,02/01/2021,36075,36075,pfizer
+Wyoming,02/01/2021,3900,3900,pfizer
+Alabama,01/25/2021,30225,30225,pfizer
+Alaska,01/25/2021,0,0,pfizer
+American Samoa,01/25/2021,0,0,pfizer
+Arizona,01/25/2021,42900,42900,pfizer
+Arkansas,01/25/2021,18525,18525,pfizer
+California,01/25/2021,241800,241800,pfizer
+Chicago,01/25/2021,17550,17550,pfizer
+Colorado,01/25/2021,35100,35100,pfizer
+Connecticut,01/25/2021,23400,23400,pfizer
+Delaware,01/25/2021,6825,6825,pfizer
+District of Columbia,01/25/2021,4875,4875,pfizer
+Federal Entities,01/25/2021,105300,105300,pfizer
+Florida,01/25/2021,132600,132600,pfizer
+Georgia,01/25/2021,63375,63375,pfizer
+Guam,01/25/2021,0,0,pfizer
+Hawaii,01/25/2021,9750,9750,pfizer
+Idaho,01/25/2021,10725,10725,pfizer
+Illinois,01/25/2021,63375,63375,pfizer
+Indiana,01/25/2021,40950,40950,pfizer
+Iowa,01/25/2021,19500,19500,pfizer
+Kansas,01/25/2021,18525,18525,pfizer
+Kentucky,01/25/2021,28275,28275,pfizer
+Louisiana,01/25/2021,29250,29250,pfizer
+Maine,01/25/2021,8775,8775,pfizer
+Mariana Islands,01/25/2021,0,0,pfizer
+Marshall Islands,01/25/2021,0,0,pfizer
+Maryland,01/25/2021,38025,38025,pfizer
+Massachusetts,01/25/2021,43875,43875,pfizer
+Michigan,01/25/2021,62400,62400,pfizer
+Micronesia,01/25/2021,0,0,pfizer
+Minnesota,01/25/2021,34125,34125,pfizer
+Mississippi,01/25/2021,18525,18525,pfizer
+Missouri,01/25/2021,38025,38025,pfizer
+Montana,01/25/2021,6825,6825,pfizer
+Nebraska,01/25/2021,11700,11700,pfizer
+Nevada,01/25/2021,18525,18525,pfizer
+New Hampshire,01/25/2021,8775,8775,pfizer
+New Jersey,01/25/2021,55575,55575,pfizer
+New Mexico,01/25/2021,13650,13650,pfizer
+New York,01/25/2021,71175,71175,pfizer
+New York City,01/25/2021,53625,53625,pfizer
+North Carolina,01/25/2021,63375,63375,pfizer
+North Dakota,01/25/2021,4875,4875,pfizer
+Ohio,01/25/2021,73125,73125,pfizer
+Oklahoma,01/25/2021,24375,24375,pfizer
+Oregon,01/25/2021,26325,26325,pfizer
+Palau,01/25/2021,0,0,pfizer
+Pennsylvania,01/25/2021,71175,71175,pfizer
+Philadelphia,01/25/2021,10725,10725,pfizer
+Puerto Rico,01/25/2021,22425,22425,pfizer
+Rhode Island,01/25/2021,6825,6825,pfizer
+South Carolina,01/25/2021,31200,31200,pfizer
+South Dakota,01/25/2021,5850,5850,pfizer
+Tennessee,01/25/2021,41925,41925,pfizer
+Texas,01/25/2021,165750,165750,pfizer
+U.S. Virgin Islands,01/25/2021,975,975,pfizer
+Utah,01/25/2021,17550,17550,pfizer
+Vermont,01/25/2021,4875,4875,pfizer
+Virginia,01/25/2021,52650,52650,pfizer
+Washington,01/25/2021,46800,46800,pfizer
+West Virginia,01/25/2021,11700,11700,pfizer
+Wisconsin,01/25/2021,37050,37050,pfizer
+Wyoming,01/25/2021,3900,3900,pfizer
+Alabama,01/18/2021,30225,30225,pfizer
+Alaska,01/18/2021,0,0,pfizer
+American Samoa,01/18/2021,0,0,pfizer
+Arizona,01/18/2021,42900,42900,pfizer
+Arkansas,01/18/2021,18525,18525,pfizer
+California,01/18/2021,241800,241800,pfizer
+Chicago,01/18/2021,17550,17550,pfizer
+Colorado,01/18/2021,35100,35100,pfizer
+Connecticut,01/18/2021,23400,23400,pfizer
+Delaware,01/18/2021,6825,6825,pfizer
+District of Columbia,01/18/2021,4875,4875,pfizer
+Federal Entities,01/18/2021,105300,105300,pfizer
+Florida,01/18/2021,132600,132600,pfizer
+Georgia,01/18/2021,63375,63375,pfizer
+Guam,01/18/2021,0,0,pfizer
+Hawaii,01/18/2021,9750,9750,pfizer
+Idaho,01/18/2021,10725,10725,pfizer
+Illinois,01/18/2021,63375,63375,pfizer
+Indiana,01/18/2021,40950,40950,pfizer
+Iowa,01/18/2021,19500,19500,pfizer
+Kansas,01/18/2021,18525,18525,pfizer
+Kentucky,01/18/2021,28275,28275,pfizer
+Louisiana,01/18/2021,29250,29250,pfizer
+Maine,01/18/2021,8775,8775,pfizer
+Mariana Islands,01/18/2021,0,0,pfizer
+Marshall Islands,01/18/2021,0,0,pfizer
+Maryland,01/18/2021,38025,38025,pfizer
+Massachusetts,01/18/2021,43875,43875,pfizer
+Michigan,01/18/2021,62400,62400,pfizer
+Micronesia,01/18/2021,0,0,pfizer
+Minnesota,01/18/2021,34125,34125,pfizer
+Mississippi,01/18/2021,18525,18525,pfizer
+Missouri,01/18/2021,38025,38025,pfizer
+Montana,01/18/2021,6825,6825,pfizer
+Nebraska,01/18/2021,11700,11700,pfizer
+Nevada,01/18/2021,18525,18525,pfizer
+New Hampshire,01/18/2021,8775,8775,pfizer
+New Jersey,01/18/2021,55575,55575,pfizer
+New Mexico,01/18/2021,13650,13650,pfizer
+New York,01/18/2021,71175,71175,pfizer
+New York City,01/18/2021,53625,53625,pfizer
+North Carolina,01/18/2021,63375,63375,pfizer
+North Dakota,01/18/2021,4875,4875,pfizer
+Ohio,01/18/2021,73125,73125,pfizer
+Oklahoma,01/18/2021,24375,24375,pfizer
+Oregon,01/18/2021,26325,26325,pfizer
+Palau,01/18/2021,0,0,pfizer
+Pennsylvania,01/18/2021,71175,71175,pfizer
+Philadelphia,01/18/2021,10725,10725,pfizer
+Puerto Rico,01/18/2021,22425,22425,pfizer
+Rhode Island,01/18/2021,6825,6825,pfizer
+South Carolina,01/18/2021,31200,31200,pfizer
+South Dakota,01/18/2021,5850,5850,pfizer
+Tennessee,01/18/2021,41925,41925,pfizer
+Texas,01/18/2021,165750,165750,pfizer
+U.S. Virgin Islands,01/18/2021,975,975,pfizer
+Utah,01/18/2021,17550,17550,pfizer
+Vermont,01/18/2021,4875,4875,pfizer
+Virginia,01/18/2021,52650,52650,pfizer
+Washington,01/18/2021,46800,46800,pfizer
+West Virginia,01/18/2021,11700,11700,pfizer
+Wisconsin,01/18/2021,37050,37050,pfizer
+Wyoming,01/18/2021,3900,3900,pfizer
+Alabama,01/11/2021,29250,29250,pfizer
+Alaska,01/11/2021,0,0,pfizer
+American Samoa,01/11/2021,0,0,pfizer
+Arizona,01/11/2021,41925,41925,pfizer
+Arkansas,01/11/2021,18525,18525,pfizer
+California,01/11/2021,233025,233025,pfizer
+Chicago,01/11/2021,16575,16575,pfizer
+Colorado,01/11/2021,33150,33150,pfizer
+Connecticut,01/11/2021,22425,22425,pfizer
+Delaware,01/11/2021,5850,5850,pfizer
+District of Columbia,01/11/2021,4875,4875,pfizer
+Federal Entities,01/11/2021,102375,102375,pfizer
+Florida,01/11/2021,127725,127725,pfizer
+Georgia,01/11/2021,60450,60450,pfizer
+Guam,01/11/2021,0,0,pfizer
+Hawaii,01/11/2021,8775,8775,pfizer
+Idaho,01/11/2021,9750,9750,pfizer
+Illinois,01/11/2021,60450,60450,pfizer
+Indiana,01/11/2021,39975,39975,pfizer
+Iowa,01/11/2021,19500,19500,pfizer
+Kansas,01/11/2021,17550,17550,pfizer
+Kentucky,01/11/2021,27300,27300,pfizer
+Louisiana,01/11/2021,28275,28275,pfizer
+Maine,01/11/2021,8775,8775,pfizer
+Mariana Islands,01/11/2021,0,0,pfizer
+Marshall Islands,01/11/2021,0,0,pfizer
+Maryland,01/11/2021,36075,36075,pfizer
+Massachusetts,01/11/2021,42900,42900,pfizer
+Michigan,01/11/2021,60450,60450,pfizer
+Micronesia,01/11/2021,0,0,pfizer
+Minnesota,01/11/2021,33150,33150,pfizer
+Mississippi,01/11/2021,17550,17550,pfizer
+Missouri,01/11/2021,37050,37050,pfizer
+Montana,01/11/2021,6825,6825,pfizer
+Nebraska,01/11/2021,11700,11700,pfizer
+Nevada,01/11/2021,17550,17550,pfizer
+New Hampshire,01/11/2021,8775,8775,pfizer
+New Jersey,01/11/2021,53625,53625,pfizer
+New Mexico,01/11/2021,12675,12675,pfizer
+New York,01/11/2021,68250,68250,pfizer
+New York City,01/11/2021,51675,51675,pfizer
+North Carolina,01/11/2021,61425,61425,pfizer
+North Dakota,01/11/2021,4875,4875,pfizer
+Ohio,01/11/2021,70200,70200,pfizer
+Oklahoma,01/11/2021,23400,23400,pfizer
+Oregon,01/11/2021,25350,25350,pfizer
+Palau,01/11/2021,0,0,pfizer
+Pennsylvania,01/11/2021,69225,69225,pfizer
+Philadelphia,01/11/2021,9750,9750,pfizer
+Puerto Rico,01/11/2021,21450,21450,pfizer
+Rhode Island,01/11/2021,6825,6825,pfizer
+South Carolina,01/11/2021,30225,30225,pfizer
+South Dakota,01/11/2021,5850,5850,pfizer
+Tennessee,01/11/2021,39975,39975,pfizer
+Texas,01/11/2021,159900,159900,pfizer
+U.S. Virgin Islands,01/11/2021,975,975,pfizer
+Utah,01/11/2021,16575,16575,pfizer
+Vermont,01/11/2021,4875,4875,pfizer
+Virginia,01/11/2021,50700,50700,pfizer
+Washington,01/11/2021,57525,57525,pfizer
+West Virginia,01/11/2021,11700,11700,pfizer
+Wisconsin,01/11/2021,35100,35100,pfizer
+Wyoming,01/11/2021,3900,3900,pfizer
+Alabama,01/04/2021,29250,29250,pfizer
+Alaska,01/04/2021,27300,27300,pfizer
+American Samoa,01/04/2021,7800,0,pfizer
+Arizona,01/04/2021,41925,41925,pfizer
+Arkansas,01/04/2021,18525,18525,pfizer
+California,01/04/2021,232050,232050,pfizer
+Chicago,01/04/2021,16575,16575,pfizer
+Colorado,01/04/2021,33150,33150,pfizer
+Connecticut,01/04/2021,22425,22425,pfizer
+Delaware,01/04/2021,5850,5850,pfizer
+District of Columbia,01/04/2021,4875,4875,pfizer
+Federal Entities,01/04/2021,117000,101400,pfizer
+Florida,01/04/2021,126750,126750,pfizer
+Georgia,01/04/2021,60450,60450,pfizer
+Guam,01/04/2021,7800,0,pfizer
+Hawaii,01/04/2021,8775,8775,pfizer
+Idaho,01/04/2021,9750,9750,pfizer
+Illinois,01/04/2021,60450,60450,pfizer
+Indiana,01/04/2021,39000,39000,pfizer
+Iowa,01/04/2021,18525,18525,pfizer
+Kansas,01/04/2021,17550,17550,pfizer
+Kentucky,01/04/2021,27300,27300,pfizer
+Louisiana,01/04/2021,28275,28275,pfizer
+Maine,01/04/2021,8775,8775,pfizer
+Mariana Islands,01/04/2021,7800,0,pfizer
+Marshall Islands,01/04/2021,0,0,pfizer
+Maryland,01/04/2021,36075,36075,pfizer
+Massachusetts,01/04/2021,42900,42900,pfizer
+Michigan,01/04/2021,60450,60450,pfizer
+Micronesia,01/04/2021,0,0,pfizer
+Minnesota,01/04/2021,33150,33150,pfizer
+Mississippi,01/04/2021,17550,17550,pfizer
+Missouri,01/04/2021,37050,37050,pfizer
+Montana,01/04/2021,6825,6825,pfizer
+Nebraska,01/04/2021,11700,11700,pfizer
+Nevada,01/04/2021,17550,17550,pfizer
+New Hampshire,01/04/2021,8775,8775,pfizer
+New Jersey,01/04/2021,53625,53625,pfizer
+New Mexico,01/04/2021,12675,12675,pfizer
+New York,01/04/2021,68250,68250,pfizer
+New York City,01/04/2021,51675,51675,pfizer
+North Carolina,01/04/2021,61425,61425,pfizer
+North Dakota,01/04/2021,4875,4875,pfizer
+Ohio,01/04/2021,70200,70200,pfizer
+Oklahoma,01/04/2021,23400,23400,pfizer
+Oregon,01/04/2021,25350,25350,pfizer
+Palau,01/04/2021,0,0,pfizer
+Pennsylvania,01/04/2021,69225,69225,pfizer
+Philadelphia,01/04/2021,9750,9750,pfizer
+Puerto Rico,01/04/2021,21450,21450,pfizer
+Rhode Island,01/04/2021,6825,6825,pfizer
+South Carolina,01/04/2021,30225,30225,pfizer
+South Dakota,01/04/2021,5850,5850,pfizer
+Tennessee,01/04/2021,39975,39975,pfizer
+Texas,01/04/2021,158925,158925,pfizer
+U.S. Virgin Islands,01/04/2021,975,975,pfizer
+Utah,01/04/2021,16575,16575,pfizer
+Vermont,01/04/2021,3900,3900,pfizer
+Virginia,01/04/2021,50700,50700,pfizer
+Washington,01/04/2021,44850,44850,pfizer
+West Virginia,01/04/2021,11700,11700,pfizer
+Wisconsin,01/04/2021,35100,35100,pfizer
+Wyoming,01/04/2021,3900,3900,pfizer
+Alabama,12/28/2020,38025,38025,pfizer
+Alaska,12/28/2020,0,0,pfizer
+American Samoa,12/28/2020,0,0,pfizer
+Arizona,12/28/2020,53625,53625,pfizer
+Arkansas,12/28/2020,23400,23400,pfizer
+California,12/28/2020,297375,297375,pfizer
+Chicago,12/28/2020,21450,21450,pfizer
+Colorado,12/28/2020,42900,42900,pfizer
+Connecticut,12/28/2020,28275,28275,pfizer
+Delaware,12/28/2020,7800,7800,pfizer
+District of Columbia,12/28/2020,5850,5850,pfizer
+Federal Entities,12/28/2020,128700,128700,pfizer
+Florida,12/28/2020,162825,162825,pfizer
+Georgia,12/28/2020,77025,77025,pfizer
+Guam,12/28/2020,0,0,pfizer
+Hawaii,12/28/2020,11700,11700,pfizer
+Idaho,12/28/2020,12675,12675,pfizer
+Illinois,12/28/2020,78000,78000,pfizer
+Indiana,12/28/2020,50700,50700,pfizer
+Iowa,12/28/2020,24375,24375,pfizer
+Kansas,12/28/2020,22425,22425,pfizer
+Kentucky,12/28/2020,34125,34125,pfizer
+Louisiana,12/28/2020,36075,36075,pfizer
+Maine,12/28/2020,10725,10725,pfizer
+Mariana Islands,12/28/2020,0,0,pfizer
+Marshall Islands,12/28/2020,0,0,pfizer
+Maryland,12/28/2020,46800,46800,pfizer
+Massachusetts,12/28/2020,54600,54600,pfizer
+Michigan,12/28/2020,77025,77025,pfizer
+Micronesia,12/28/2020,0,0,pfizer
+Minnesota,12/28/2020,42900,42900,pfizer
+Mississippi,12/28/2020,22425,22425,pfizer
+Missouri,12/28/2020,46800,46800,pfizer
+Montana,12/28/2020,8775,8775,pfizer
+Nebraska,12/28/2020,14625,14625,pfizer
+Nevada,12/28/2020,22425,22425,pfizer
+New Hampshire,12/28/2020,10725,10725,pfizer
+New Jersey,12/28/2020,68250,68250,pfizer
+New Mexico,12/28/2020,16575,16575,pfizer
+New York,12/28/2020,87750,87750,pfizer
+New York City,12/28/2020,66300,66300,pfizer
+North Carolina,12/28/2020,78000,78000,pfizer
+North Dakota,12/28/2020,5850,5850,pfizer
+Ohio,12/28/2020,89700,89700,pfizer
+Oklahoma,12/28/2020,29250,29250,pfizer
+Oregon,12/28/2020,32175,32175,pfizer
+Palau,12/28/2020,0,0,pfizer
+Pennsylvania,12/28/2020,88725,88725,pfizer
+Philadelphia,12/28/2020,12675,12675,pfizer
+Puerto Rico,12/28/2020,27300,27300,pfizer
+Rhode Island,12/28/2020,8775,8775,pfizer
+South Carolina,12/28/2020,39000,39000,pfizer
+South Dakota,12/28/2020,6825,6825,pfizer
+Tennessee,12/28/2020,51675,51675,pfizer
+Texas,12/28/2020,203775,203775,pfizer
+U.S. Virgin Islands,12/28/2020,975,975,pfizer
+Utah,12/28/2020,21450,21450,pfizer
+Vermont,12/28/2020,5850,5850,pfizer
+Virginia,12/28/2020,65325,65325,pfizer
+Washington,12/28/2020,57525,57525,pfizer
+West Virginia,12/28/2020,14625,14625,pfizer
+Wisconsin,12/28/2020,44850,44850,pfizer
+Wyoming,12/28/2020,4875,4875,pfizer
+Alabama,12/21/2020,29250,29250,pfizer
+Alaska,12/21/2020,0,0,pfizer
+American Samoa,12/21/2020,0,0,pfizer
+Arizona,12/21/2020,41925,41925,pfizer
+Arkansas,12/21/2020,18525,18525,pfizer
+California,12/21/2020,233025,233025,pfizer
+Chicago,12/21/2020,16575,16575,pfizer
+Colorado,12/21/2020,33150,33150,pfizer
+Connecticut,12/21/2020,22425,22425,pfizer
+Delaware,12/21/2020,5850,5850,pfizer
+District of Columbia,12/21/2020,4875,4875,pfizer
+Federal Entities,12/21/2020,102375,102375,pfizer
+Florida,12/21/2020,127725,127725,pfizer
+Georgia,12/21/2020,60450,60450,pfizer
+Guam,12/21/2020,0,0,pfizer
+Hawaii,12/21/2020,8775,8775,pfizer
+Idaho,12/21/2020,9750,9750,pfizer
+Illinois,12/21/2020,60450,60450,pfizer
+Indiana,12/21/2020,39975,39975,pfizer
+Iowa,12/21/2020,19500,19500,pfizer
+Kansas,12/21/2020,17550,17550,pfizer
+Kentucky,12/21/2020,27300,27300,pfizer
+Louisiana,12/21/2020,28275,28275,pfizer
+Maine,12/21/2020,8775,8775,pfizer
+Mariana Islands,12/21/2020,0,0,pfizer
+Marshall Islands,12/21/2020,0,0,pfizer
+Maryland,12/21/2020,36075,36075,pfizer
+Massachusetts,12/21/2020,42900,42900,pfizer
+Michigan,12/21/2020,60450,60450,pfizer
+Micronesia,12/21/2020,0,0,pfizer
+Minnesota,12/21/2020,33150,33150,pfizer
+Mississippi,12/21/2020,17550,17550,pfizer
+Missouri,12/21/2020,37050,37050,pfizer
+Montana,12/21/2020,6825,6825,pfizer
+Nebraska,12/21/2020,11700,11700,pfizer
+Nevada,12/21/2020,17550,17550,pfizer
+New Hampshire,12/21/2020,8775,8775,pfizer
+New Jersey,12/21/2020,53625,53625,pfizer
+New Mexico,12/21/2020,12675,12675,pfizer
+New York,12/21/2020,68250,68250,pfizer
+New York City,12/21/2020,51675,51675,pfizer
+North Carolina,12/21/2020,61425,61425,pfizer
+North Dakota,12/21/2020,4875,4875,pfizer
+Ohio,12/21/2020,70200,70200,pfizer
+Oklahoma,12/21/2020,23400,23400,pfizer
+Oregon,12/21/2020,25350,25350,pfizer
+Palau,12/21/2020,0,0,pfizer
+Pennsylvania,12/21/2020,69225,69225,pfizer
+Philadelphia,12/21/2020,9750,9750,pfizer
+Puerto Rico,12/21/2020,21450,21450,pfizer
+Rhode Island,12/21/2020,6825,6825,pfizer
+South Carolina,12/21/2020,30225,30225,pfizer
+South Dakota,12/21/2020,5850,5850,pfizer
+Tennessee,12/21/2020,39975,39975,pfizer
+Texas,12/21/2020,159900,159900,pfizer
+U.S. Virgin Islands,12/21/2020,975,975,pfizer
+Utah,12/21/2020,16575,16575,pfizer
+Vermont,12/21/2020,4875,4875,pfizer
+Virginia,12/21/2020,50700,50700,pfizer
+Washington,12/21/2020,44850,44850,pfizer
+West Virginia,12/21/2020,11700,11700,pfizer
+Wisconsin,12/21/2020,35100,35100,pfizer
+Wyoming,12/21/2020,3900,3900,pfizer
+Alabama,12/14/2020,40950,40950,pfizer
+Alaska,12/14/2020,35100,35100,pfizer
+American Samoa,12/14/2020,5850,0,pfizer
+Arizona,12/14/2020,58500,58500,pfizer
+Arkansas,12/14/2020,25350,25350,pfizer
+California,12/14/2020,327600,327600,pfizer
+Chicago,12/14/2020,23400,23400,pfizer
+Colorado,12/14/2020,46800,46800,pfizer
+Connecticut,12/14/2020,31200,31200,pfizer
+Delaware,12/14/2020,8775,8775,pfizer
+District of Columbia,12/14/2020,6825,6825,pfizer
+Federal Entities,12/14/2020,156000,142350,pfizer
+Florida,12/14/2020,179400,179400,pfizer
+Georgia,12/14/2020,84825,84825,pfizer
+Guam,12/14/2020,11700,0,pfizer
+Hawaii,12/14/2020,12675,12675,pfizer
+Idaho,12/14/2020,13650,13650,pfizer
+Illinois,12/14/2020,85800,85800,pfizer
+Indiana,12/14/2020,55575,55575,pfizer
+Iowa,12/14/2020,26325,26325,pfizer
+Kansas,12/14/2020,24375,24375,pfizer
+Kentucky,12/14/2020,38025,38025,pfizer
+Louisiana,12/14/2020,39000,39000,pfizer
+Maine,12/14/2020,12675,12675,pfizer
+Mariana Islands,12/14/2020,5850,0,pfizer
+Marshall Islands,12/14/2020,0,0,pfizer
+Maryland,12/14/2020,50700,50700,pfizer
+Massachusetts,12/14/2020,59475,59475,pfizer
+Michigan,12/14/2020,84825,84825,pfizer
+Micronesia,12/14/2020,0,0,pfizer
+Minnesota,12/14/2020,46800,46800,pfizer
+Mississippi,12/14/2020,25350,25350,pfizer
+Missouri,12/14/2020,51675,51675,pfizer
+Montana,12/14/2020,9750,9750,pfizer
+Nebraska,12/14/2020,16575,16575,pfizer
+Nevada,12/14/2020,25350,25350,pfizer
+New Hampshire,12/14/2020,12675,12675,pfizer
+New Jersey,12/14/2020,76050,76050,pfizer
+New Mexico,12/14/2020,17550,17550,pfizer
+New York,12/14/2020,96525,96525,pfizer
+New York City,12/14/2020,73125,73125,pfizer
+North Carolina,12/14/2020,85800,85800,pfizer
+North Dakota,12/14/2020,6825,6825,pfizer
+Ohio,12/14/2020,98475,98475,pfizer
+Oklahoma,12/14/2020,33150,33150,pfizer
+Oregon,12/14/2020,35100,35100,pfizer
+Palau,12/14/2020,0,0,pfizer
+Pennsylvania,12/14/2020,97500,97500,pfizer
+Philadelphia,12/14/2020,13650,13650,pfizer
+Puerto Rico,12/14/2020,30225,30225,pfizer
+Rhode Island,12/14/2020,9750,9750,pfizer
+South Carolina,12/14/2020,42900,42900,pfizer
+South Dakota,12/14/2020,7800,7800,pfizer
+Tennessee,12/14/2020,56550,56550,pfizer
+Texas,12/14/2020,224250,224250,pfizer
+U.S. Virgin Islands,12/14/2020,975,975,pfizer
+Utah,12/14/2020,23400,23400,pfizer
+Vermont,12/14/2020,5850,5850,pfizer
+Virginia,12/14/2020,72150,72150,pfizer
+Washington,12/14/2020,62400,62400,pfizer
+West Virginia,12/14/2020,16575,16575,pfizer
+Wisconsin,12/14/2020,49725,49725,pfizer
+Wyoming,12/14/2020,4875,4875,pfizer
+>>>>>>> 05e0a320f1738341b3207fa8a59bc836f723dfb0

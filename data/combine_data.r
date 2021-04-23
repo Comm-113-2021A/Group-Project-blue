@@ -49,7 +49,6 @@ write_csv(vaccines, "data/vaccines.csv")
 
 demographic <- read_csv("data/demographic.csv")
 
-glimpse(demographic)
 
 #-------------join df --------------
 library(janitor)
@@ -66,4 +65,5 @@ vaccine_demographic$asian <- lapply(vaccine_demographic$asian, function(x) as.nu
 
 vaccine_demographic <- vaccine_demographic %>%
   mutate(asian = as.numeric(asian))
+
 
