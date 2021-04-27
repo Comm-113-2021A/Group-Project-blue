@@ -23,7 +23,13 @@ library(knitr)
 library(xaringanthemer)
 library(showtext)
 library(rvest)
+library(janitor)
 ```
+
+```{r install_xaringanExtra, include=FALSE, force = TRUE}
+devtools::install_github("gadenbuie/xaringanExtra")
+```
+
 
 ```{r setup, include=FALSE}
 # For better figure resolution
@@ -36,53 +42,57 @@ knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618,
   moderna <- read.csv("../data/moderna.csv")
 ```
 
-```{r, echo = FALSE}
+```{r presentation_theme, echo = FALSE}
 style_xaringan(
-  title_slide_background_image = "img/confetti.jpg"
+  title_slide_background_image = "img/title.png",
+  title_slide_text_color = "#FFFFFF",
+  background_color = "#FFF",
+  text_color = "#000080",
+  header_color = "#800000",
+  inverse_background_color = "#23395D",
+  inverse_text_color = "#C0C0C0",
+  inverse_header_color = "#FFF",
 )
 ```
 
 
 class: center, middle
 
-## Are vaccines being distributed fairly within the US?
+## Are vaccines being distributed fairly within the U.S.?
+
+---
+# The Racial Disparities Behind Who Has Received Vaccines
+
+```{r embed_url, echo = FALSE}
+
+include_url("https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on-covid-19-vaccinations-race-ethnicity/", height = "600px")
+
+```
+
 
 ---
 
 class: inverse, center, middle
 
-# Data Tidying
+# Section 1: Data
 
 ---
 
 # Initial Data Sets
 
-- Vaccination Data recieved from CDC
+- Vaccination Data received from Centers for Disease Control and Prevention (CDC)
 
-- Data on vaccines came in 3 different different data sets. 
+- Data on vaccines allocation came in 3 different data sets for the 3 types of vaccines that are largely recommended and authorized in the U.S. (as of the week of April 5th 2021).
 
 ---
 
-# janssen.csv
+# janssen.csv, moderna.csv, and pfizer.csv
 
-```{r echo = FALSE}
+```{r glimpse_df, echo = FALSE}
 glimpse(janssen)
-```
 
----
-
-# moderna.csv
-
-```{r echo = FALSE}
 glimpse(moderna)
-```
 
-
----
-
-# phizer.csv
-
-```{r echo = FALSE}
 glimpse(pfizer)
 ```
 
@@ -90,7 +100,7 @@ glimpse(pfizer)
 
 # Renaming Columns
 
-```{r}
+```{r rename_column}
 janssen <- janssen %>%
   rename(
     first_dose = "X1st.Dose.Allocations",
@@ -116,86 +126,22 @@ pfizer <- pfizer %>%
 
 ---
 
-# Combining Data
+# Mutating the data
 
-- We wish to combine the data into one big dataset `vaccines.csv`. 
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
 
-- First note that the janssen vaccine only has 1 dose. We can fix this with a `mutate` call
 
-```{r}
+```{r mutate_df, eval = FALSE}
+# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
 janssen_second_dose <- janssen %>%
   mutate(second_dose = 0)
 glimpse(janssen_second_dose)
-```
-
----
 
 
----
+# Then, we add a column called `vaccine` to differentiate the types of vaccines.
 
-# moderna.csv
-
-```{r echo = FALSE}
-glimpse(moderna)
-```
-
-
----
-
-# phizer.csv
-
-```{r echo = FALSE}
-glimpse(pfizer)
-```
-
----
-
-# Renaming Columns
-
-```{r}
-janssen <- janssen %>%
-  rename(
-    first_dose = "X1st.Dose.Allocations",
-    # second_dose = "2nd Dose Allocations",
-    week = "Week.of.Allocations",
-    jurisdiction = "Jurisdiction"
-  )
-moderna <- moderna %>%
-  rename(
-    first_dose = "X1st.Dose.Allocations",
-    second_dose = "X2nd.Dose.Allocations",
-    week = "Week.of.Allocations",
-    jurisdiction = "Jurisdiction"
-  )
-pfizer <- pfizer %>%
-  rename(
-    first_dose = "X1st.Dose.Allocations",
-    second_dose = "X2nd.Dose.Allocations",
-    week = "Week.of.Allocations",
-    jurisdiction = "Jurisdiction"
-  )
-```
-
----
-
-# Combining Data
-
-- We wish to combine the data into one big dataset `vaccines.csv`. 
-
-- First note that the janssen vaccine only has 1 dose. We can fix this with a `mutate` call
-
-```{r}
-janssen_second_dose <- janssen %>%
-  mutate(second_dose = 0)
-glimpse(janssen_second_dose)
-```
-
----
-
-# Marking Vaccine
-
-Then, we add a column called vaccine so we know what kind of vaccine it is after we combine the datasets. 
-```{r}
 janssen_second_dose <- janssen_second_dose %>%
   mutate(vaccine = "janssen")
 
@@ -204,63 +150,137 @@ pfizer <- pfizer %>%
 
 moderna <- moderna %>%
   mutate(vaccine = "moderna")
+
+```
+
+
+```{r mutate_df1, include=FALSE}
+# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
+janssen_second_dose <- janssen %>%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+
+
+# Then, we add a column called `vaccine` to differentiate the types of vaccines.
+
+janssen_second_dose <- janssen_second_dose %>%
+  mutate(vaccine = "janssen")
+
+pfizer <- pfizer %>%
+  mutate(vaccine = "pfizer")
+
+moderna <- moderna %>%
+  mutate(vaccine = "moderna")
+
 ```
 
 ---
 
-# Combine
+# Combining and Writing Data Set
 
-- Then we combine the datasets into `vaccines` with `rbind`
+- Then, we combine the datasets into `vaccines` with `rbind`
 ```{r}
 vaccines <- rbind(janssen_second_dose, moderna, pfizer)
 glimpse(vaccines)
 ```
 
----
-
-# Writing Data Set
-
-- Finally we write out the dataset
+- Finally, we write out the dataset
 ```{r}
 write_csv(vaccines, "../data/vaccines.csv")
 ```
 
 ---
 
-Join 
+class: inverse, center, middle
+
+# Merging Datasets
+
 
 ---
 
-# Combine
+class: inverse, center, middle
 
-- Then we combine the datasets into `vaccines` with `rbind`
-```{r}
-vaccines <- rbind(janssen_second_dose, moderna, pfizer)
-glimpse(vaccines)
+## *demographic.csv*
+
+```{r read_demographic, include =FALSE}
+
+demographic <- read.csv("../data/demographic.csv")
+
 ```
 
 ---
 
-# Writing Data Set
+# More tidying
 
-- Finally we write out the dataset
-```{r}
-write_csv(vaccines, "../data/vaccines.csv")
+```{r tidy_vaccines_demographic}
+# select main variables to be joined, convert case, and rename variables to match snake_case
+demographic <- demographic %>%
+  select(Location, White, Black, Asian, Hispanic) %>%
+  janitor::clean_names() %>%
+  rename(
+    white_prop = white,
+    black_prop = black,
+    asian_prop = asian,
+    hispanic_prop = hispanic
+  )
+
+# change variables name to match
+
+vaccines <- vaccines %>%
+  rename(location = "jurisdiction")
 ```
 
+---
 
-<!-- WRITE SOME STUFF ABOUT COMBINING VACCINE DEMOGRAPHIC HERE -->
+# Joining `vaccine` and `demographic`
+
+```{r vaccine_join_demographic, warning=FALSE}
+
+vaccine_demographic <- left_join(vaccines, demographic, by = "location") %>%
+#remove all locations where the demographic data frame does not have, thereby unsuitable for our model
+  na.omit()
+vaccine_demographic$asian_prop <- lapply(vaccine_demographic$asian_prop, function(x) as.numeric(as.character(x)))
+vaccine_demographic <- vaccine_demographic %>%
+  mutate(asian_prop = if_else(is.na(asian_prop), 0, as.numeric(asian_prop)))
+vaccine_demographic
+```
+
+---
+
+class: inverse, center, middle
+
+## *population.csv*
+
+```{r read_population, include =FALSE}
+
+population <- read.csv("../data/population.csv")
+
+```
+
+---
+
+# `vaccine_pop`
+
+We essentially repeated the steps above for the population dataframe, but with a little bit more mutating...
+
+```{r read_vaccine_pop, include = FALSE}
+vaccine_pop <- read_csv("../data/vaccine_pop.csv")
+```
+
+```{r vaccine_pop}
+vaccine_pop <- vaccine_pop %>%
+  mutate(week = as.Date(week, "%m/%d/%y"))
+vaccine_pop
+```
+
+---
 
 class: inverse, middle, center
 
-# Model
+# Section 2: Model
+
 
 ---
-```{r}
-vaccine_pop <- read_csv("../data/vaccine_pop.csv")
-vaccine_pop <- vaccine_pop %>%
-  mutate(week = as.Date(week, "%m/%d/%y"))
-```
 
 # Splitting the Data
 
@@ -314,6 +334,13 @@ vaccine_fit %>%
 
 ---
 
+class: inverse, middle, center
+
+# Section 3: Evaluate Model
+
+
+---
+
 # Evaluate Model
 
 
@@ -345,8 +372,6 @@ rmse(vaccine_train_pred, truth = first_dose, estimate = .pred)
 rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 ```
 
-
-
 ---
 
 
@@ -366,3 +391,11 @@ rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
 
 
 ```
+
+---
+
+# Limitations
+
+---
+
+# Recommendations
