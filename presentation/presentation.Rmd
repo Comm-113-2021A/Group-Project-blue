@@ -22,184 +22,415 @@ library(palmerpenguins)
 library(knitr)
 library(xaringanthemer)
 library(showtext)
+library(rvest)
+library(janitor)
 ```
+
+```{r install_xaringanExtra, include=FALSE, force = TRUE}
+devtools::install_github("gadenbuie/xaringanExtra")
+```
+
 
 ```{r setup, include=FALSE}
 # For better figure resolution
 knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618, out.width = "80%")
 ```
 
-```{r load-data}
+```{r load-data, echo = FALSE}
   janssen <- read.csv("../data/janssen.csv")
   pfizer <- read.csv("../data/pfizer.csv")
   moderna <- read.csv("../data/moderna.csv")
 ```
 
-```{r}
+```{r presentation_theme, echo = FALSE}
 style_xaringan(
-  title_slide_background_image = "img/confetti.jpg"
+  title_slide_background_image = "img/title.png",
+  title_slide_text_color = "#FFFFFF",
+  background_color = "#FFF",
+  text_color = "#000080",
+  header_color = "#800000",
+  inverse_background_color = "#23395D",
+  inverse_text_color = "#C0C0C0",
+  inverse_header_color = "#FFF",
 )
 ```
 
 
 class: center, middle
 
-## A statement of the overall goal / research question
+## Are vaccines being distributed fairly within the U.S.?
+
+---
+# The Racial Disparities Behind Who Has Received Vaccines
+
+```{r embed_url, echo = FALSE}
+
+include_url("https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on-covid-19-vaccinations-race-ethnicity/", height = "600px")
+
+```
+
+---
+
+## The Plan
+
+- First find data on population by race by state
+
+- Then use linear regression to model the number of vaccines based off of the population of each racial group 
+
+- Finally evaluate the accuracy of our model
 
 ---
 
 class: inverse, center, middle
 
-# Section title
+# Section 1: Data
 
 ---
 
-# Hello World
+# Initial Data Sets
 
-- Click the `Knit` button to compile your presentation
+- Vaccination Data received from Centers for Disease Control and Prevention (CDC)
 
-- Make sure to commit and push all resulting files to your GitHub repo
+- Data on vaccines allocation came in 3 different data sets for the 3 types of vaccines that are largely recommended and authorized in the U.S. (as of the week of April 5th 2021).
+
+---
+
+# janssen.csv, moderna.csv, and pfizer.csv
+
+```{r glimpse_df, echo = FALSE}
+glimpse(janssen)
+
+glimpse(moderna)
+
+glimpse(pfizer)
+```
+
+---
+
+# Renaming Columns
+
+```{r rename_column}
+janssen <- janssen %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    # second_dose = "2nd Dose Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+moderna <- moderna %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+pfizer <- pfizer %>%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+```
+
+---
+
+# Mutating the data
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
+```{r mutate_df, eval = FALSE}
+# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
+janssen_second_dose <- janssen %>%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+
+
+# Then, we add a column called `vaccine` to differentiate the types of vaccines.
+
+janssen_second_dose <- janssen_second_dose %>%
+  mutate(vaccine = "janssen")
+
+pfizer <- pfizer %>%
+  mutate(vaccine = "pfizer")
+
+moderna <- moderna %>%
+  mutate(vaccine = "moderna")
+
+```
+
+
+```{r mutate_df1, include=FALSE}
+# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
+janssen_second_dose <- janssen %>%
+  mutate(second_dose = 0)
+glimpse(janssen_second_dose)
+
+
+# Then, we add a column called `vaccine` to differentiate the types of vaccines.
+
+janssen_second_dose <- janssen_second_dose %>%
+  mutate(vaccine = "janssen")
+
+pfizer <- pfizer %>%
+  mutate(vaccine = "pfizer")
+
+moderna <- moderna %>%
+  mutate(vaccine = "moderna")
+
+```
+
+---
+
+# Combining and Writing Data Set
+
+- Then, we combine the datasets into `vaccines` with `rbind`
+```{r}
+vaccines <- rbind(janssen_second_dose, moderna, pfizer)
+glimpse(vaccines)
+```
+
+- Finally, we write out the dataset
+```{r}
+write_csv(vaccines, "../data/vaccines.csv")
+```
+
+---
+
+class: inverse, center, middle
+
+# Merging Datasets
+
+
+---
+
+class: inverse, center, middle
+
+## *demographic.csv*
+
+```{r read_demographic, include =FALSE}
+
+demographic <- read.csv("../data/demographic.csv")
+
+```
+
+---
+# demographic.csv
+```{r}
+glimpse(demographic)
+```
+
+---
+
+# More tidying
+
+```{r tidy_vaccines_demographic}
+# select main variables to be joined, convert case, and rename variables to match snake_case
+demographic <- demographic %>%
+  select(Location, White, Black, Asian, Hispanic) %>%
+  janitor::clean_names() %>%
+  rename(
+    white_prop = white,
+    black_prop = black,
+    asian_prop = asian,
+    hispanic_prop = hispanic
+  )
+
+# change variables name to match
+
+vaccines <- vaccines %>%
+  rename(location = "jurisdiction")
+```
+
+---
+
+# Joining `vaccine` and `demographic`
+
+```{r vaccine_join_demographic, warning=FALSE}
+
+vaccine_demographic <- left_join(vaccines, demographic, by = "location") %>%
+#remove all locations where the demographic data frame does not have, thereby unsuitable for our model
+  na.omit()
+vaccine_demographic$asian_prop <- lapply(vaccine_demographic$asian_prop, function(x) as.numeric(as.character(x)))
+vaccine_demographic <- vaccine_demographic %>%
+  mutate(asian_prop = if_else(is.na(asian_prop), 0, as.numeric(asian_prop)))
+vaccine_demographic
+```
+
+---
+
+class: inverse, center, middle
+
+## *population.csv*
+
+```{r read_population, include =FALSE}
+
+population <- read.csv("../data/population.csv")
+
+```
+
+---
+# demographic.csv
+```{r}
+glimpse(population)
+```
+
+---
+
+
+
+# `vaccine_pop`
+
+We essentially repeated the steps above for the population dataframe, but with a little bit more mutating...
+
+```{r read_vaccine_pop, include = FALSE}
+vaccine_pop <- read_csv("../data/vaccine_pop.csv")
+```
+
+```{r vaccine_pop}
+vaccine_pop <- vaccine_pop %>%
+  mutate(week = as.Date(week, "%m/%d/%y"))
+vaccine_pop
+```
 
 ---
 
 class: inverse, middle, center
 
-# Using xaringan
+# Section 2: Model
+
 
 ---
 
-# xaringan
+# Splitting the Data
 
-- The presentation is created using the `xaringan` package
+First we split the data into train and test data sets.
 
-- Use `---` to separate slides and `--` for incremental builds
+```{r}
+set.seed(1234)
+library(tidymodels)
+vaccine_split <- initial_split(vaccine_pop)
+vaccine_train <- training(vaccine_split)
+vaccine_test <- testing(vaccine_split)
+dim(vaccine_train)
+dim(vaccine_test)
+```
 
---
-
-- Like this
-
----
-
-# Layouts
-
-You can use plain text
-
-- or bullet points
-
-.pull-left[
-or text in two columns $^*$
-]
-.pull-right[
-- like
-- this
-]
-
-.footnote[
-[*] And add footnotes
-]
 
 ---
 
-# Code
+# Specifying Model
+
+Then we build the model and recipe. We use these to build the workflow. 
+
+```{r}
+
+vaccine_mod <- linear_reg() %>%
+  set_engine("lm")
+vaccine_recipe <- recipe(first_dose ~ week + vaccine + white + black + asian + hispanic,
+                         data = vaccine_train) %>%
+  step_zv(all_predictors())
+
+vaccine_wflow <- workflow() %>%
+  add_model(vaccine_mod) %>%
+  add_recipe(vaccine_recipe)
+
+```
+
+
+---
+
+# Fitting Model
+
+We fit the model on the training data.
 
 ```{r boring-regression}
-# a boring regression
-model <- lm(dist ~ speed, data = cars)
-tidy(model)
-glance(model)
+vaccine_fit <- vaccine_wflow %>%
+  fit(data = vaccine_train)
+vaccine_fit %>%
+  tidy()
 ```
 
 ---
 
-# Plots
+# Key Takeaway
 
-```{r recode-species, echo = FALSE}
-# In this chunk I'm doing a bunch of analysis that I don't want to present 
-# in my slides. But I need the resulting data frame for a plot I want to present.
-iris_modified <- iris %>%
-  mutate(Species = fct_other(Species, keep = "setosa"))
+On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
+
+```{r, echo = FALSE}
+vaccine_fit %>%
+  tidy()
 ```
 
-```{r plot-iris, echo = FALSE}
-# Code hidden with echo = FALSE
-# Uses modified iris dataset from previous chunk
-# Play around with height and width until you're happy with the look
-ggplot(data = iris_modified, mapping = aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
-  geom_point() + 
-  theme_minimal() # theme options: https://ggplot2.tidyverse.org/reference/ggtheme.html
+
+
+---
+
+class: inverse, middle, center
+
+# Section 3: Evaluate Model
+
+
+---
+
+# Evaluate Model
+
+
+```{r}
+vaccine_train_pred <- predict(vaccine_fit, vaccine_train) %>%
+  bind_cols(data = vaccine_train %>% select(first_dose, location))
+vaccine_train_pred
 ```
 
 ---
 
-## Plot and text
+# Residual Graph
+```{r, echo=FALSE}
+vaccine_mod_fitted <- vaccine_mod %>% 
+  fit(first_dose ~ week + vaccine + white + black + asian + hispanic, data = vaccine_train)
+vaccine_aug <- augment(vaccine_mod_fitted$fit)
 
-.pull-left[
-- Some text
-- goes here
-]
-.pull-right[
-```{r warning=FALSE, out.width="100%", fig.width=4, echo=FALSE}
-# see how I changed out.width and fig.width from defaults
-# to make the figure bigger
-ggplot(penguins, aes(x = bill_length_mm, y = species, color = species)) +
-  geom_boxplot() +
-  theme_minimal()
+vaccine_aug %>%
+  ggplot(aes(x=.fitted, y=.resid)) +
+  geom_point()
 ```
-]
+
 
 ---
 
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r iris-table, echo = FALSE}
-kable(head(iris), format = "html")
+# R^2
+```{r}
+rmse(vaccine_train_pred, truth = first_dose, estimate = .pred)
+rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 ```
 
 ---
 
-# Images
 
-```{r castle, echo = FALSE, out.width = "60%", fig.align = "center", fig.cap = "Image credit: Photo by Jörg Angeli on Unsplash."}
-include_graphics("https://images.unsplash.com/photo-1535448033526-c0e85c9e6968?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+```{r}
+vaccine_test_pred <- predict(vaccine_fit, vaccine_test) %>%
+  bind_cols(data = vaccine_test %>% select(first_dose, location))
+vaccine_test_pred
 ```
-
-Or you can also include a full page image. See next slide.
 
 ---
 
-background-image: url(https://images.unsplash.com/photo-1535448033526-c0e85c9e6968?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+# R^2
+```{r}
+rmse(vaccine_test_pred, truth = first_dose, estimate = .pred)
+rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
+
+
+
+```
 
 ---
 
-# Math Expressions
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. &#36;\alpha+\beta$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
-
-```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
-
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-Limitations:
-
-1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-1. There should not be spaces after the opening `$` or before the closing `$`.
-
-1. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
+# Limitations
 
 ---
 
-# Feeling adventurous?
-
-- Want to find out more about `xaringan`? See https://slides.yihui.name/xaringan/#1.
-
-- You are welcomed to use the default styling of the slides. In fact, that's what I expect majority of you will do. You will differentiate yourself with the content of your presentation.
-
-- But some of you might want to play around with slide styling. The 
-`xaringanthemer` provides some solutions for this that: https://pkg.garrickadenbuie.com/xaringanthemer.
-
-- And if you want more bells and whistles, there is also `xaringanExtra`: https://pkg.garrickadenbuie.com/xaringanExtra.
+# Recommendations
