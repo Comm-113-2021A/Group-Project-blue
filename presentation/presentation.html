@@ -4,7 +4,7 @@
     <title>Analysis of COVID Vaccine Distribution in Pennsylvania</title>
     <meta charset="utf-8" />
     <meta name="author" content="Team Blue   Vinh Hau, Iris Lee, Jason Yan" />
-    <meta name="date" content="2021-04-27" />
+    <meta name="date" content="2021-04-28" />
     <script src="libs/header-attrs-2.7/header-attrs.js"></script>
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 
 # Analysis of COVID Vaccine Distribution in Pennsylvania
 ### Team Blue <br> Vinh Hau, Iris Lee, Jason Yan
-### 2021-04-27
+### 2021-04-28
 
 ---
 
@@ -42,6 +42,15 @@ class: center, middle
 
 &lt;iframe src="https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on-covid-19-vaccinations-race-ethnicity/" width="80%" height="600px"&gt;&lt;/iframe&gt;
 
+---
+
+## The Plan
+
+- First find data on population by race by state
+
+- Then use linear regression to model the number of vaccines based off of the population of each racial group 
+
+- Finally evaluate the accuracy of our model
 
 ---
 
@@ -93,6 +102,29 @@ class: inverse, center, middle
 # Renaming Columns
 
 
+```r
+janssen &lt;- janssen %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    # second_dose = "2nd Dose Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+moderna &lt;- moderna %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+pfizer &lt;- pfizer %&gt;%
+  rename(
+    first_dose = "X1st.Dose.Allocations",
+    second_dose = "X2nd.Dose.Allocations",
+    week = "Week.of.Allocations",
+    jurisdiction = "Jurisdiction"
+  )
+```
 
 ---
 
@@ -165,6 +197,28 @@ class: inverse, center, middle
 ## *demographic.csv*
 
 
+
+---
+# demographic.csv
+
+```r
+glimpse(demographic)
+```
+
+```
+## Rows: 53
+## Columns: 10
+## $ Location                               &lt;chr&gt; "United States", "Alabama", "A…
+## $ White                                  &lt;dbl&gt; 0.601, 0.654, 0.600, 0.542, 0.…
+## $ Black                                  &lt;dbl&gt; 0.122, 0.265, 0.022, 0.043, 0.…
+## $ Hispanic                               &lt;dbl&gt; 0.185, 0.044, 0.070, 0.318, 0.…
+## $ Asian                                  &lt;chr&gt; "0.056", "0.014", "0.060", "0.…
+## $ American.Indian.Alaska.Native          &lt;chr&gt; "0.007", "0.004", "0.151", "0.…
+## $ Native.Hawaiian.Other.Pacific.Islander &lt;chr&gt; "0.002", "N/A", "0.015", "0.00…
+## $ Multiple.Races                         &lt;dbl&gt; 0.028, 0.019, 0.083, 0.024, 0.…
+## $ Total                                  &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Footnotes                              &lt;int&gt; 1, NA, NA, NA, NA, NA, NA, NA,…
+```
 
 ---
 
@@ -4170,6 +4224,22 @@ class: inverse, center, middle
 
 
 ---
+# demographic.csv
+
+```r
+glimpse(population)
+```
+
+```
+## Rows: 51
+## Columns: 2
+## $ location   &lt;chr&gt; "Alabama", "Alaska", "Arizona", "Arkansas", "California", …
+## $ population &lt;chr&gt; "4,903,185", "731,545", "7,278,717", "3,017,804", "39,512,…
+```
+
+---
+
+
 
 # `vaccine_pop`
 
@@ -4214,6 +4284,8 @@ class: inverse, middle, center
 
 # Splitting the Data
 
+First we split the data into train and test data sets.
+
 
 ```r
 set.seed(1234)
@@ -4241,16 +4313,12 @@ dim(vaccine_test)
 
 # Specifying Model
 
+Then we build the model and recipe. We use these to build the workflow. 
 
 
 ```r
 vaccine_mod &lt;- linear_reg() %&gt;%
   set_engine("lm")
-# %&gt;%
-#   fit(first_dose ~ week + vaccine + white + black + asian + hispanic, data = vaccine_train)
-# 
-# vaccine_mod %&gt;%
-#   tidy()
 vaccine_recipe &lt;- recipe(first_dose ~ week + vaccine + white + black + asian + hispanic,
                          data = vaccine_train) %&gt;%
   step_zv(all_predictors())
@@ -4264,6 +4332,8 @@ vaccine_wflow &lt;- workflow() %&gt;%
 ---
 
 # Fitting Model
+
+We fit the model on the training data.
 
 
 ```r
@@ -4286,6 +4356,29 @@ vaccine_fit %&gt;%
 ## 7 asian           0.162     0.0203        7.97 3.14e-15
 ## 8 hispanic        0.0723    0.0199        3.63 2.99e- 4
 ```
+
+---
+
+# Key Takeaway
+
+On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
+
+
+```
+## # A tibble: 8 x 5
+##   term            estimate std.error statistic  p.value
+##   &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 (Intercept)    -9.56      2.38         -4.02 6.18e- 5
+## 2 week            0.000404  0.000129      3.13 1.80e- 3
+## 3 vaccinemoderna  0.771     0.0438       17.6  6.39e-63
+## 4 vaccinepfizer   0.779     0.0433       18.0  2.98e-65
+## 5 white           0.549     0.0264       20.8  3.59e-84
+## 6 black           0.0706    0.0130        5.44 6.14e- 8
+## 7 asian           0.162     0.0203        7.97 3.14e-15
+## 8 hispanic        0.0723    0.0199        3.63 2.99e- 4
+```
+
+
 
 ---
 
@@ -4326,7 +4419,7 @@ vaccine_train_pred
 ---
 
 # Residual Graph
-&lt;img src="presentation_files/figure-html/unnamed-chunk-6-1.png" width="80%" /&gt;
+&lt;img src="presentation_files/figure-html/unnamed-chunk-9-1.png" width="80%" /&gt;
 
 
 ---

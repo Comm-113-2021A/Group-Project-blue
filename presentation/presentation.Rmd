@@ -69,6 +69,15 @@ include_url("https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on
 
 ```
 
+---
+
+## The Plan
+
+- First find data on population by race by state
+
+- Then use linear regression to model the number of vaccines based off of the population of each racial group 
+
+- Finally evaluate the accuracy of our model
 
 ---
 
@@ -209,6 +218,12 @@ demographic <- read.csv("../data/demographic.csv")
 ```
 
 ---
+# demographic.csv
+```{r}
+glimpse(demographic)
+```
+
+---
 
 # More tidying
 
@@ -258,6 +273,14 @@ population <- read.csv("../data/population.csv")
 ```
 
 ---
+# demographic.csv
+```{r}
+glimpse(population)
+```
+
+---
+
+
 
 # `vaccine_pop`
 
@@ -284,6 +307,8 @@ class: inverse, middle, center
 
 # Splitting the Data
 
+First we split the data into train and test data sets.
+
 ```{r}
 set.seed(1234)
 library(tidymodels)
@@ -292,7 +317,6 @@ vaccine_train <- training(vaccine_split)
 vaccine_test <- testing(vaccine_split)
 dim(vaccine_train)
 dim(vaccine_test)
-
 ```
 
 
@@ -300,16 +324,12 @@ dim(vaccine_test)
 
 # Specifying Model
 
+Then we build the model and recipe. We use these to build the workflow. 
 
 ```{r}
 
 vaccine_mod <- linear_reg() %>%
   set_engine("lm")
-# %>%
-#   fit(first_dose ~ week + vaccine + white + black + asian + hispanic, data = vaccine_train)
-# 
-# vaccine_mod %>%
-#   tidy()
 vaccine_recipe <- recipe(first_dose ~ week + vaccine + white + black + asian + hispanic,
                          data = vaccine_train) %>%
   step_zv(all_predictors())
@@ -325,12 +345,27 @@ vaccine_wflow <- workflow() %>%
 
 # Fitting Model
 
+We fit the model on the training data.
+
 ```{r boring-regression}
 vaccine_fit <- vaccine_wflow %>%
   fit(data = vaccine_train)
 vaccine_fit %>%
   tidy()
 ```
+
+---
+
+# Key Takeaway
+
+On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
+
+```{r, echo = FALSE}
+vaccine_fit %>%
+  tidy()
+```
+
+
 
 ---
 
