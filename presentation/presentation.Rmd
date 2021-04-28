@@ -1,5 +1,5 @@
 ---
-title: "Analysis of COVID Vaccine Distribution in Pennsylvania"
+title: "Analysis of COVID Vaccine Distribution in US"
 subtitle: ""
 author: "Team Blue <br> Vinh Hau, Iris Lee, Jason Yan"
 date: "`r Sys.Date()`"
@@ -43,7 +43,7 @@ style_xaringan(
   title_slide_background_image = "img/title.png",
   title_slide_text_color = "#FFFFFF",
   background_color = "#FFF",
-  text_color = "#000080",
+  # text_c$\ln{\text{white}}$olor = "#000080",
   header_color = "#800000",
   inverse_background_color = "#23395D",
   inverse_text_color = "#C0C0C0",
@@ -311,7 +311,6 @@ dim(vaccine_train)
 dim(vaccine_test)
 ```
 
-
 ---
 
 # Specifying Model
@@ -347,10 +346,21 @@ vaccine_fit %>%
 ```
 
 ---
+# Logarithmic Function
+
+$\hat{\ln(\text{vaccine_count})} = m \cdot \ln(\text{population}) + b$
+
+Where population is either the population of white, black, asian, or hispanic. 
+
+We changed from a linear scale to a log scale because our initial test resulted in a fan-shaped distribution; this model performed much better. 
+
+---
 
 # Key Takeaway
 
-On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
+On average, an increase of 1 in $\ln{(\text{white})}$ resulted in a 0.549 increase in $\ln{(\text{vaccines})}$
+
+On the other hand, an increase of 1 in $\ln{(\text{black})}$, $\ln{(\text{asian})}$, or $\ln{(\text{hispanic})}$ resulted in around a 0.1 increase in $\ln{(\text{vaccines})}$. 
 
 ```{r tidy, echo = FALSE}
 vaccine_fit %>%
@@ -368,7 +378,7 @@ class: inverse, middle, center
 
 ---
 
-# Evaluate Model
+# Predict Train
 
 
 ```{r predict_vaccine_train}
@@ -393,7 +403,7 @@ vaccine_aug %>%
 
 ---
 
-# R^2
+# Train R^2 and RMSE
 ```{r rmse_rsq_train}
 rmse(vaccine_train_pred, truth = first_dose, estimate = .pred)
 rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
@@ -401,6 +411,7 @@ rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 
 ---
 
+# Predict Test
 
 ```{r predict_vaccine_test}
 vaccine_test_pred <- predict(vaccine_fit, vaccine_test) %>%
@@ -410,7 +421,7 @@ vaccine_test_pred
 
 ---
 
-# R^2
+# Test R^2 and RMSE
 ```{r rmse_rsq_test}
 rmse(vaccine_test_pred, truth = first_dose, estimate = .pred)
 rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
@@ -433,12 +444,14 @@ The residual graph displays a random distribution meaning that a linear regressi
 - Correlation vs. Causation
 - Third confounding variable
 - Overgeneralization
+- Need-based vaccine distribution
 
 ---
 
 # Recommendations
 
-- Establish cause
+- Conduct study to establish what the cause is
 - Find more focused datasets
+- Re-run study at a later date, with more data available
 
 

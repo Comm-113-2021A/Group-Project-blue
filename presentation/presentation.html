@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Analysis of COVID Vaccine Distribution in Pennsylvania</title>
+    <title>Analysis of COVID Vaccine Distribution in US</title>
     <meta charset="utf-8" />
     <meta name="author" content="Team Blue   Vinh Hau, Iris Lee, Jason Yan" />
     <meta name="date" content="2021-04-28" />
@@ -12,7 +12,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Analysis of COVID Vaccine Distribution in Pennsylvania
+# Analysis of COVID Vaccine Distribution in US
 ### Team Blue <br> Vinh Hau, Iris Lee, Jason Yan
 ### 2021-04-28
 
@@ -4218,7 +4218,7 @@ class: inverse, center, middle
 
 
 ---
-# demographic.csv
+# population.csv
 
 ```r
 glimpse(population)
@@ -4302,7 +4302,6 @@ dim(vaccine_test)
 ## [1] 478  14
 ```
 
-
 ---
 
 # Specifying Model
@@ -4352,10 +4351,21 @@ vaccine_fit %&gt;%
 ```
 
 ---
+# Logarithmic Function
+
+`\(\hat{\ln(\text{vaccine_count})} = m \cdot \ln(\text{population}) + b\)`
+
+Where population is either the population of white, black, asian, or hispanic. 
+
+We changed from a linear scale to a log scale because our initial test resulted in a fan-shaped distribution; this model performed much better. 
+
+---
 
 # Key Takeaway
 
-On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
+On average, an increase of 1 in `\(\ln{(\text{white})}\)` resulted in a 0.549 increase in `\(\ln{(\text{vaccines})}\)`
+
+On the other hand, an increase of 1 in `\(\ln{(\text{black})}\)`, `\(\ln{(\text{asian})}\)`, or `\(\ln{(\text{hispanic})}\)` resulted in around a 0.1 increase in `\(\ln{(\text{vaccines})}\)`. 
 
 
 ```
@@ -4383,7 +4393,7 @@ class: inverse, middle, center
 
 ---
 
-# Evaluate Model
+# Predict Train
 
 
 
@@ -4413,12 +4423,12 @@ vaccine_train_pred
 ---
 
 # Residual Graph
-&lt;img src="presentation_files/figure-html/unnamed-chunk-9-1.png" width="80%" /&gt;
+&lt;img src="presentation_files/figure-html/residual-1.png" width="80%" /&gt;
 
 
 ---
 
-# R^2
+# Train R^2 and RMSE
 
 ```r
 rmse(vaccine_train_pred, truth = first_dose, estimate = .pred)
@@ -4444,6 +4454,7 @@ rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 
 ---
 
+# Predict Test
 
 
 ```r
@@ -4471,7 +4482,7 @@ vaccine_test_pred
 
 ---
 
-# R^2
+# Test R^2 and RMSE
 
 ```r
 rmse(vaccine_test_pred, truth = first_dose, estimate = .pred)
@@ -4497,11 +4508,27 @@ rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
 
 ---
 
+# Conclusion
+
+The residual graph displays a random distribution meaning that a linear regression model is the correct model for our data. Further our RMSE is small and our R^2 is large indicating that our model quite accurately predicts the number of vaccinations based on racial distribution. 
+
+---
+
 # Limitations
+
+- Implicit bias
+- Correlation vs. Causation
+- Third confounding variable
+- Overgeneralization
 
 ---
 
 # Recommendations
+
+- Conduct study to establish what the cause is
+- Find more focused datasets
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
