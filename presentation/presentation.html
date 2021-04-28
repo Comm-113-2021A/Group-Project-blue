@@ -4,12 +4,8 @@
     <title>Analysis of COVID Vaccine Distribution in Pennsylvania</title>
     <meta charset="utf-8" />
     <meta name="author" content="Team Blue   Vinh Hau, Iris Lee, Jason Yan" />
-
     <meta name="date" content="2021-04-28" />
     <script src="libs/header-attrs-2.7/header-attrs.js"></script>
-    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
-    <script src="libs/panelset-0.2.6/panelset.js"></script>
-
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -18,7 +14,6 @@ class: center, middle, inverse, title-slide
 
 # Analysis of COVID Vaccine Distribution in Pennsylvania
 ### Team Blue <br> Vinh Hau, Iris Lee, Jason Yan
-
 ### 2021-04-28
 
 ---
@@ -27,13 +22,6 @@ class: center, middle, inverse, title-slide
 
 
 
-
-
-```r
-  janssen &lt;- read.csv("../data/janssen.csv")
-  pfizer &lt;- read.csv("../data/pfizer.csv")
-  moderna &lt;- read.csv("../data/moderna.csv")
-```
 
 
 
@@ -56,7 +44,7 @@ class: center, middle
 
 - First find data on population by race by state
 
-- Then use linear regression to model the number of vaccines based off of the population of each racial group
+- Then use linear regression to model the number of vaccines based off of the population of each racial group 
 
 - Finally evaluate the accuracy of our model
 
@@ -140,10 +128,8 @@ pfizer &lt;- pfizer %&gt;%
 
 
 
-
-
 ```r
-# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0.
+# First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
 janssen_second_dose &lt;- janssen %&gt;%
   mutate(second_dose = 0)
 glimpse(janssen_second_dose)
@@ -4266,16 +4252,16 @@ vaccine_pop
 ## # A tibble: 1,915 x 14
 ##    location week       first_dose second_dose vaccine white_prop black_prop
 ##    &lt;chr&gt;    &lt;date&gt;          &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;      &lt;dbl&gt;
-##  1 Connect… 2020-04-05      10.9            0 janssen      0.657      0.1
+##  1 Connect… 2020-04-05      10.9            0 janssen      0.657      0.1  
 ##  2 Maine    2020-04-05       9.93           0 janssen      0.932      0.014
-##  3 Massach… 2020-04-05      11.6            0 janssen      0.705      0.07
+##  3 Massach… 2020-04-05      11.6            0 janssen      0.705      0.07 
 ##  4 New Ham… 2020-04-05       9.93           0 janssen      0.898      0.013
 ##  5 Rhode I… 2020-04-05       9.69           0 janssen      0.705      0.059
 ##  6 Vermont  2020-04-05       9.18           0 janssen      0.928      0.011
 ##  7 New Jer… 2020-04-05      11.8            0 janssen      0.545      0.124
-##  8 New York 2020-04-05      12.0            0 janssen      0.552      0.14
+##  8 New York 2020-04-05      12.0            0 janssen      0.552      0.14 
 ##  9 Delaware 2020-04-05       9.57           0 janssen      0.614      0.218
-## 10 Distric… 2020-04-05       9.29           0 janssen      0.367      0.45
+## 10 Distric… 2020-04-05       9.29           0 janssen      0.367      0.45 
 ## # … with 1,905 more rows, and 7 more variables: asian_prop &lt;dbl&gt;,
 ## #   hispanic_prop &lt;dbl&gt;, population &lt;dbl&gt;, white &lt;dbl&gt;, black &lt;dbl&gt;,
 ## #   asian &lt;dbl&gt;, hispanic &lt;dbl&gt;
@@ -4321,7 +4307,7 @@ dim(vaccine_test)
 
 # Specifying Model
 
-Then we build the model and recipe. We use these to build the workflow.
+Then we build the model and recipe. We use these to build the workflow. 
 
 
 ```r
@@ -4369,7 +4355,7 @@ vaccine_fit %&gt;%
 
 # Key Takeaway
 
-On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines.
+On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
 
 
 ```
@@ -4409,17 +4395,17 @@ vaccine_train_pred
 
 ```
 ## # A tibble: 1,437 x 3
-##    .pred first_dose location
-##    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;
-##  1  9.72      10.9  Connecticut
-##  2  8.54       9.93 Maine
+##    .pred first_dose location     
+##    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;        
+##  1  9.72      10.9  Connecticut  
+##  2  8.54       9.93 Maine        
 ##  3 10.3       11.6  Massachusetts
-##  4  8.63       9.69 Rhode Island
-##  5  7.93       9.18 Vermont
-##  6 10.5       11.8  New Jersey
-##  7 11.2       12.0  New York
-##  8  8.56       9.57 Delaware
-##  9 10.8       12.0  Pennsylvania
+##  4  8.63       9.69 Rhode Island 
+##  5  7.93       9.18 Vermont      
+##  6 10.5       11.8  New Jersey   
+##  7 11.2       12.0  New York     
+##  8  8.56       9.57 Delaware     
+##  9 10.8       12.0  Pennsylvania 
 ## 10  8.78      10.2  West Virginia
 ## # … with 1,427 more rows
 ```
@@ -4468,18 +4454,18 @@ vaccine_test_pred
 
 ```
 ## # A tibble: 478 x 3
-##    .pred first_dose location
-##    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;
-##  1  8.73       9.93 New Hampshire
+##    .pred first_dose location            
+##    &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;               
+##  1  8.73       9.93 New Hampshire       
 ##  2  8.06       9.29 District of Columbia
-##  3 10.1       11.4  Maryland
-##  4 10.5       11.7  Virginia
-##  5  9.21      10.7  Mississippi
-##  6  9.51      10.7  Iowa
-##  7  8.25       9.66 Montana
-##  8  8.14       9.33 North Dakota
-##  9  8.23       9.43 South Dakota
-## 10  7.77       9.05 Wyoming
+##  3 10.1       11.4  Maryland            
+##  4 10.5       11.7  Virginia            
+##  5  9.21      10.7  Mississippi         
+##  6  9.51      10.7  Iowa                
+##  7  8.25       9.66 Montana             
+##  8  8.14       9.33 North Dakota        
+##  9  8.23       9.43 South Dakota        
+## 10  7.77       9.05 Wyoming             
 ## # … with 468 more rows
 ```
 
@@ -4508,12 +4494,6 @@ rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
 ##   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
 ## 1 rsq     standard       0.792
 ```
-
----
-
-# Conclusion
-
-The residual graph shows a pretty symmetrical distribution clustered towards the middle of the graph without any distinct pattern indicating that our linear regression model quite accurately predicts the racial distribution of vaccines by population in each state in the US. As the model fits the data well, it can be concluded that the distribution of vaccines in the US is not fair and display a racial disparity.
 
 ---
 

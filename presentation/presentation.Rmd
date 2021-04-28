@@ -26,10 +26,6 @@ library(rvest)
 library(janitor)
 ```
 
-```{r install_xaringanExtra, include=FALSE, force = TRUE}
-devtools::install_github("gadenbuie/xaringanExtra")
-```
-
 
 ```{r setup, include=FALSE}
 # For better figure resolution
@@ -137,10 +133,6 @@ pfizer <- pfizer %>%
 
 # Mutating the data
 
-```{r xaringan-panelset, echo=FALSE}
-xaringanExtra::use_panelset()
-```
-
 
 ```{r mutate_df, eval = FALSE}
 # First note that the janssen vaccine only has 1 dose. We can fix this with adding a variable `second_dose` with only values of 0. 
@@ -188,13 +180,13 @@ moderna <- moderna %>%
 # Combining and Writing Data Set
 
 - Then, we combine the datasets into `vaccines` with `rbind`
-```{r}
+```{r glimpse_vaccines}
 vaccines <- rbind(janssen_second_dose, moderna, pfizer)
 glimpse(vaccines)
 ```
 
 - Finally, we write out the dataset
-```{r}
+```{r write_vaccines}
 write_csv(vaccines, "../data/vaccines.csv")
 ```
 
@@ -219,7 +211,7 @@ demographic <- read.csv("../data/demographic.csv")
 
 ---
 # demographic.csv
-```{r}
+```{r glimpse_demographic}
 glimpse(demographic)
 ```
 
@@ -273,8 +265,8 @@ population <- read.csv("../data/population.csv")
 ```
 
 ---
-# demographic.csv
-```{r}
+# population.csv
+```{r glimpse_population}
 glimpse(population)
 ```
 
@@ -309,7 +301,7 @@ class: inverse, middle, center
 
 First we split the data into train and test data sets.
 
-```{r}
+```{r split_data}
 set.seed(1234)
 library(tidymodels)
 vaccine_split <- initial_split(vaccine_pop)
@@ -326,7 +318,7 @@ dim(vaccine_test)
 
 Then we build the model and recipe. We use these to build the workflow. 
 
-```{r}
+```{r model_spec}
 
 vaccine_mod <- linear_reg() %>%
   set_engine("lm")
@@ -347,7 +339,7 @@ vaccine_wflow <- workflow() %>%
 
 We fit the model on the training data.
 
-```{r boring-regression}
+```{r fit_to_model}
 vaccine_fit <- vaccine_wflow %>%
   fit(data = vaccine_train)
 vaccine_fit %>%
@@ -360,7 +352,7 @@ vaccine_fit %>%
 
 On average, one more white person resulted 0.549 more vaccines, while one more black, asian, or hispanic person resulted in around 0.1 more vaccines. 
 
-```{r, echo = FALSE}
+```{r tidy, echo = FALSE}
 vaccine_fit %>%
   tidy()
 ```
@@ -379,7 +371,7 @@ class: inverse, middle, center
 # Evaluate Model
 
 
-```{r}
+```{r predict_vaccine_train}
 vaccine_train_pred <- predict(vaccine_fit, vaccine_train) %>%
   bind_cols(data = vaccine_train %>% select(first_dose, location))
 vaccine_train_pred
@@ -388,7 +380,7 @@ vaccine_train_pred
 ---
 
 # Residual Graph
-```{r, echo=FALSE}
+```{r residual, echo=FALSE}
 vaccine_mod_fitted <- vaccine_mod %>% 
   fit(first_dose ~ week + vaccine + white + black + asian + hispanic, data = vaccine_train)
 vaccine_aug <- augment(vaccine_mod_fitted$fit)
@@ -402,7 +394,7 @@ vaccine_aug %>%
 ---
 
 # R^2
-```{r}
+```{r rmse_rsq_train}
 rmse(vaccine_train_pred, truth = first_dose, estimate = .pred)
 rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 ```
@@ -410,7 +402,7 @@ rsq(vaccine_train_pred, truth = first_dose, estimate = .pred)
 ---
 
 
-```{r}
+```{r predict_vaccine_test}
 vaccine_test_pred <- predict(vaccine_fit, vaccine_test) %>%
   bind_cols(data = vaccine_test %>% select(first_dose, location))
 vaccine_test_pred
@@ -419,7 +411,7 @@ vaccine_test_pred
 ---
 
 # R^2
-```{r}
+```{r rmse_rsq_test}
 rmse(vaccine_test_pred, truth = first_dose, estimate = .pred)
 rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
 
@@ -429,8 +421,24 @@ rsq(vaccine_test_pred, truth = first_dose, estimate = .pred)
 
 ---
 
+# Conclusion
+
+The residual graph displays a random distribution meaning that a linear regression model is the correct model for our data. Further our RMSE is small and our R^2 is large indicating that our model quite accurately predicts the number of vaccinations based on racial distribution. 
+
+---
+
 # Limitations
+
+- Implicit bias
+- Correlation vs. Causation
+- Third confounding variable
+- Overgeneralization
 
 ---
 
 # Recommendations
+
+- Establish cause
+- Find more focused datasets
+
+
