@@ -1,5 +1,5 @@
 
-Analysis of COVID Vaccine Distribution in Pennsylvania
+Analysis of COVID Vaccine Distribution in the U.S.
 ================
 by Team Blue
 
