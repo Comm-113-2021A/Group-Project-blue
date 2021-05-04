@@ -45,7 +45,6 @@ United States Census Bureau, 2021. 2019 National and State Population Estimates.
 Centers for Disease Control and Prevention, 2021. COVID-19 Vaccine Distribution Allocations by Jurisdiction - Pfizer. [online] Data.cdc.gov. Available at: <https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Distribution-Allocations-by-Juris/saz5-9hgg/data> [Accessed 5 April 2021].
 
 Centers for Disease Control and Prevention, 2021. COVID-19 Vaccine Distribution Allocations by Jurisdiction - Moderna. [online] Data.cdc.gov. Available at: <https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Distribution-Allocations-by-Juris/b7pe-5nws/data> [Accessed 5 April 2021].
-https://www.kff.org/other/state-indicator/distribution-by-raceethnicity/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
 
 Centers for Disease Control and Prevention, 2021. COVID-19 Vaccine Distribution Allocations by Jurisdiction - Janssen. [online] Data.cdc.gov. Available at: <https://data.cdc.gov/Vaccinations/COVID-19-Vaccine-Distribution-Allocations-by-Juris/w9zu-fywh/data> [Accessed 5 April 2021].
 
