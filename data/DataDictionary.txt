@@ -1,0 +1,44 @@
+We have 5 datasets: `janssen.csv`, `moderna.csv`,`pfizer.csv`, 'demographic.csv', and 'population.csv`
+
+#`janssen.csv`
+
+This data set is 315 observations by 3 variables, which tracks Janssen Covid-19 vaccine distribution by jurisdiction as of 4/5/2021:
+  - `Jurisdiction`: The jursidiction where the data was collected,
+  -`Week.of.Allocations`: the last day of the week when the data was collected,
+  - `X1st.Dose.Allocations`: Number of 1st dose allocations,
+  - (Jaansen vaccine does not have a second dose)
+
+#`moderna.csv`
+
+This data set is 1,008 observations by 4 variables, which tracks Moderna Covid-19 vaccine distribution by jurisdiction as of 4/5/2021:
+  - `Jurisdiction`: The jursidiction where the data was collected,
+  -`Week.of.Allocations`: the last day of the week when the data was collected,
+  - `X1st.Dose.Allocations`: Number of 1st dose allocations,
+  - `X2nd.Dose.Allocations`: Number of 2nd dose allocations
+
+#`pfizer.csv`
+
+This data set is 1,071 observations by 4 variables, which tracks Pfizer Covid-19 vaccine distribution by jurisdiction as of 4/5/2021:
+  - `Jurisdiction`: The jursidiction where the data was collected,
+  -`Week.of.Allocations`: the last day of the week when the data was collected,
+  - `X1st.Dose.Allocations`: Number of 1st dose allocations,
+  - `X2nd.Dose.Allocations`: Number of 2nd dose allocations
+
+#`demographic.csv`
+
+This data set is 53 observations by 9 variables, which summarizes the proportions of population by race and state in the U.S. as of early 2021:
+  - `Location`: The location where the data was collected,
+  - `White`: proportions of White-Americans relative to the population of the location,
+  - `Black`: proportions of African-Americans relative to the population of the location,
+  - `Asian`: proportions of Asian-Americans relative to the population of the location,
+  - `Hispanic`: proportions of Hispanic and Latino Americans relative to the population of the location,
+  - `American.Inidian.Alaskan.Native`: proportions of American Indian or Alaska Native relative to the population of the location,
+  - `Native.Hawaiian.Other.Pacific.Islander`: proportions of Native Hawaiian or other Pacific Islander relative to the population of the location,
+  - `Multiple.Races`: proportions of multi-racial Americans  relative to the population of the location,
+  - `Total`: Sum of the proportions of the 7 Race variables
+
+#`demographic.csv`
+
+This data set is 51 observations by 2 variables, which summarizes the population by state in the U.S. as of 2019:
+  - `location`: The location where the data was collected,
+  - `population`: The population count within the location
